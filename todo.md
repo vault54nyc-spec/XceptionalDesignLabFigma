@@ -78,3 +78,11 @@
 ## Homepage Hero Fix
 - [x] Remove marble texture from hero
 - [x] Replace with cleaner, more sophisticated background
+
+
+## Video Banner and Interactive Elements
+- [x] Add high-definition video banner to hero section
+- [x] Replace turquoise/cyan color with burgundy throughout
+- [x] Add interactive short videos throughout the site
+- [x] Add animated GIFs to sections
+- [x] Update color scheme to burgundy accent color

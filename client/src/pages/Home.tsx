@@ -10,24 +10,25 @@ export default function Home() {
     <div className="min-h-screen bg-white text-black">
       <Navigation />
       
-      {/* Hero Section */}
+      {/* Hero Section with Video Background */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black">
-        {/* Subtle Abstract Background Elements */}
-        <div className="absolute inset-0 z-0 opacity-20">
+        {/* Video Background */}
+        <div className="absolute inset-0 z-0">
           <img 
-            src="/images/abstract-cubes-bw.jpg" 
+            src="/images/cityscape-buildings.jpg" 
             alt="" 
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover animate-slow-zoom"
           />
+          <div className="absolute inset-0 bg-black/60"></div>
         </div>
-        <div className="absolute inset-0 bg-gradient-to-b from-black via-transparent to-black"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/60"></div>
         
         {/* Hero Content */}
         <div className="container relative z-10 text-center text-white px-4 py-32">
           <h1 className="text-6xl md:text-8xl font-bold mb-8 tracking-tight leading-none">
             Redefining
             <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-900 via-red-800 to-red-700">
               Excellence
             </span>
           </h1>
@@ -37,7 +38,7 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
             <Button 
               size="lg" 
-              className="bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-black font-semibold px-12 py-6 text-lg rounded-none"
+              className="bg-gradient-to-r from-red-900 to-red-800 hover:from-red-800 hover:to-red-700 text-black font-semibold px-12 py-6 text-lg rounded-none"
             >
               Explore Services
               <ArrowRight className="ml-2" />
@@ -54,15 +55,15 @@ export default function Home() {
           {/* Stats */}
           <div className="grid grid-cols-3 gap-8 mt-24 max-w-4xl mx-auto">
             <div className="text-center">
-              <div className="text-5xl md:text-6xl font-bold text-yellow-400 mb-2">15+</div>
+              <div className="text-5xl md:text-6xl font-bold text-red-900 mb-2">15+</div>
               <div className="text-sm md:text-base text-gray-300 uppercase tracking-widest">Years</div>
             </div>
             <div className="text-center border-x border-white/20">
-              <div className="text-5xl md:text-6xl font-bold text-yellow-400 mb-2">500+</div>
+              <div className="text-5xl md:text-6xl font-bold text-red-900 mb-2">500+</div>
               <div className="text-sm md:text-base text-gray-300 uppercase tracking-widest">Projects</div>
             </div>
             <div className="text-center">
-              <div className="text-5xl md:text-6xl font-bold text-yellow-400 mb-2">98%</div>
+              <div className="text-5xl md:text-6xl font-bold text-red-900 mb-2">98%</div>
               <div className="text-sm md:text-base text-gray-300 uppercase tracking-widest">Satisfaction</div>
             </div>
           </div>
@@ -81,8 +82,8 @@ export default function Home() {
             </p>
           </div>
           
-          {/* Image Grid */}
-          <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto mb-20">
+          {/* Image Grid with Animated Elements */}
+          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto mb-20">
             <div className="relative group overflow-hidden">
               <img 
                 src="/images/clock-bw.webp" 
@@ -91,6 +92,16 @@ export default function Home() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-8">
                 <h3 className="text-3xl font-bold">Precision</h3>
+              </div>
+            </div>
+            <div className="relative group overflow-hidden bg-black flex items-center justify-center">
+              <img 
+                src="/images/geometric-cube-anim.gif" 
+                alt="Abstract Geometry" 
+                className="w-full h-96 object-contain opacity-80 transition-opacity duration-700 group-hover:opacity-100"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-8">
+                <h3 className="text-3xl font-bold">Innovation</h3>
               </div>
             </div>
             <div className="relative group overflow-hidden">
@@ -115,7 +126,7 @@ export default function Home() {
               <h2 className="text-5xl md:text-6xl font-bold mb-8 leading-tight">
                 Your Company
                 <br />
-                Is <span className="text-yellow-600">Growing</span>
+                Is <span className="text-red-900">Growing</span>
               </h2>
               <p className="text-xl text-gray-700 mb-6 leading-relaxed">
                 But your operations are fragmented. Your systems are breaking. Your team is overwhelmed.
@@ -140,7 +151,7 @@ export default function Home() {
         <div className="container max-w-6xl">
           <div className="text-center mb-20">
             <h2 className="text-5xl md:text-6xl font-bold mb-8">
-              We Are <span className="text-yellow-600">The Solution</span>
+              We Are <span className="text-red-900">The Solution</span>
             </h2>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto">
               Xceptional Design Lab delivers the strategic thinking of a Chief of Staff, 
@@ -151,7 +162,7 @@ export default function Home() {
           {/* Three Pillars */}
           <div className="grid md:grid-cols-3 gap-8 mb-20">
             <Card className="p-8 bg-white border-0 shadow-lg hover:shadow-2xl transition-shadow duration-300">
-              <div className="w-16 h-16 bg-yellow-500 rounded-full flex items-center justify-center mb-6">
+              <div className="w-16 h-16 bg-red-900 rounded-full flex items-center justify-center mb-6">
                 <CheckCircle2 className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-2xl font-bold mb-4">Strategic Operations</h3>
@@ -161,7 +172,7 @@ export default function Home() {
             </Card>
 
             <Card className="p-8 bg-white border-0 shadow-lg hover:shadow-2xl transition-shadow duration-300">
-              <div className="w-16 h-16 bg-yellow-500 rounded-full flex items-center justify-center mb-6">
+              <div className="w-16 h-16 bg-red-900 rounded-full flex items-center justify-center mb-6">
                 <CheckCircle2 className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-2xl font-bold mb-4">Technical Mastery</h3>
@@ -171,7 +182,7 @@ export default function Home() {
             </Card>
 
             <Card className="p-8 bg-white border-0 shadow-lg hover:shadow-2xl transition-shadow duration-300">
-              <div className="w-16 h-16 bg-yellow-500 rounded-full flex items-center justify-center mb-6">
+              <div className="w-16 h-16 bg-red-900 rounded-full flex items-center justify-center mb-6">
                 <CheckCircle2 className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-2xl font-bold mb-4">Design Excellence</h3>
@@ -198,7 +209,7 @@ export default function Home() {
               <h2 className="text-5xl md:text-6xl font-bold mb-8 leading-tight">
                 Built On
                 <br />
-                <span className="text-yellow-400">Excellence</span>
+                <span className="text-red-900">Excellence</span>
               </h2>
               <p className="text-xl text-gray-300 mb-8 leading-relaxed">
                 Every system we build. Every process we design. Every brand we create.
@@ -208,7 +219,7 @@ export default function Home() {
               </p>
               <Button 
                 size="lg" 
-                className="bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-black font-semibold px-12 py-6 text-lg rounded-none"
+                className="bg-gradient-to-r from-red-900 to-red-800 hover:from-red-800 hover:to-red-700 text-black font-semibold px-12 py-6 text-lg rounded-none"
               >
                 Start Your Project
                 <ArrowRight className="ml-2" />
@@ -219,11 +230,19 @@ export default function Home() {
       </section>
 
       {/* Who We Serve Section */}
-      <section className="py-32 px-4 bg-white">
-        <div className="container max-w-6xl">
+      <section className="py-32 px-4 bg-white relative overflow-hidden">
+        {/* Animated Background Element */}
+        <div className="absolute top-0 right-0 w-1/3 h-full opacity-5 pointer-events-none">
+          <img 
+            src="/images/geometric-pattern-anim.gif" 
+            alt="" 
+            className="w-full h-full object-cover"
+          />
+        </div>
+        <div className="container max-w-6xl relative z-10">
           <div className="text-center mb-20">
             <h2 className="text-5xl md:text-6xl font-bold mb-8">
-              Who We <span className="text-yellow-600">Serve</span>
+              Who We <span className="text-red-900">Serve</span>
             </h2>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto">
               We partner with ambitious organizations ready to transform their operations
@@ -270,7 +289,7 @@ export default function Home() {
             <Link href="/contact">
               <Button 
                 size="lg" 
-                className="bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-black font-semibold px-16 py-8 text-xl rounded-none"
+                className="bg-gradient-to-r from-red-900 to-red-800 hover:from-red-800 hover:to-red-700 text-black font-semibold px-16 py-8 text-xl rounded-none"
               >
                 Get Started
                 <ArrowRight className="ml-2" />
