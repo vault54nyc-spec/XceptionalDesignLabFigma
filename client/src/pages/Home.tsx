@@ -1,27 +1,55 @@
 import { Button } from "@/components/ui/button";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import { ArrowRight, CheckCircle2, Briefcase, TrendingUp, Users, Zap } from "lucide-react";
+import { ArrowRight, CheckCircle2 } from "lucide-react";
+import { useState } from "react";
 
 export default function Home() {
+  const [hasEntered, setHasEntered] = useState(false);
+
+  if (!hasEntered) {
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-white">
+        {/* Entrance Screen with Clickable Logo */}
+        <div className="text-center">
+          <button
+            onClick={() => setHasEntered(true)}
+            className="group relative cursor-pointer transition-all duration-500 hover:scale-105"
+          >
+            <img 
+              src="/xceptional-logo-hero.png" 
+              alt="Xceptional Design Lab" 
+              className="w-full max-w-2xl mx-auto transition-all duration-500 group-hover:drop-shadow-[0_0_50px_rgba(234,179,8,0.8)]"
+            />
+            <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <div className="bg-yellow-500/20 backdrop-blur-sm px-8 py-4 rounded-full">
+                <p className="text-yellow-600 font-bold text-xl">Click to Enter</p>
+              </div>
+            </div>
+          </button>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="min-h-screen flex flex-col bg-white">
       <Navigation />
       
       <main className="flex-1">
-        {/* Hero Section with Torn Paper Effect */}
+        {/* Hero Section */}
         <section className="relative min-h-screen flex items-center justify-center bg-black overflow-hidden">
-          {/* Torn Paper Background */}
+          {/* Background Image */}
           <div className="absolute inset-0">
             <img 
-              src="/torn-paper-bg.png" 
+              src="/xceptional-logo-hero.png" 
               alt="" 
-              className="w-full h-full object-cover opacity-90"
+              className="w-full h-full object-cover opacity-40"
             />
           </div>
           
           {/* Dotted Pattern Accents */}
-          <div className="absolute top-20 left-20 w-32 h-32 opacity-30">
+          <div className="absolute top-20 left-20 w-32 h-32 opacity-20">
             <div className="grid grid-cols-8 gap-2">
               {[...Array(64)].map((_, i) => (
                 <div key={i} className="w-2 h-2 bg-yellow-500 rounded-full"></div>
@@ -29,7 +57,7 @@ export default function Home() {
             </div>
           </div>
           
-          <div className="absolute bottom-20 right-20 w-32 h-32 opacity-30">
+          <div className="absolute bottom-20 right-20 w-32 h-32 opacity-20">
             <div className="grid grid-cols-8 gap-2">
               {[...Array(64)].map((_, i) => (
                 <div key={i} className="w-2 h-2 bg-white rounded-full"></div>
@@ -37,20 +65,18 @@ export default function Home() {
             </div>
           </div>
           
-          {/* Logo and Tagline */}
+          {/* Hero Content */}
           <div className="relative z-10 text-center px-4">
-            <div className="mb-8">
-              <h1 className="text-6xl md:text-8xl font-bold text-white mb-4 tracking-tight">
-                Xceptional
-              </h1>
-              <h2 className="text-5xl md:text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600">
-                DesignLab
-              </h2>
-            </div>
+            <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 tracking-tight">
+              Fortune 500 Operations.
+            </h1>
+            <h2 className="text-4xl md:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 mb-8">
+              Built for Your Business.
+            </h2>
             <p className="text-xl md:text-2xl text-gray-300 mb-12 max-w-3xl mx-auto">
-              Fortune 500 Operations. Built for Your Business.
+              Strategic operations, crisis management, and executive leadership from a multi-disciplinary executive with 15+ years Fortune 30 experience.
             </p>
-            <Button size="lg" className="bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-black font-bold px-12 py-6 text-lg">
+            <Button size="lg" className="bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-black font-bold px-12 py-6 text-lg shadow-[0_0_30px_rgba(234,179,8,0.5)] hover:shadow-[0_0_50px_rgba(234,179,8,0.8)] transition-all duration-300">
               Book a Strategy Call
               <ArrowRight className="ml-2 w-5 h-5" />
             </Button>
@@ -104,7 +130,7 @@ export default function Home() {
                   Not defined by a single lane: <strong>Chief of Staff</strong>, <strong>Project Management Professional</strong>, 
                   <strong> Crisis Manager</strong>, and <strong>Creative Director</strong> rolled into one.
                 </p>
-                <Button size="lg" variant="outline" className="border-2 border-black hover:bg-black hover:text-white">
+                <Button size="lg" variant="outline" className="border-2 border-black hover:bg-black hover:text-white transition-all duration-300">
                   Learn More
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </Button>
@@ -302,7 +328,7 @@ export default function Home() {
             <p className="text-xl text-gray-300 mb-12">
               Ready to scale with systems that work? Book a strategy call today.
             </p>
-            <Button size="lg" className="bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-black font-bold px-12 py-6 text-lg">
+            <Button size="lg" className="bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-black font-bold px-12 py-6 text-lg shadow-[0_0_30px_rgba(234,179,8,0.5)] hover:shadow-[0_0_50px_rgba(234,179,8,0.8)] transition-all duration-300">
               Schedule a Consultation
               <ArrowRight className="ml-2 w-5 h-5" />
             </Button>
