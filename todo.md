@@ -109,3 +109,20 @@
 - [x] Add video to project public directory
 - [x] Update homepage hero to use video background
 - [x] Test video playback and loop
+
+
+## MAJOR REDESIGN - Black/White/Gold Minimalist Aesthetic
+- [ ] Remove ALL pricing from entire website
+- [ ] Remove price comparisons and package pricing sections
+- [ ] Change color scheme from burgundy to gold/yellow (#FFB800)
+- [ ] Update all accent colors to gold instead of burgundy
+- [ ] Create torn paper hero effect with Xceptional DesignLab logo
+- [ ] Implement minimalist accounting firm-style layouts
+- [ ] Add numbered service layouts (01, 02, 03...)
+- [ ] Redesign with more black backgrounds and white text
+- [ ] Add dotted pattern accents like "Coming Soon" image
+- [ ] Simplify all layouts with more white space
+- [ ] Update homepage with new minimalist design
+- [ ] Redesign all service pages with split layouts
+- [ ] Update Contact page with simple left image/right info layout
+- [ ] Add professional black and white photography throughout

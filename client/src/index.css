@@ -43,8 +43,8 @@
 }
 
 :root {
-  --primary: oklch(0.45 0.15 15);
-  --primary-foreground: oklch(0.98 0 0);
+  --primary: oklch(0.75 0.15 85);
+  --primary-foreground: oklch(0.1 0 0);
   --sidebar-primary: var(--color-blue-600);
   --sidebar-primary-foreground: var(--color-blue-50);
   --chart-1: var(--color-blue-300);
