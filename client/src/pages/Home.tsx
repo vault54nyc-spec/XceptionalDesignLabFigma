@@ -20,6 +20,10 @@ export default function Home() {
               src="/xceptional-logo-hero.png" 
               alt="Xceptional Design Lab" 
               className="w-full max-w-2xl mx-auto transition-all duration-500 group-hover:drop-shadow-[0_0_50px_rgba(234,179,8,0.8)]"
+              style={{
+                maskImage: 'radial-gradient(circle, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%)',
+                WebkitMaskImage: 'radial-gradient(circle, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%)'
+              }}
             />
             <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
               <div className="bg-yellow-500/20 backdrop-blur-sm px-8 py-4 rounded-full">
