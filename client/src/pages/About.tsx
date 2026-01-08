@@ -62,6 +62,10 @@ export default function About() {
                       <CheckCircle2 className="w-6 h-6 text-black mt-1 flex-shrink-0" />
                       <span className="text-gray-700"><strong>Executive Visuals:</strong> Architected the "ValueVerse" presentation for the CEO and President.</span>
                     </li>
+                    <li className="flex items-start gap-3">
+                      <CheckCircle2 className="w-6 h-6 text-black mt-1 flex-shrink-0" />
+                      <span className="text-gray-700"><strong>AI Commercial Production:</strong> Created an agency-quality commercial for an executive pitch deck using AI, saving thousands in resources while exceeding quality expectations for a top-tier client.</span>
+                    </li>
                   </ul>
                 </div>
 
