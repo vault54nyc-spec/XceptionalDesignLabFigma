@@ -73,9 +73,26 @@ export default function Home() {
         <main className="flex-1">
           {/* Hero Section */}
           <section className="relative min-h-screen flex items-center justify-center bg-black text-white overflow-hidden pt-20">
-            {/* Background Elements */}
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-gray-900 via-black to-black opacity-80" />
-            <div className="absolute inset-0 bg-[url('/images/noise.png')] opacity-10 mix-blend-overlay" />
+            {/* Video Background */}
+            <div className="absolute inset-0 z-0">
+              <div className="absolute inset-0 bg-black/60 z-10" /> {/* Overlay for text readability */}
+              <video
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="w-full h-full object-cover opacity-50"
+              >
+                <source src="/assets/video/hero-video.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+              
+              {/* Fallback/Texture Background (visible if video fails or loads) */}
+              <div className="absolute inset-0 -z-10 bg-black">
+                 <div className="absolute inset-0 opacity-20" 
+                   style={{ backgroundImage: 'radial-gradient(#D4AF37 1px, transparent 1px)', backgroundSize: '30px 30px' }} />
+              </div>
+            </div>
             
             <div className="container relative z-10 px-4 text-center max-w-5xl mx-auto">
               <Badge className="bg-[#00CFC1] text-black hover:bg-[#00b8ab] mb-8 px-6 py-2 text-sm font-bold tracking-wide uppercase animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-700">
