@@ -1,341 +1,182 @@
-import { Button } from "@/components/ui/button";
+import { useState } from "react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import { ArrowRight, CheckCircle2 } from "lucide-react";
-import { useState } from "react";
+import { ArrowRight, Star, ShieldCheck, Globe } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Link } from "wouter";
 
 export default function Home() {
-  const [hasEntered, setHasEntered] = useState(false);
+  const [entered, setEntered] = useState(false);
 
-  if (!hasEntered) {
+  if (!entered) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-white">
-        {/* Entrance Screen with Clickable Logo */}
-        <div className="text-center">
-          <button
-            onClick={() => setHasEntered(true)}
-            className="group relative cursor-pointer transition-all duration-500 hover:scale-105"
-          >
+      <div className="h-screen w-screen bg-white flex items-center justify-center overflow-hidden relative">
+        <div 
+          className="relative cursor-pointer group transition-all duration-700 hover:scale-105"
+          onClick={() => setEntered(true)}
+        >
+          {/* Logo Image with Radial Mask */}
+          <div className="relative w-[500px] h-[500px] md:w-[600px] md:h-[600px]">
             <img 
-              src="/xceptional-logo-hero.png" 
-              alt="Xceptional Design Lab" 
-              className="w-full max-w-2xl mx-auto transition-all duration-500 group-hover:drop-shadow-[0_0_50px_rgba(234,179,8,0.8)]"
+              src="/images/logo-entrance.png" 
+              alt="Xceptional Design Lab Entrance" 
+              className="w-full h-full object-contain"
               style={{
-                maskImage: 'radial-gradient(circle, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%)',
-                WebkitMaskImage: 'radial-gradient(circle, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%)'
+                maskImage: 'radial-gradient(circle, black 40%, transparent 70%)',
+                WebkitMaskImage: 'radial-gradient(circle, black 40%, transparent 70%)'
               }}
             />
-            <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              <div className="bg-yellow-500/20 backdrop-blur-sm px-8 py-4 rounded-full">
-                <p className="text-yellow-600 font-bold text-xl">Click to Enter</p>
-              </div>
-            </div>
-          </button>
+            
+            {/* Golden Glow Effect on Hover */}
+            <div className="absolute inset-0 bg-yellow-500/20 blur-3xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
+          </div>
+
+          {/* Click Prompt */}
+          <div className="absolute bottom-20 left-1/2 -translate-x-1/2 text-gray-400 text-sm tracking-[0.3em] uppercase opacity-0 group-hover:opacity-100 transition-opacity duration-700">
+            Click to Enter
+          </div>
         </div>
       </div>
     );
   }
 
   return (
-    <div className="min-h-screen flex flex-col bg-white">
+    <div className="min-h-screen flex flex-col bg-black text-white animate-in fade-in duration-1000">
       <Navigation />
       
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="relative min-h-screen flex items-center justify-center bg-black overflow-hidden">
-          {/* Background Image */}
-          <div className="absolute inset-0">
+        <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
+          {/* Background Logo (Faded) */}
+          <div className="absolute inset-0 flex items-center justify-center opacity-5 pointer-events-none">
             <img 
-              src="/xceptional-logo-hero.png" 
-              alt="" 
-              className="w-full h-full object-cover opacity-40"
+              src="/images/logo-entrance.png" 
+              alt="Background" 
+              className="w-[80vw] h-[80vw] object-contain grayscale"
             />
           </div>
-          
-          {/* Dotted Pattern Accents */}
-          <div className="absolute top-20 left-20 w-32 h-32 opacity-20">
-            <div className="grid grid-cols-8 gap-2">
-              {[...Array(64)].map((_, i) => (
-                <div key={i} className="w-2 h-2 bg-yellow-500 rounded-full"></div>
-              ))}
+
+          <div className="container relative z-10 text-center px-4">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-yellow-500/30 bg-yellow-500/10 text-yellow-500 text-sm font-medium mb-8 animate-in slide-in-from-bottom-4 duration-1000 delay-300">
+              <ShieldCheck className="w-4 h-4" />
+              <span>Certified Chief of Staff® (CCOS)</span>
             </div>
-          </div>
-          
-          <div className="absolute bottom-20 right-20 w-32 h-32 opacity-20">
-            <div className="grid grid-cols-8 gap-2">
-              {[...Array(64)].map((_, i) => (
-                <div key={i} className="w-2 h-2 bg-white rounded-full"></div>
-              ))}
-            </div>
-          </div>
-          
-          {/* Hero Content */}
-          <div className="relative z-10 text-center px-4">
-            <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 tracking-tight">
-              Fortune 500 Operations.
+            
+            <h1 className="text-5xl md:text-8xl font-bold mb-8 tracking-tight leading-tight animate-in slide-in-from-bottom-8 duration-1000 delay-500">
+              Governance. <br />
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-yellow-600">
+                Design.
+              </span> <br />
+              Execution.
             </h1>
-            <h2 className="text-4xl md:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 mb-8">
-              Built for Your Business.
-            </h2>
-            <p className="text-xl md:text-2xl text-gray-300 mb-12 max-w-3xl mx-auto">
-              Strategic operations, crisis management, and executive leadership from a multi-disciplinary executive with 15+ years Fortune 30 experience.
+            
+            <p className="text-xl md:text-2xl text-gray-400 max-w-3xl mx-auto mb-12 leading-relaxed animate-in slide-in-from-bottom-8 duration-1000 delay-700">
+              Bringing elite, international standards of the Chief of Staff profession to your organization. 
+              We architect the systems, narratives, and visuals that define world-class leadership.
             </p>
-            <Button size="lg" className="bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-black font-bold px-12 py-6 text-lg shadow-[0_0_30px_rgba(234,179,8,0.5)] hover:shadow-[0_0_50px_rgba(234,179,8,0.8)] transition-all duration-300">
-              Book a Strategy Call
-              <ArrowRight className="ml-2 w-5 h-5" />
-            </Button>
-          </div>
-        </section>
-
-        {/* Credentials Bar */}
-        <section className="py-8 px-4 bg-gray-100 border-y border-gray-200">
-          <div className="container max-w-6xl">
-            <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16 text-sm text-gray-700">
-              <div className="flex items-center gap-2">
-                <CheckCircle2 className="w-5 h-5 text-yellow-600" />
-                <span>Verizon Chief of Staff</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <CheckCircle2 className="w-5 h-5 text-yellow-600" />
-                <span>PMP® Certified</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <CheckCircle2 className="w-5 h-5 text-yellow-600" />
-                <span>$2.5M Cost Reductions</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <CheckCircle2 className="w-5 h-5 text-yellow-600" />
-                <span>15+ Years Experience</span>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Company Profile Section */}
-        <section className="py-32 px-4 bg-white">
-          <div className="container max-w-6xl">
-            <div className="grid md:grid-cols-2 gap-16 items-center">
-              <div>
-                <img 
-                  src="/dashboard-analytics.jpg" 
-                  alt="Strategic Operations" 
-                  className="w-full h-[500px] object-cover rounded-lg shadow-2xl"
-                />
-              </div>
-              <div>
-                <h2 className="text-4xl md:text-5xl font-bold mb-6">
-                  Multi-Disciplinary <span className="text-yellow-600">Executive</span>
-                </h2>
-                <p className="text-lg text-gray-700 mb-6">
-                  A Multi-Disciplinary Executive with over 15 years of experience traversing the worlds of 
-                  high-stakes corporate strategy, creative media production, and technical innovation.
-                </p>
-                <p className="text-lg text-gray-700 mb-8">
-                  Not defined by a single lane: <strong>Chief of Staff</strong>, <strong>Project Management Professional</strong>, 
-                  <strong> Crisis Manager</strong>, and <strong>Creative Director</strong> rolled into one.
-                </p>
-                <Button size="lg" variant="outline" className="border-2 border-black hover:bg-black hover:text-white transition-all duration-300">
-                  Learn More
-                  <ArrowRight className="ml-2 w-5 h-5" />
+            
+            <div className="flex flex-col md:flex-row gap-6 justify-center items-center animate-in slide-in-from-bottom-8 duration-1000 delay-1000">
+              <Link href="/contact">
+                <Button size="lg" className="bg-white text-black hover:bg-gray-200 text-lg px-8 py-6 rounded-full font-bold transition-all hover:scale-105">
+                  Partner With Us
                 </Button>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Services Section - Numbered Layout */}
-        <section className="py-32 px-4 bg-black text-white">
-          <div className="container max-w-6xl">
-            <h2 className="text-4xl md:text-5xl font-bold mb-20 text-center">
-              Our <span className="text-yellow-500">Services</span>
-            </h2>
-
-            <div className="grid md:grid-cols-2 gap-16">
-              {/* Left Column - Image */}
-              <div className="space-y-8">
-                <img 
-                  src="/handshake-business.jpg" 
-                  alt="Strategic Operations" 
-                  className="w-full h-[400px] object-cover rounded-lg"
-                />
-              </div>
-
-              {/* Right Column - Services */}
-              <div className="space-y-12">
-                <div>
-                  <div className="flex items-start gap-6">
-                    <span className="text-5xl font-bold text-yellow-500">01</span>
-                    <div>
-                      <h3 className="text-2xl font-bold mb-3">Strategic Operations</h3>
-                      <p className="text-gray-300">
-                        Fortune 500-caliber operational leadership from crisis management to strategic planning
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div>
-                  <div className="flex items-start gap-6">
-                    <span className="text-5xl font-bold text-yellow-500">02</span>
-                    <div>
-                      <h3 className="text-2xl font-bold mb-3">Technical Solutions</h3>
-                      <p className="text-gray-300">
-                        Custom dashboards, automation, and technical infrastructure that scales
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div>
-                  <div className="flex items-start gap-6">
-                    <span className="text-5xl font-bold text-yellow-500">03</span>
-                    <div>
-                      <h3 className="text-2xl font-bold mb-3">Executive Communications</h3>
-                      <p className="text-gray-300">
-                        Strategic messaging, presentations, and executive-level content creation
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div>
-                  <div className="flex items-start gap-6">
-                    <span className="text-5xl font-bold text-yellow-500">04</span>
-                    <div>
-                      <h3 className="text-2xl font-bold mb-3">Design & Brand</h3>
-                      <p className="text-gray-300">
-                        Graphic design, media production, and brand identity development
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Bottom Services */}
-            <div className="grid md:grid-cols-2 gap-16 mt-16">
-              <div className="space-y-12">
-                <div>
-                  <div className="flex items-start gap-6">
-                    <span className="text-5xl font-bold text-yellow-500">05</span>
-                    <div>
-                      <h3 className="text-2xl font-bold mb-3">Financial Operations</h3>
-                      <p className="text-gray-300">
-                        Budget management, cost optimization, and financial integrity (CFE certified)
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div>
-                  <div className="flex items-start gap-6">
-                    <span className="text-5xl font-bold text-yellow-500">06</span>
-                    <div>
-                      <h3 className="text-2xl font-bold mb-3">Crisis Management</h3>
-                      <p className="text-gray-300">
-                        Disaster relief operations and rapid response frameworks
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div>
-                <img 
-                  src="/team-collaboration.jpg" 
-                  alt="Team Collaboration" 
-                  className="w-full h-[400px] object-cover rounded-lg"
-                />
-              </div>
+              </Link>
+              <Link href="/about">
+                <Button variant="outline" size="lg" className="border-gray-700 text-white hover:bg-gray-900 text-lg px-8 py-6 rounded-full font-medium">
+                  View Credentials
+                </Button>
+              </Link>
             </div>
           </div>
         </section>
 
         {/* Stats Section */}
-        <section className="py-24 px-4 bg-gray-50">
-          <div className="container max-w-6xl">
-            <div className="grid md:grid-cols-4 gap-12 text-center">
-              <div>
-                <div className="text-5xl font-bold text-yellow-600 mb-4">$2.5M+</div>
-                <div className="text-lg text-gray-700">Cost Reductions Delivered</div>
+        <section className="py-20 border-y border-gray-900 bg-black/50 backdrop-blur-sm">
+          <div className="container">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-12 text-center">
+              <div className="space-y-2">
+                <div className="text-4xl md:text-5xl font-bold text-yellow-500">5+</div>
+                <div className="text-sm text-gray-400 uppercase tracking-wider">Global Crisis Events Managed</div>
               </div>
-              <div>
-                <div className="text-5xl font-bold text-yellow-600 mb-4">15+</div>
-                <div className="text-lg text-gray-700">Years Experience</div>
+              <div className="space-y-2">
+                <div className="text-4xl md:text-5xl font-bold text-yellow-500">$MM+</div>
+                <div className="text-sm text-gray-400 uppercase tracking-wider">Capex Prioritization Models</div>
               </div>
-              <div>
-                <div className="text-5xl font-bold text-yellow-600 mb-4">500+</div>
-                <div className="text-lg text-gray-700">Projects Completed</div>
+              <div className="space-y-2">
+                <div className="text-4xl md:text-5xl font-bold text-yellow-500">3</div>
+                <div className="text-sm text-gray-400 uppercase tracking-wider">Enterprise Microsites Launched</div>
               </div>
-              <div>
-                <div className="text-5xl font-bold text-yellow-600 mb-4">98%</div>
-                <div className="text-lg text-gray-700">Client Satisfaction</div>
+              <div className="space-y-2">
+                <div className="text-4xl md:text-5xl font-bold text-yellow-500">100%</div>
+                <div className="text-sm text-gray-400 uppercase tracking-wider">Client Satisfaction</div>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Client Roster Section */}
-        <section className="py-32 px-4 bg-white">
+        {/* Services Preview */}
+        <section className="py-32 px-4">
           <div className="container max-w-6xl">
-            <h2 className="text-4xl md:text-5xl font-bold mb-8">Our Client Roster</h2>
-            <p className="text-lg text-gray-700 mb-16 max-w-3xl">
-              From our early days, we've been providing reliable service to our clientele. 
-              We've had the honor of being the firm of choice of the following corporations:
-            </p>
-
-            <div className="grid md:grid-cols-3 gap-8">
-              {[
-                { name: "Global Solutions", img: "/team-meeting-1.jpg" },
-                { name: "Agile Tech", img: "/team-meeting-2.jpg" },
-                { name: "Innovation Company", img: "/boardroom-meeting.jpg" },
-                { name: "Savvy Bank", img: "/team-success.jpg" },
-                { name: "Dynamic Digital", img: "/team-collaboration.jpg" },
-                { name: "Key Securities", img: "/team-meeting-1.jpg" }
-              ].map((client, index) => (
-                <div key={index} className="relative group overflow-hidden rounded-lg">
-                  <img 
-                    src={client.img} 
-                    alt={client.name}
-                    className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end">
-                    <h3 className="text-white text-xl font-bold p-6">{client.name}</h3>
-                  </div>
+            <div className="grid md:grid-cols-2 gap-16 items-center mb-24">
+              <div>
+                <h2 className="text-4xl md:text-5xl font-bold mb-6">The Office of the <br /><span className="text-yellow-500">Chief of Staff</span></h2>
+                <p className="text-lg text-gray-400 leading-relaxed mb-8">
+                  We don't just consult; we operate. Leveraging the Certified Chief of Staff® competency framework, 
+                  we provide the strategic scaffolding that allows executives to lead with clarity and impact.
+                </p>
+                <ul className="space-y-4 mb-8">
+                  <li className="flex items-center gap-3 text-lg">
+                    <Globe className="w-5 h-5 text-yellow-500" />
+                    <span>International Governance Standards</span>
+                  </li>
+                  <li className="flex items-center gap-3 text-lg">
+                    <ShieldCheck className="w-5 h-5 text-yellow-500" />
+                    <span>Certified Fraud Examiner (CFE) Integrity</span>
+                  </li>
+                  <li className="flex items-center gap-3 text-lg">
+                    <Star className="w-5 h-5 text-yellow-500" />
+                    <span>Award-Winning Creative Direction</span>
+                  </li>
+                </ul>
+                <Link href="/operations">
+                  <Button variant="link" className="text-yellow-500 p-0 text-lg hover:text-yellow-400">
+                    Explore Our Framework <ArrowRight className="ml-2 w-4 h-4" />
+                  </Button>
+                </Link>
+              </div>
+              <div className="grid grid-cols-2 gap-4">
+                <div className="bg-gray-900 p-8 rounded-2xl aspect-square flex flex-col justify-between group hover:bg-gray-800 transition-colors">
+                  <span className="text-4xl font-bold text-gray-700 group-hover:text-yellow-500 transition-colors">01</span>
+                  <span className="text-xl font-bold">Strategic <br />Operations</span>
                 </div>
-              ))}
+                <div className="bg-gray-900 p-8 rounded-2xl aspect-square flex flex-col justify-between group hover:bg-gray-800 transition-colors translate-y-8">
+                  <span className="text-4xl font-bold text-gray-700 group-hover:text-yellow-500 transition-colors">02</span>
+                  <span className="text-xl font-bold">Design & <br />Brand</span>
+                </div>
+                <div className="bg-gray-900 p-8 rounded-2xl aspect-square flex flex-col justify-between group hover:bg-gray-800 transition-colors">
+                  <span className="text-4xl font-bold text-gray-700 group-hover:text-yellow-500 transition-colors">03</span>
+                  <span className="text-xl font-bold">Technical <br />Architecture</span>
+                </div>
+                <div className="bg-gray-900 p-8 rounded-2xl aspect-square flex flex-col justify-between group hover:bg-gray-800 transition-colors translate-y-8">
+                  <span className="text-4xl font-bold text-gray-700 group-hover:text-yellow-500 transition-colors">04</span>
+                  <span className="text-xl font-bold">Crisis <br />Comms</span>
+                </div>
+              </div>
             </div>
-
-            <p className="text-lg text-gray-700 mt-16 text-center">
-              We value the unique backgrounds, experiences, and contributions that each 
-              client brings to our community and encourage and celebrate diversity.
-            </p>
           </div>
         </section>
 
-        {/* Testimonials */}
-        <section className="py-32 px-4 bg-gray-50">
-          <div className="container max-w-4xl text-center">
-            <blockquote className="text-3xl md:text-4xl font-bold mb-8 leading-relaxed">
-              "Operations is our expertise. We'll take care of it, so you can focus on yours."
-            </blockquote>
-            <p className="text-xl text-gray-600">Christopher Henry, Principal</p>
-          </div>
-        </section>
-
-        {/* Final CTA */}
-        <section className="py-32 px-4 bg-black text-white">
-          <div className="container max-w-4xl text-center">
-            <h2 className="text-4xl md:text-5xl font-bold mb-8">
-              Let's work <span className="text-yellow-500">together.</span>
-            </h2>
-            <p className="text-xl text-gray-300 mb-12">
-              Ready to scale with systems that work? Book a strategy call today.
-            </p>
-            <Button size="lg" className="bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-black font-bold px-12 py-6 text-lg shadow-[0_0_30px_rgba(234,179,8,0.5)] hover:shadow-[0_0_50px_rgba(234,179,8,0.8)] transition-all duration-300">
-              Schedule a Consultation
-              <ArrowRight className="ml-2 w-5 h-5" />
-            </Button>
+        {/* Client Roster (Placeholder for now) */}
+        <section className="py-24 border-t border-gray-900">
+          <div className="container text-center">
+            <p className="text-sm text-gray-500 uppercase tracking-widest mb-12">Trusted by Leaders At</p>
+            <div className="flex flex-wrap justify-center gap-12 md:gap-24 opacity-50 grayscale">
+              {/* Replace with real logos later */}
+              <span className="text-2xl font-bold text-gray-600">FORTUNE 100 TELECOM</span>
+              <span className="text-2xl font-bold text-gray-600">GLOBAL NON-PROFITS</span>
+              <span className="text-2xl font-bold text-gray-600">ENTERTAINMENT BRANDS</span>
+              <span className="text-2xl font-bold text-gray-600">MUNICIPAL AGENCIES</span>
+            </div>
           </div>
         </section>
       </main>
