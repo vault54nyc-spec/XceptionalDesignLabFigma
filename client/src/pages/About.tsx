@@ -2,7 +2,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
-import { CheckCircle2, Award, Briefcase, Star, ShieldCheck } from "lucide-react";
+import { CheckCircle2, Award, Briefcase, Star, ShieldCheck, BookOpen } from "lucide-react";
 
 export default function About() {
   return (
@@ -64,8 +64,120 @@ export default function About() {
           </div>
         </section>
 
-        {/* 2025 Strategic Impact */}
+        {/* CSA Micro-credentials Section */}
         <section className="py-24 px-4 bg-gray-50">
+          <div className="container max-w-6xl">
+            <div className="text-center mb-16">
+              <Badge className="bg-black text-white mb-4">Verified Competencies</Badge>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">CSA Micro-credentials</h2>
+              <p className="text-gray-600 max-w-2xl mx-auto">
+                Beyond the CCOS designation, I hold verified micro-credentials in specific 
+                competency modules from the Chief of Staff Association's rigorous curriculum.
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {/* Strategic Leadership */}
+              <Card className="border-0 shadow-md hover:shadow-lg transition-all">
+                <CardContent className="p-6">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-10 h-10 bg-yellow-100 rounded-full flex items-center justify-center">
+                      <Star className="w-5 h-5 text-yellow-600" />
+                    </div>
+                    <h3 className="font-bold text-lg">Strategic Leadership</h3>
+                  </div>
+                  <p className="text-sm text-gray-600">
+                    Mastery in aligning organizational vision with execution, leading through influence, 
+                    and driving enterprise-wide change initiatives.
+                  </p>
+                </CardContent>
+              </Card>
+
+              {/* Stakeholder Management */}
+              <Card className="border-0 shadow-md hover:shadow-lg transition-all">
+                <CardContent className="p-6">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-10 h-10 bg-yellow-100 rounded-full flex items-center justify-center">
+                      <Briefcase className="w-5 h-5 text-yellow-600" />
+                    </div>
+                    <h3 className="font-bold text-lg">Stakeholder Management</h3>
+                  </div>
+                  <p className="text-sm text-gray-600">
+                    Advanced techniques for navigating complex political landscapes, building consensus, 
+                    and managing executive relationships.
+                  </p>
+                </CardContent>
+              </Card>
+
+              {/* Enterprise Execution */}
+              <Card className="border-0 shadow-md hover:shadow-lg transition-all">
+                <CardContent className="p-6">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-10 h-10 bg-yellow-100 rounded-full flex items-center justify-center">
+                      <CheckCircle2 className="w-5 h-5 text-yellow-600" />
+                    </div>
+                    <h3 className="font-bold text-lg">Enterprise Execution</h3>
+                  </div>
+                  <p className="text-sm text-gray-600">
+                    Operationalizing strategy through rigorous project management, KPI tracking, 
+                    and cross-functional coordination.
+                  </p>
+                </CardContent>
+              </Card>
+
+              {/* Communications & Storytelling */}
+              <Card className="border-0 shadow-md hover:shadow-lg transition-all">
+                <CardContent className="p-6">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-10 h-10 bg-yellow-100 rounded-full flex items-center justify-center">
+                      <BookOpen className="w-5 h-5 text-yellow-600" />
+                    </div>
+                    <h3 className="font-bold text-lg">Communications</h3>
+                  </div>
+                  <p className="text-sm text-gray-600">
+                    Crafting compelling executive narratives, managing internal comms, and 
+                    leveraging storytelling to drive culture.
+                  </p>
+                </CardContent>
+              </Card>
+
+              {/* Business Planning */}
+              <Card className="border-0 shadow-md hover:shadow-lg transition-all">
+                <CardContent className="p-6">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-10 h-10 bg-yellow-100 rounded-full flex items-center justify-center">
+                      <ShieldCheck className="w-5 h-5 text-yellow-600" />
+                    </div>
+                    <h3 className="font-bold text-lg">Business Planning</h3>
+                  </div>
+                  <p className="text-sm text-gray-600">
+                    Facilitating annual planning cycles, OKR setting, and resource allocation 
+                    to ensure strategic alignment.
+                  </p>
+                </CardContent>
+              </Card>
+
+              {/* Events & Logistics */}
+              <Card className="border-0 shadow-md hover:shadow-lg transition-all">
+                <CardContent className="p-6">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-10 h-10 bg-yellow-100 rounded-full flex items-center justify-center">
+                      <Award className="w-5 h-5 text-yellow-600" />
+                    </div>
+                    <h3 className="font-bold text-lg">Events & Logistics</h3>
+                  </div>
+                  <p className="text-sm text-gray-600">
+                    Orchestrating high-stakes executive events, town halls, and offsites 
+                    with precision and strategic intent.
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </section>
+
+        {/* 2025 Strategic Impact */}
+        <section className="py-24 px-4">
           <div className="container max-w-6xl">
             <h2 className="text-3xl font-bold mb-12 text-center">2025 Strategic Impact</h2>
             <div className="grid md:grid-cols-2 gap-8">
@@ -127,11 +239,11 @@ export default function About() {
         </section>
 
         {/* Credentials Grid */}
-        <section className="py-24 px-4">
+        <section className="py-24 px-4 bg-gray-50">
           <div className="container max-w-4xl">
-            <h2 className="text-3xl font-bold mb-12 text-center">Credentials & Certifications</h2>
+            <h2 className="text-3xl font-bold mb-12 text-center">Core Certifications</h2>
             <div className="grid md:grid-cols-3 gap-8 text-center">
-              <div className="p-6 border border-gray-200 rounded-xl hover:border-yellow-500 transition-colors">
+              <div className="p-6 border border-gray-200 rounded-xl hover:border-yellow-500 transition-colors bg-white">
                 <div className="w-16 h-16 mx-auto bg-yellow-100 rounded-full flex items-center justify-center mb-4">
                   <Award className="w-8 h-8 text-yellow-600" />
                 </div>
@@ -140,7 +252,7 @@ export default function About() {
                 <p className="text-xs text-gray-400 mt-2">Chief of Staff Association (CSA)</p>
               </div>
 
-              <div className="p-6 border border-gray-200 rounded-xl hover:border-yellow-500 transition-colors">
+              <div className="p-6 border border-gray-200 rounded-xl hover:border-yellow-500 transition-colors bg-white">
                 <div className="w-16 h-16 mx-auto bg-yellow-100 rounded-full flex items-center justify-center mb-4">
                   <CheckCircle2 className="w-8 h-8 text-yellow-600" />
                 </div>
@@ -149,7 +261,7 @@ export default function About() {
                 <p className="text-xs text-gray-400 mt-2">Project Management Institute</p>
               </div>
 
-              <div className="p-6 border border-gray-200 rounded-xl hover:border-yellow-500 transition-colors">
+              <div className="p-6 border border-gray-200 rounded-xl hover:border-yellow-500 transition-colors bg-white">
                 <div className="w-16 h-16 mx-auto bg-yellow-100 rounded-full flex items-center justify-center mb-4">
                   <ShieldCheck className="w-8 h-8 text-yellow-600" />
                 </div>
