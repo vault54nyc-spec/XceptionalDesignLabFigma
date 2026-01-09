@@ -13,7 +13,7 @@ export default function Communications() {
         <section className="py-24 px-4 bg-black text-white">
           <div className="container max-w-6xl">
             <h1 className="text-5xl md:text-7xl font-bold mb-8">
-              Strategic <span className="text-yellow-500">Communications</span>
+              Strategic <span className="text-[#D4AF37]">Communications</span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-300 max-w-3xl leading-relaxed">
               We craft the narratives that move markets and mobilize teams. From internal change management 
@@ -28,8 +28,8 @@ export default function Communications() {
             <div className="grid md:grid-cols-2 gap-16">
               {/* Capability 1: Executive Messaging */}
               <div className="space-y-6">
-                <div className="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center">
-                  <Mic2 className="w-8 h-8 text-yellow-600" />
+                <div className="w-16 h-16 bg-yellow-100 rounded-sm flex items-center justify-center">
+                  <Mic2 className="w-8 h-8 text-[#C4A137]" />
                 </div>
                 <h3 className="text-3xl font-bold">Executive Messaging</h3>
                 <p className="text-lg text-gray-700 leading-relaxed">
@@ -38,15 +38,15 @@ export default function Communications() {
                 </p>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-yellow-600 mt-1" />
+                    <CheckCircle2 className="w-5 h-5 text-[#C4A137] mt-1" />
                     <span>Keynote speechwriting & coaching</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-yellow-600 mt-1" />
+                    <CheckCircle2 className="w-5 h-5 text-[#C4A137] mt-1" />
                     <span>Town Hall & All-Hands orchestration</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-yellow-600 mt-1" />
+                    <CheckCircle2 className="w-5 h-5 text-[#C4A137] mt-1" />
                     <span>Leadership communication frameworks</span>
                   </li>
                 </ul>
@@ -54,8 +54,8 @@ export default function Communications() {
 
               {/* Capability 2: Change Management */}
               <div className="space-y-6">
-                <div className="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center">
-                  <Users className="w-8 h-8 text-yellow-600" />
+                <div className="w-16 h-16 bg-yellow-100 rounded-sm flex items-center justify-center">
+                  <Users className="w-8 h-8 text-[#C4A137]" />
                 </div>
                 <h3 className="text-3xl font-bold">Change Management</h3>
                 <p className="text-lg text-gray-700 leading-relaxed">
@@ -64,15 +64,15 @@ export default function Communications() {
                 </p>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-yellow-600 mt-1" />
+                    <CheckCircle2 className="w-5 h-5 text-[#C4A137] mt-1" />
                     <span>Organizational restructure messaging</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-yellow-600 mt-1" />
+                    <CheckCircle2 className="w-5 h-5 text-[#C4A137] mt-1" />
                     <span>Culture & engagement campaigns</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-yellow-600 mt-1" />
+                    <CheckCircle2 className="w-5 h-5 text-[#C4A137] mt-1" />
                     <span>Stakeholder alignment strategies</span>
                   </li>
                 </ul>
@@ -80,8 +80,8 @@ export default function Communications() {
 
               {/* Capability 3: Internal Comms */}
               <div className="space-y-6">
-                <div className="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center">
-                  <MessageSquare className="w-8 h-8 text-yellow-600" />
+                <div className="w-16 h-16 bg-yellow-100 rounded-sm flex items-center justify-center">
+                  <MessageSquare className="w-8 h-8 text-[#C4A137]" />
                 </div>
                 <h3 className="text-3xl font-bold">Internal Communications</h3>
                 <p className="text-lg text-gray-700 leading-relaxed">
@@ -90,15 +90,15 @@ export default function Communications() {
                 </p>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-yellow-600 mt-1" />
+                    <CheckCircle2 className="w-5 h-5 text-[#C4A137] mt-1" />
                     <span>Newsletter & intranet content strategy</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-yellow-600 mt-1" />
+                    <CheckCircle2 className="w-5 h-5 text-[#C4A137] mt-1" />
                     <span>Employee recognition programs</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-yellow-600 mt-1" />
+                    <CheckCircle2 className="w-5 h-5 text-[#C4A137] mt-1" />
                     <span>Policy rollout & education</span>
                   </li>
                 </ul>
@@ -106,8 +106,8 @@ export default function Communications() {
 
               {/* Capability 4: Crisis Communications */}
               <div className="space-y-6">
-                <div className="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center">
-                  <Newspaper className="w-8 h-8 text-yellow-600" />
+                <div className="w-16 h-16 bg-yellow-100 rounded-sm flex items-center justify-center">
+                  <Newspaper className="w-8 h-8 text-[#C4A137]" />
                 </div>
                 <h3 className="text-3xl font-bold">Crisis Communications</h3>
                 <p className="text-lg text-gray-700 leading-relaxed">
@@ -116,15 +116,15 @@ export default function Communications() {
                 </p>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-yellow-600 mt-1" />
+                    <CheckCircle2 className="w-5 h-5 text-[#C4A137] mt-1" />
                     <span>Disaster response communication protocols</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-yellow-600 mt-1" />
+                    <CheckCircle2 className="w-5 h-5 text-[#C4A137] mt-1" />
                     <span>Media holding statements & FAQs</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-yellow-600 mt-1" />
+                    <CheckCircle2 className="w-5 h-5 text-[#C4A137] mt-1" />
                     <span>Reputation management strategy</span>
                   </li>
                 </ul>
@@ -139,7 +139,7 @@ export default function Communications() {
             <div className="bg-white p-8 md:p-12 rounded-2xl shadow-xl border border-gray-100">
               <div className="grid md:grid-cols-2 gap-12 items-center">
                 <div>
-                  <h3 className="text-sm font-bold text-yellow-600 uppercase tracking-wider mb-2">Featured Project</h3>
+                  <h3 className="text-sm font-bold text-[#C4A137] uppercase tracking-wider mb-2">Featured Project</h3>
                   <h2 className="text-3xl md:text-4xl font-bold mb-6">The "MOD Reset" Initiative</h2>
                   <p className="text-lg text-gray-700 mb-6">
                     Designed the comprehensive communication strategy for a major operational reset. 
@@ -166,9 +166,9 @@ export default function Communications() {
         <section className="py-24 px-4 bg-black text-white text-center">
           <div className="container max-w-4xl">
             <h2 className="text-4xl md:text-5xl font-bold mb-8">
-              Words matter. <span className="text-yellow-500">Make them count.</span>
+              Words matter. <span className="text-[#D4AF37]">Make them count.</span>
             </h2>
-            <Button size="lg" className="bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-black font-bold px-12 py-6 text-lg">
+            <Button size="lg" className="bg-gradient-to-r from-[#D4AF37] to-[#C4A137] hover:from-[#C4A137] hover:to-[#B49137] text-black font-bold px-12 py-6 text-lg">
               Refine Your Message
               <ArrowRight className="ml-2 w-5 h-5" />
             </Button>

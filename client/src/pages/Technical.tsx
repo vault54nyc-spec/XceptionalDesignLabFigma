@@ -13,7 +13,7 @@ export default function Technical() {
         <section className="py-24 px-4 bg-black text-white">
           <div className="container max-w-6xl">
             <h1 className="text-5xl md:text-7xl font-bold mb-8">
-              Technical <span className="text-yellow-500">Architecture</span>
+              Technical <span className="text-[#D4AF37]">Architecture</span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-300 max-w-3xl leading-relaxed">
               Systems that scale. We implement the technical infrastructure and AI-driven workflows 
@@ -28,8 +28,8 @@ export default function Technical() {
             <div className="grid md:grid-cols-2 gap-16">
               {/* Capability 1: AI Implementation */}
               <div className="space-y-6">
-                <div className="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center">
-                  <Cpu className="w-8 h-8 text-yellow-600" />
+                <div className="w-16 h-16 bg-yellow-100 rounded-sm flex items-center justify-center">
+                  <Cpu className="w-8 h-8 text-[#C4A137]" />
                 </div>
                 <h3 className="text-3xl font-bold">AI & Automation</h3>
                 <p className="text-lg text-gray-700 leading-relaxed">
@@ -38,15 +38,15 @@ export default function Technical() {
                 </p>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-yellow-600 mt-1" />
+                    <CheckCircle2 className="w-5 h-5 text-[#C4A137] mt-1" />
                     <span>Workflow automation architecture</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-yellow-600 mt-1" />
+                    <CheckCircle2 className="w-5 h-5 text-[#C4A137] mt-1" />
                     <span>Custom AI agent deployment</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-yellow-600 mt-1" />
+                    <CheckCircle2 className="w-5 h-5 text-[#C4A137] mt-1" />
                     <span>Generative design system integration</span>
                   </li>
                 </ul>
@@ -54,8 +54,8 @@ export default function Technical() {
 
               {/* Capability 2: Systems Governance */}
               <div className="space-y-6">
-                <div className="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center">
-                  <Database className="w-8 h-8 text-yellow-600" />
+                <div className="w-16 h-16 bg-yellow-100 rounded-sm flex items-center justify-center">
+                  <Database className="w-8 h-8 text-[#C4A137]" />
                 </div>
                 <h3 className="text-3xl font-bold">Systems Governance</h3>
                 <p className="text-lg text-gray-700 leading-relaxed">
@@ -64,15 +64,15 @@ export default function Technical() {
                 </p>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-yellow-600 mt-1" />
+                    <CheckCircle2 className="w-5 h-5 text-[#C4A137] mt-1" />
                     <span>Enterprise microsite development</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-yellow-600 mt-1" />
+                    <CheckCircle2 className="w-5 h-5 text-[#C4A137] mt-1" />
                     <span>Knowledge management frameworks</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-yellow-600 mt-1" />
+                    <CheckCircle2 className="w-5 h-5 text-[#C4A137] mt-1" />
                     <span>Data integrity & audit protocols</span>
                   </li>
                 </ul>
@@ -80,8 +80,8 @@ export default function Technical() {
 
               {/* Capability 3: Security & Compliance */}
               <div className="space-y-6">
-                <div className="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center">
-                  <Lock className="w-8 h-8 text-yellow-600" />
+                <div className="w-16 h-16 bg-yellow-100 rounded-sm flex items-center justify-center">
+                  <Lock className="w-8 h-8 text-[#C4A137]" />
                 </div>
                 <h3 className="text-3xl font-bold">Security & Compliance</h3>
                 <p className="text-lg text-gray-700 leading-relaxed">
@@ -90,15 +90,15 @@ export default function Technical() {
                 </p>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-yellow-600 mt-1" />
+                    <CheckCircle2 className="w-5 h-5 text-[#C4A137] mt-1" />
                     <span>Access control & permission audits</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-yellow-600 mt-1" />
+                    <CheckCircle2 className="w-5 h-5 text-[#C4A137] mt-1" />
                     <span>Secure communication channel setup</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-yellow-600 mt-1" />
+                    <CheckCircle2 className="w-5 h-5 text-[#C4A137] mt-1" />
                     <span>Risk mitigation strategies</span>
                   </li>
                 </ul>
@@ -106,8 +106,8 @@ export default function Technical() {
 
               {/* Capability 4: Integration Strategy */}
               <div className="space-y-6">
-                <div className="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center">
-                  <Network className="w-8 h-8 text-yellow-600" />
+                <div className="w-16 h-16 bg-yellow-100 rounded-sm flex items-center justify-center">
+                  <Network className="w-8 h-8 text-[#C4A137]" />
                 </div>
                 <h3 className="text-3xl font-bold">Integration Strategy</h3>
                 <p className="text-lg text-gray-700 leading-relaxed">
@@ -116,15 +116,15 @@ export default function Technical() {
                 </p>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-yellow-600 mt-1" />
+                    <CheckCircle2 className="w-5 h-5 text-[#C4A137] mt-1" />
                     <span>API & middleware strategy</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-yellow-600 mt-1" />
+                    <CheckCircle2 className="w-5 h-5 text-[#C4A137] mt-1" />
                     <span>Cross-platform dashboarding</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-yellow-600 mt-1" />
+                    <CheckCircle2 className="w-5 h-5 text-[#C4A137] mt-1" />
                     <span>Legacy system modernization</span>
                   </li>
                 </ul>
@@ -139,7 +139,7 @@ export default function Technical() {
             <div className="bg-white p-8 md:p-12 rounded-2xl shadow-xl border border-gray-100">
               <div className="grid md:grid-cols-2 gap-12 items-center">
                 <div>
-                  <h3 className="text-sm font-bold text-yellow-600 uppercase tracking-wider mb-2">Featured Capability</h3>
+                  <h3 className="text-sm font-bold text-[#C4A137] uppercase tracking-wider mb-2">Featured Capability</h3>
                   <h2 className="text-3xl md:text-4xl font-bold mb-6">Enterprise Microsite Architecture</h2>
                   <p className="text-lg text-gray-700 mb-6">
                     Developed and deployed 3 centralized microsites to serve as the "Single Source of Truth" 
@@ -166,9 +166,9 @@ export default function Technical() {
         <section className="py-24 px-4 bg-black text-white text-center">
           <div className="container max-w-4xl">
             <h2 className="text-4xl md:text-5xl font-bold mb-8">
-              Build a foundation that <span className="text-yellow-500">scales.</span>
+              Build a foundation that <span className="text-[#D4AF37]">scales.</span>
             </h2>
-            <Button size="lg" className="bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-black font-bold px-12 py-6 text-lg">
+            <Button size="lg" className="bg-gradient-to-r from-[#D4AF37] to-[#C4A137] hover:from-[#C4A137] hover:to-[#B49137] text-black font-bold px-12 py-6 text-lg">
               Audit Your Infrastructure
               <ArrowRight className="ml-2 w-5 h-5" />
             </Button>

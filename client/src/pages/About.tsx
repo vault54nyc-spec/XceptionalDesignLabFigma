@@ -15,7 +15,7 @@ export default function About() {
           <div className="container max-w-6xl">
             <div className="flex flex-col md:flex-row gap-12 items-center">
               <div className="flex-1">
-                <Badge className="bg-yellow-500 text-black hover:bg-yellow-400 mb-6 px-4 py-1 text-sm font-bold">
+                <Badge className="bg-[#D4AF37] text-black hover:bg-[#E8C547] mb-6 px-4 py-1 text-sm font-bold">
                   Certified Chief of Staff® (CCOS)
                 </Badge>
                 <h1 className="text-5xl md:text-7xl font-bold mb-8">
@@ -81,8 +81,8 @@ export default function About() {
               <Card className="border-0 shadow-md hover:shadow-lg transition-all">
                 <CardContent className="p-6">
                   <div className="flex items-center gap-3 mb-4">
-                    <div className="w-10 h-10 bg-yellow-100 rounded-full flex items-center justify-center">
-                      <Star className="w-5 h-5 text-yellow-600" />
+                    <div className="w-10 h-10 bg-yellow-100 rounded-sm flex items-center justify-center">
+                      <Star className="w-5 h-5 text-[#C4A137]" />
                     </div>
                     <h3 className="font-bold text-lg">Strategic Leadership</h3>
                   </div>
@@ -97,8 +97,8 @@ export default function About() {
               <Card className="border-0 shadow-md hover:shadow-lg transition-all">
                 <CardContent className="p-6">
                   <div className="flex items-center gap-3 mb-4">
-                    <div className="w-10 h-10 bg-yellow-100 rounded-full flex items-center justify-center">
-                      <Briefcase className="w-5 h-5 text-yellow-600" />
+                    <div className="w-10 h-10 bg-yellow-100 rounded-sm flex items-center justify-center">
+                      <Briefcase className="w-5 h-5 text-[#C4A137]" />
                     </div>
                     <h3 className="font-bold text-lg">Stakeholder Management</h3>
                   </div>
@@ -113,8 +113,8 @@ export default function About() {
               <Card className="border-0 shadow-md hover:shadow-lg transition-all">
                 <CardContent className="p-6">
                   <div className="flex items-center gap-3 mb-4">
-                    <div className="w-10 h-10 bg-yellow-100 rounded-full flex items-center justify-center">
-                      <CheckCircle2 className="w-5 h-5 text-yellow-600" />
+                    <div className="w-10 h-10 bg-yellow-100 rounded-sm flex items-center justify-center">
+                      <CheckCircle2 className="w-5 h-5 text-[#C4A137]" />
                     </div>
                     <h3 className="font-bold text-lg">Enterprise Execution</h3>
                   </div>
@@ -129,8 +129,8 @@ export default function About() {
               <Card className="border-0 shadow-md hover:shadow-lg transition-all">
                 <CardContent className="p-6">
                   <div className="flex items-center gap-3 mb-4">
-                    <div className="w-10 h-10 bg-yellow-100 rounded-full flex items-center justify-center">
-                      <BookOpen className="w-5 h-5 text-yellow-600" />
+                    <div className="w-10 h-10 bg-yellow-100 rounded-sm flex items-center justify-center">
+                      <BookOpen className="w-5 h-5 text-[#C4A137]" />
                     </div>
                     <h3 className="font-bold text-lg">Communications</h3>
                   </div>
@@ -145,8 +145,8 @@ export default function About() {
               <Card className="border-0 shadow-md hover:shadow-lg transition-all">
                 <CardContent className="p-6">
                   <div className="flex items-center gap-3 mb-4">
-                    <div className="w-10 h-10 bg-yellow-100 rounded-full flex items-center justify-center">
-                      <ShieldCheck className="w-5 h-5 text-yellow-600" />
+                    <div className="w-10 h-10 bg-yellow-100 rounded-sm flex items-center justify-center">
+                      <ShieldCheck className="w-5 h-5 text-[#C4A137]" />
                     </div>
                     <h3 className="font-bold text-lg">Business Planning</h3>
                   </div>
@@ -161,8 +161,8 @@ export default function About() {
               <Card className="border-0 shadow-md hover:shadow-lg transition-all">
                 <CardContent className="p-6">
                   <div className="flex items-center gap-3 mb-4">
-                    <div className="w-10 h-10 bg-yellow-100 rounded-full flex items-center justify-center">
-                      <Award className="w-5 h-5 text-yellow-600" />
+                    <div className="w-10 h-10 bg-yellow-100 rounded-sm flex items-center justify-center">
+                      <Award className="w-5 h-5 text-[#C4A137]" />
                     </div>
                     <h3 className="font-bold text-lg">Events & Logistics</h3>
                   </div>
@@ -184,8 +184,8 @@ export default function About() {
               
               <Card className="border-0 shadow-lg">
                 <CardContent className="p-8">
-                  <div className="w-12 h-12 bg-black rounded-full flex items-center justify-center mb-6">
-                    <Briefcase className="w-6 h-6 text-yellow-500" />
+                  <div className="w-12 h-12 bg-black rounded-sm flex items-center justify-center mb-6">
+                    <Briefcase className="w-6 h-6 text-[#D4AF37]" />
                   </div>
                   <h3 className="text-xl font-bold mb-4">Disaster Relief Leadership</h3>
                   <p className="text-gray-600 mb-4">
@@ -197,8 +197,8 @@ export default function About() {
 
               <Card className="border-0 shadow-lg">
                 <CardContent className="p-8">
-                  <div className="w-12 h-12 bg-black rounded-full flex items-center justify-center mb-6">
-                    <Award className="w-6 h-6 text-yellow-500" />
+                  <div className="w-12 h-12 bg-black rounded-sm flex items-center justify-center mb-6">
+                    <Award className="w-6 h-6 text-[#D4AF37]" />
                   </div>
                   <h3 className="text-xl font-bold mb-4">Governance & "MOD Reset"</h3>
                   <p className="text-gray-600 mb-4">
@@ -210,8 +210,8 @@ export default function About() {
 
               <Card className="border-0 shadow-lg">
                 <CardContent className="p-8">
-                  <div className="w-12 h-12 bg-black rounded-full flex items-center justify-center mb-6">
-                    <CheckCircle2 className="w-6 h-6 text-yellow-500" />
+                  <div className="w-12 h-12 bg-black rounded-sm flex items-center justify-center mb-6">
+                    <CheckCircle2 className="w-6 h-6 text-[#D4AF37]" />
                   </div>
                   <h3 className="text-xl font-bold mb-4">Financial Strategy</h3>
                   <p className="text-gray-600 mb-4">
@@ -223,8 +223,8 @@ export default function About() {
 
               <Card className="border-0 shadow-lg">
                 <CardContent className="p-8">
-                  <div className="w-12 h-12 bg-black rounded-full flex items-center justify-center mb-6">
-                    <Star className="w-6 h-6 text-yellow-500" />
+                  <div className="w-12 h-12 bg-black rounded-sm flex items-center justify-center mb-6">
+                    <Star className="w-6 h-6 text-[#D4AF37]" />
                   </div>
                   <h3 className="text-xl font-bold mb-4">AI-Enhanced Production</h3>
                   <p className="text-gray-600 mb-4">
@@ -243,27 +243,27 @@ export default function About() {
           <div className="container max-w-4xl">
             <h2 className="text-3xl font-bold mb-12 text-center">Core Certifications</h2>
             <div className="grid md:grid-cols-3 gap-8 text-center">
-              <div className="p-6 border border-gray-200 rounded-xl hover:border-yellow-500 transition-colors bg-white">
-                <div className="w-16 h-16 mx-auto bg-yellow-100 rounded-full flex items-center justify-center mb-4">
-                  <Award className="w-8 h-8 text-yellow-600" />
+              <div className="p-6 border border-gray-200 rounded-xl hover:border-[#D4AF37] transition-colors bg-white">
+                <div className="w-16 h-16 mx-auto bg-yellow-100 rounded-sm flex items-center justify-center mb-4">
+                  <Award className="w-8 h-8 text-[#C4A137]" />
                 </div>
                 <h3 className="font-bold text-lg mb-2">CCOS</h3>
                 <p className="text-sm text-gray-500">Certified Chief of Staff®</p>
                 <p className="text-xs text-gray-400 mt-2">Chief of Staff Association (CSA)</p>
               </div>
 
-              <div className="p-6 border border-gray-200 rounded-xl hover:border-yellow-500 transition-colors bg-white">
-                <div className="w-16 h-16 mx-auto bg-yellow-100 rounded-full flex items-center justify-center mb-4">
-                  <CheckCircle2 className="w-8 h-8 text-yellow-600" />
+              <div className="p-6 border border-gray-200 rounded-xl hover:border-[#D4AF37] transition-colors bg-white">
+                <div className="w-16 h-16 mx-auto bg-yellow-100 rounded-sm flex items-center justify-center mb-4">
+                  <CheckCircle2 className="w-8 h-8 text-[#C4A137]" />
                 </div>
                 <h3 className="font-bold text-lg mb-2">PMP</h3>
                 <p className="text-sm text-gray-500">Project Management Professional</p>
                 <p className="text-xs text-gray-400 mt-2">Project Management Institute</p>
               </div>
 
-              <div className="p-6 border border-gray-200 rounded-xl hover:border-yellow-500 transition-colors bg-white">
-                <div className="w-16 h-16 mx-auto bg-yellow-100 rounded-full flex items-center justify-center mb-4">
-                  <ShieldCheck className="w-8 h-8 text-yellow-600" />
+              <div className="p-6 border border-gray-200 rounded-xl hover:border-[#D4AF37] transition-colors bg-white">
+                <div className="w-16 h-16 mx-auto bg-yellow-100 rounded-sm flex items-center justify-center mb-4">
+                  <ShieldCheck className="w-8 h-8 text-[#C4A137]" />
                 </div>
                 <h3 className="font-bold text-lg mb-2">CFE</h3>
                 <p className="text-sm text-gray-500">Certified Fraud Examiner</p>
