@@ -259,7 +259,7 @@ export default function Home() {
                   }
                 ].map((service, i) => (
                   <Link key={i} href={service.link}>
-                    <div className="bg-white p-8 rounded-sm shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-[#D4AF37] hover:border-l-4 group cursor-pointer h-full">
+                    <div className="bg-white p-8 rounded-sm shadow-sm hover:shadow-xl transition-all duration-300 border-l-4 border-t border-r border-b border-gray-100 hover:border-l-[#D4AF37] group cursor-pointer h-full">
                       <div className="w-14 h-14 bg-[#F9F5E8] rounded-sm flex items-center justify-center mb-6 group-hover:bg-[#D4AF37] transition-colors">
                         <service.icon className="w-7 h-7 text-black" />
                       </div>
