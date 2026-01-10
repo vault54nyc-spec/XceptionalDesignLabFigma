@@ -16,7 +16,7 @@ export default function Contact() {
         <section className="py-24 px-4 bg-black text-white">
           <div className="container max-w-6xl">
             <h1 className="text-5xl md:text-7xl font-bold mb-8">
-              Let's <span className="text-yellow-500">Connect</span>
+              Let's <span className="text-[#D4AF37]">Connect</span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-300 max-w-3xl leading-relaxed">
               Ready to elevate your operations, design, or communications? 
@@ -42,8 +42,8 @@ export default function Contact() {
                   
                   <div className="space-y-6">
                     <div className="flex items-start gap-4">
-                      <div className="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center flex-shrink-0">
-                        <Mail className="w-6 h-6 text-yellow-600" />
+                      <div className="w-12 h-12 bg-yellow-100 rounded-sm flex items-center justify-center flex-shrink-0">
+                        <Mail className="w-6 h-6 text-[#C4A137]" />
                       </div>
                       <div>
                         <h3 className="font-bold text-lg">Email Us</h3>
@@ -52,8 +52,8 @@ export default function Contact() {
                     </div>
                     
                     <div className="flex items-start gap-4">
-                      <div className="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center flex-shrink-0">
-                        <MapPin className="w-6 h-6 text-yellow-600" />
+                      <div className="w-12 h-12 bg-yellow-100 rounded-sm flex items-center justify-center flex-shrink-0">
+                        <MapPin className="w-6 h-6 text-[#C4A137]" />
                       </div>
                       <div>
                         <h3 className="font-bold text-lg">Location</h3>
@@ -68,7 +68,7 @@ export default function Contact() {
                 <Card className="bg-black text-white border-0 shadow-xl">
                   <CardContent className="p-8">
                     <div className="flex items-center gap-4 mb-6">
-                      <div className="w-12 h-12 bg-yellow-500 rounded-full flex items-center justify-center">
+                      <div className="w-12 h-12 bg-[#D4AF37] rounded-sm flex items-center justify-center">
                         <Calendar className="w-6 h-6 text-black" />
                       </div>
                       <h3 className="text-2xl font-bold">Book a Strategy Call</h3>

@@ -95,7 +95,7 @@ export default function Home() {
             </div>
             
             <div className="container relative z-10 px-4 text-center max-w-5xl mx-auto">
-              <Badge className="bg-[#00CFC1] text-black hover:bg-[#00b8ab] mb-8 px-6 py-2 text-sm font-bold tracking-wide uppercase animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-700">
+              <Badge className="bg-[#D4AF37] text-black hover:bg-[#E8C547] mb-8 px-6 py-2 text-sm font-bold tracking-wide uppercase animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-700">
                 Complete Operational Solutions
               </Badge>
               
@@ -113,12 +113,12 @@ export default function Home() {
               
               <div className="flex flex-col md:flex-row gap-6 justify-center items-center animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-1400">
                 <Link href="/contact">
-                  <Button size="lg" className="bg-[#00CFC1] text-black hover:bg-[#00b8ab] font-bold px-10 py-7 text-lg rounded-full transition-all hover:scale-105">
+                  <Button size="lg" className="bg-[#D4AF37] text-black hover:bg-[#E8C547] font-bold px-10 py-7 text-lg rounded-sm transition-all hover:scale-105">
                     Start Your Transformation <ArrowRight className="ml-2 w-5 h-5" />
                   </Button>
                 </Link>
                 <Link href="/services">
-                  <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-black font-semibold px-10 py-7 text-lg rounded-full">
+                  <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-black font-semibold px-10 py-7 text-lg rounded-sm">
                     Explore Solutions
                   </Button>
                 </Link>
@@ -149,7 +149,7 @@ export default function Home() {
                 <div>
                   <h2 className="text-4xl md:text-5xl font-bold mb-8 leading-tight">
                     Not Just a Creative Agency. <br />
-                    <span className="text-[#00CFC1]">A Growth Engine.</span>
+                    <span className="text-[#D4AF37]">A Growth Engine.</span>
                   </h2>
                   <p className="text-lg text-gray-600 mb-6 leading-relaxed">
                     We've evolved. While our roots are in design, our impact is in operations. 
@@ -164,13 +164,13 @@ export default function Home() {
                       "Design of executive communications"
                     ].map((item, i) => (
                       <li key={i} className="flex items-center gap-3 text-lg font-medium text-gray-800">
-                        <CheckCircle2 className="w-6 h-6 text-[#00CFC1]" />
+                        <CheckCircle2 className="w-6 h-6 text-[#D4AF37]" />
                         {item}
                       </li>
                     ))}
                   </ul>
                   <Link href="/about">
-                    <Button variant="link" className="text-black font-bold text-lg p-0 hover:text-[#00CFC1]">
+                    <Button variant="link" className="text-black font-bold text-lg p-0 hover:text-[#D4AF37]">
                       Read Our Story <ArrowRight className="ml-2 w-5 h-5" />
                     </Button>
                   </Link>
@@ -182,7 +182,7 @@ export default function Home() {
                     <div className="space-y-6">
                       <div className="flex gap-4">
                         <div className="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center flex-shrink-0">
-                          <Layers className="w-6 h-6 text-[#00CFC1]" />
+                          <Layers className="w-6 h-6 text-[#D4AF37]" />
                         </div>
                         <div>
                           <h4 className="font-bold text-lg">One Partner, Entire Team</h4>
@@ -193,7 +193,7 @@ export default function Home() {
                       </div>
                       <div className="flex gap-4">
                         <div className="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center flex-shrink-0">
-                          <ShieldCheck className="w-6 h-6 text-[#00CFC1]" />
+                          <ShieldCheck className="w-6 h-6 text-[#D4AF37]" />
                         </div>
                         <div>
                           <h4 className="font-bold text-lg">Fortune 500 at Startup Speed</h4>
@@ -204,7 +204,7 @@ export default function Home() {
                       </div>
                       <div className="flex gap-4">
                         <div className="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center flex-shrink-0">
-                          <Zap className="w-6 h-6 text-[#00CFC1]" />
+                          <Zap className="w-6 h-6 text-[#D4AF37]" />
                         </div>
                         <div>
                           <h4 className="font-bold text-lg">We Execute, Not Just Advise</h4>
@@ -259,13 +259,13 @@ export default function Home() {
                   }
                 ].map((service, i) => (
                   <Link key={i} href={service.link}>
-                    <div className="bg-white p-8 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-[#00CFC1] group cursor-pointer h-full">
-                      <div className="w-14 h-14 bg-gray-100 rounded-full flex items-center justify-center mb-6 group-hover:bg-[#00CFC1] transition-colors">
+                    <div className="bg-white p-8 rounded-sm shadow-sm hover:shadow-xl transition-all duration-300 border-l-4 border-t border-r border-b border-gray-100 hover:border-l-[#D4AF37] group cursor-pointer h-full">
+                      <div className="w-14 h-14 bg-[#F9F5E8] rounded-sm flex items-center justify-center mb-6 group-hover:bg-[#D4AF37] transition-colors">
                         <service.icon className="w-7 h-7 text-black" />
                       </div>
                       <h3 className="text-xl font-bold mb-3">{service.title}</h3>
                       <p className="text-gray-600 mb-6 text-sm">{service.desc}</p>
-                      <div className="flex items-center text-[#00CFC1] font-bold text-sm group-hover:translate-x-2 transition-transform">
+                      <div className="flex items-center text-[#D4AF37] font-bold text-sm group-hover:translate-x-2 transition-transform">
                         Learn More <ArrowRight className="ml-2 w-4 h-4" />
                       </div>
                     </div>
@@ -280,7 +280,7 @@ export default function Home() {
             <div className="container max-w-4xl">
               <h2 className="text-4xl md:text-6xl font-bold mb-8">
                 Ready to scale with <br />
-                <span className="text-[#00CFC1]">Enterprise Precision?</span>
+                <span className="text-[#D4AF37]">Enterprise Precision?</span>
               </h2>
               <p className="text-xl text-gray-400 mb-10 max-w-2xl mx-auto">
                 Whether you need a fractional Chief of Staff, a financial dashboard, or a complete 

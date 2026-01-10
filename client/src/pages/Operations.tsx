@@ -13,7 +13,7 @@ export default function Operations() {
         <section className="py-24 px-4 bg-black text-white">
           <div className="container max-w-6xl">
             <h1 className="text-5xl md:text-7xl font-bold mb-8">
-              Strategic <span className="text-yellow-500">Operations</span>
+              Strategic <span className="text-[#D4AF37]">Operations</span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-300 max-w-3xl leading-relaxed">
               We don't just manage projects; we build the governance, infrastructure, and 
@@ -28,8 +28,8 @@ export default function Operations() {
             <div className="grid md:grid-cols-2 gap-16">
               {/* Capability 1: Crisis Management */}
               <div className="space-y-6">
-                <div className="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center">
-                  <ShieldAlert className="w-8 h-8 text-yellow-600" />
+                <div className="w-16 h-16 bg-yellow-100 rounded-sm flex items-center justify-center">
+                  <ShieldAlert className="w-8 h-8 text-[#C4A137]" />
                 </div>
                 <h3 className="text-3xl font-bold">Crisis Management & Disaster Relief</h3>
                 <p className="text-lg text-gray-700 leading-relaxed">
@@ -38,15 +38,15 @@ export default function Operations() {
                 </p>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-yellow-600 mt-1" />
+                    <CheckCircle2 className="w-5 h-5 text-[#C4A137] mt-1" />
                     <span>First-to-market relief offer deployment</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-yellow-600 mt-1" />
+                    <CheckCircle2 className="w-5 h-5 text-[#C4A137] mt-1" />
                     <span>Pre- and post-disaster impact analysis models</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-yellow-600 mt-1" />
+                    <CheckCircle2 className="w-5 h-5 text-[#C4A137] mt-1" />
                     <span>Cross-functional command center leadership</span>
                   </li>
                 </ul>
@@ -54,8 +54,8 @@ export default function Operations() {
 
               {/* Capability 2: Governance & Planning */}
               <div className="space-y-6">
-                <div className="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center">
-                  <Globe className="w-8 h-8 text-yellow-600" />
+                <div className="w-16 h-16 bg-yellow-100 rounded-sm flex items-center justify-center">
+                  <Globe className="w-8 h-8 text-[#C4A137]" />
                 </div>
                 <h3 className="text-3xl font-bold">Enterprise Governance</h3>
                 <p className="text-lg text-gray-700 leading-relaxed">
@@ -64,15 +64,15 @@ export default function Operations() {
                 </p>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-yellow-600 mt-1" />
+                    <CheckCircle2 className="w-5 h-5 text-[#C4A137] mt-1" />
                     <span>"MOD Reset" process architecture</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-yellow-600 mt-1" />
+                    <CheckCircle2 className="w-5 h-5 text-[#C4A137] mt-1" />
                     <span>Enterprise microsite development for central resources</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-yellow-600 mt-1" />
+                    <CheckCircle2 className="w-5 h-5 text-[#C4A137] mt-1" />
                     <span>Annual planning & roadmap governance</span>
                   </li>
                 </ul>
@@ -80,8 +80,8 @@ export default function Operations() {
 
               {/* Capability 3: Financial Integrity */}
               <div className="space-y-6">
-                <div className="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center">
-                  <BarChart3 className="w-8 h-8 text-yellow-600" />
+                <div className="w-16 h-16 bg-yellow-100 rounded-sm flex items-center justify-center">
+                  <BarChart3 className="w-8 h-8 text-[#C4A137]" />
                 </div>
                 <h3 className="text-3xl font-bold">Financial Operations</h3>
                 <p className="text-lg text-gray-700 leading-relaxed">
@@ -90,15 +90,15 @@ export default function Operations() {
                 </p>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-yellow-600 mt-1" />
+                    <CheckCircle2 className="w-5 h-5 text-[#C4A137] mt-1" />
                     <span>Multi-million dollar Capex prioritization models</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-yellow-600 mt-1" />
+                    <CheckCircle2 className="w-5 h-5 text-[#C4A137] mt-1" />
                     <span>T&E budget governance & compliance</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-yellow-600 mt-1" />
+                    <CheckCircle2 className="w-5 h-5 text-[#C4A137] mt-1" />
                     <span>Vendor sourcing & contract management</span>
                   </li>
                 </ul>
@@ -106,8 +106,8 @@ export default function Operations() {
 
               {/* Capability 4: Operational Efficiency */}
               <div className="space-y-6">
-                <div className="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center">
-                  <Zap className="w-8 h-8 text-yellow-600" />
+                <div className="w-16 h-16 bg-yellow-100 rounded-sm flex items-center justify-center">
+                  <Zap className="w-8 h-8 text-[#C4A137]" />
                 </div>
                 <h3 className="text-3xl font-bold">Operational Efficiency</h3>
                 <p className="text-lg text-gray-700 leading-relaxed">
@@ -116,15 +116,15 @@ export default function Operations() {
                 </p>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-yellow-600 mt-1" />
+                    <CheckCircle2 className="w-5 h-5 text-[#C4A137] mt-1" />
                     <span>AI integration across workstreams</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-yellow-600 mt-1" />
+                    <CheckCircle2 className="w-5 h-5 text-[#C4A137] mt-1" />
                     <span>Dashboard & interactive tool development</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-yellow-600 mt-1" />
+                    <CheckCircle2 className="w-5 h-5 text-[#C4A137] mt-1" />
                     <span>Meeting cadence & logistics optimization</span>
                   </li>
                 </ul>
@@ -139,7 +139,7 @@ export default function Operations() {
             <div className="bg-white p-8 md:p-12 rounded-2xl shadow-xl border border-gray-100">
               <div className="grid md:grid-cols-2 gap-12 items-center">
                 <div>
-                  <h3 className="text-sm font-bold text-yellow-600 uppercase tracking-wider mb-2">Case Study</h3>
+                  <h3 className="text-sm font-bold text-[#C4A137] uppercase tracking-wider mb-2">Case Study</h3>
                   <h2 className="text-3xl md:text-4xl font-bold mb-6">2025 Disaster Relief Operations</h2>
                   <p className="text-lg text-gray-700 mb-6">
                     Managed 5 major global crisis events including Southern California Wildfires and Myanmar Earthquake.
@@ -165,9 +165,9 @@ export default function Operations() {
         <section className="py-24 px-4 bg-black text-white text-center">
           <div className="container max-w-4xl">
             <h2 className="text-4xl md:text-5xl font-bold mb-8">
-              Ready to optimize your <span className="text-yellow-500">operations?</span>
+              Ready to optimize your <span className="text-[#D4AF37]">operations?</span>
             </h2>
-            <Button size="lg" className="bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-black font-bold px-12 py-6 text-lg">
+            <Button size="lg" className="bg-gradient-to-r from-[#D4AF37] to-[#C4A137] hover:from-[#C4A137] hover:to-[#B49137] text-black font-bold px-12 py-6 text-lg">
               Book a Strategy Call
               <ArrowRight className="ml-2 w-5 h-5" />
             </Button>

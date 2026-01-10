@@ -107,7 +107,7 @@ export default function Portfolio() {
         <section className="py-24 px-4 bg-black text-white">
           <div className="container max-w-6xl">
             <h1 className="text-5xl md:text-7xl font-bold mb-8">
-              Selected <span className="text-yellow-500">Work</span>
+              Selected <span className="text-[#D4AF37]">Work</span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-300 max-w-3xl leading-relaxed">
               A curated collection of strategic communications, brand identity, and digital experiences. 
@@ -126,7 +126,7 @@ export default function Portfolio() {
                 <button
                   key={cat.id}
                   onClick={() => setActiveCategory(cat.id)}
-                  className={`px-6 py-2 rounded-full text-sm font-bold transition-all duration-300 
+                  className={`px-6 py-2 rounded-sm text-sm font-bold transition-all duration-300 
                     ${activeCategory === cat.id 
                       ? "bg-black text-white shadow-lg scale-105" 
                       : "bg-gray-100 text-gray-600 hover:bg-gray-200"}`}
@@ -167,7 +167,7 @@ export default function Portfolio() {
                       )}
                     </div>
                     
-                    <h3 className="text-xl font-bold mb-2 group-hover:text-yellow-600 transition-colors">
+                    <h3 className="text-xl font-bold mb-2 group-hover:text-[#C4A137] transition-colors">
                       {item.title}
                     </h3>
                     <p className="text-gray-600 text-sm mb-4 line-clamp-2">

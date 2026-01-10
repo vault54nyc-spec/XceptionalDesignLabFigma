@@ -15,7 +15,7 @@ export default function Packages() {
         <section className="py-24 px-4 bg-black text-white">
           <div className="container max-w-6xl text-center">
             <h1 className="text-5xl md:text-7xl font-bold mb-8">
-              Engagement <span className="text-yellow-500">Models</span>
+              Engagement <span className="text-[#D4AF37]">Models</span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
               Flexible frameworks designed to meet you where you are. From targeted strategic interventions 
@@ -33,7 +33,7 @@ export default function Packages() {
               <Card className="flex flex-col border-gray-200 shadow-lg hover:shadow-xl transition-all duration-300 relative overflow-hidden">
                 <div className="absolute top-0 left-0 w-full h-2 bg-gray-300" />
                 <CardHeader className="pt-12 pb-8">
-                  <div className="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mb-6">
+                  <div className="w-16 h-16 bg-gray-100 rounded-sm flex items-center justify-center mb-6">
                     <ShieldCheck className="w-8 h-8 text-gray-600" />
                   </div>
                   <CardTitle className="text-2xl font-bold">Governance Audit</CardTitle>
@@ -70,14 +70,14 @@ export default function Packages() {
               </Card>
 
               {/* Tier 2: The Project (Most Popular) */}
-              <Card className="flex flex-col border-yellow-500 shadow-2xl scale-105 z-10 relative overflow-hidden bg-black text-white">
-                <div className="absolute top-0 left-0 w-full h-2 bg-yellow-500" />
+              <Card className="flex flex-col border-[#D4AF37] shadow-2xl scale-105 z-10 relative overflow-hidden bg-black text-white">
+                <div className="absolute top-0 left-0 w-full h-2 bg-[#D4AF37]" />
                 <div className="absolute top-4 right-4">
-                  <Badge className="bg-yellow-500 text-black hover:bg-yellow-400">Most Popular</Badge>
+                  <Badge className="bg-[#D4AF37] text-black hover:bg-[#E8C547]">Most Popular</Badge>
                 </div>
                 <CardHeader className="pt-12 pb-8">
-                  <div className="w-16 h-16 bg-yellow-500/20 rounded-full flex items-center justify-center mb-6">
-                    <Zap className="w-8 h-8 text-yellow-500" />
+                  <div className="w-16 h-16 bg-[#D4AF37]/20 rounded-sm flex items-center justify-center mb-6">
+                    <Zap className="w-8 h-8 text-[#D4AF37]" />
                   </div>
                   <CardTitle className="text-2xl font-bold">Strategic Sprint</CardTitle>
                   <p className="text-gray-400 mt-2">Targeted Execution</p>
@@ -88,25 +88,25 @@ export default function Packages() {
                   </p>
                   <ul className="space-y-4">
                     <li className="flex items-start gap-3">
-                      <CheckCircle2 className="w-5 h-5 text-yellow-500 mt-1 flex-shrink-0" />
+                      <CheckCircle2 className="w-5 h-5 text-[#D4AF37] mt-1 flex-shrink-0" />
                       <span className="text-sm text-gray-300">3-Month Intensive Engagement</span>
                     </li>
                     <li className="flex items-start gap-3">
-                      <CheckCircle2 className="w-5 h-5 text-yellow-500 mt-1 flex-shrink-0" />
+                      <CheckCircle2 className="w-5 h-5 text-[#D4AF37] mt-1 flex-shrink-0" />
                       <span className="text-sm text-gray-300">Custom Microsite / Dashboard</span>
                     </li>
                     <li className="flex items-start gap-3">
-                      <CheckCircle2 className="w-5 h-5 text-yellow-500 mt-1 flex-shrink-0" />
+                      <CheckCircle2 className="w-5 h-5 text-[#D4AF37] mt-1 flex-shrink-0" />
                       <span className="text-sm text-gray-300">Executive Narrative Development</span>
                     </li>
                     <li className="flex items-start gap-3">
-                      <CheckCircle2 className="w-5 h-5 text-yellow-500 mt-1 flex-shrink-0" />
+                      <CheckCircle2 className="w-5 h-5 text-[#D4AF37] mt-1 flex-shrink-0" />
                       <span className="text-sm text-gray-300">Weekly Steering Committee Leadership</span>
                     </li>
                   </ul>
                 </CardContent>
                 <CardFooter className="pt-8 pb-12">
-                  <Button className="w-full bg-yellow-500 text-black hover:bg-yellow-400 font-bold">
+                  <Button className="w-full bg-[#D4AF37] text-black hover:bg-[#E8C547] font-bold">
                     Start a Sprint
                   </Button>
                 </CardFooter>
@@ -116,7 +116,7 @@ export default function Packages() {
               <Card className="flex flex-col border-gray-200 shadow-lg hover:shadow-xl transition-all duration-300 relative overflow-hidden">
                 <div className="absolute top-0 left-0 w-full h-2 bg-black" />
                 <CardHeader className="pt-12 pb-8">
-                  <div className="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mb-6">
+                  <div className="w-16 h-16 bg-gray-100 rounded-sm flex items-center justify-center mb-6">
                     <Crown className="w-8 h-8 text-black" />
                   </div>
                   <CardTitle className="text-2xl font-bold">Fractional CoS</CardTitle>
