@@ -149,6 +149,11 @@ xceptional-design-lab/
 
 The application is configured for deployment on Vercel.
 
+**Important:** Before deploying to production, update placeholder domains in:
+- `client/public/sitemap.xml` (replace `yourdomain.com`)
+- `client/public/robots.txt` (replace `yourdomain.com`)
+- `client/index.html` (Open Graph URL meta tag)
+
 ### Quick Deploy to Vercel
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vault54nyc-spec/xceptional-design-lab)

@@ -143,10 +143,20 @@ Add the following DNS records to your domain provider:
 
 ### Update Sitemap and Robots.txt
 
-After domain configuration, update:
+After domain configuration, update the following files with your actual domain:
 
-1. `client/public/sitemap.xml` - Replace `yourdomain.com` with your actual domain
-2. `client/public/robots.txt` - Update sitemap URL
+1. **`client/public/sitemap.xml`** - Replace all instances of `yourdomain.com` with your actual domain
+2. **`client/public/robots.txt`** - Update sitemap URL with your actual domain
+3. **`client/index.html`** - Update the Open Graph URL meta tag (line 29) with your actual domain
+
+Example using find and replace:
+```bash
+# Replace placeholder domain in all files
+find client/public -type f \( -name "sitemap.xml" -o -name "robots.txt" \) -exec sed -i 's/yourdomain.com/xceptionaldesignlab.com/g' {} +
+
+# Update index.html Open Graph URL
+sed -i 's/yourdomain.com/xceptionaldesignlab.com/g' client/index.html
+```
 
 ## Troubleshooting
 
