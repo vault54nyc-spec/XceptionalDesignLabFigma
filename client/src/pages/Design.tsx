@@ -1,13 +1,20 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import { CheckCircle2, ArrowRight, Palette, Wand2, Video, Layers } from "lucide-react";
+import {
+  CheckCircle2,
+  ArrowRight,
+  Palette,
+  Wand2,
+  Video,
+  Layers,
+} from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export default function Design() {
   return (
     <div className="min-h-screen flex flex-col bg-white">
       <Navigation />
-      
+
       <main className="flex-1">
         {/* Hero Section */}
         <section className="py-24 px-4 bg-black text-white">
@@ -16,8 +23,9 @@ export default function Design() {
               Design & <span className="text-[#D4AF37]">Brand</span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-300 max-w-3xl leading-relaxed">
-              Where executive strategy meets high-end creative production. We replace expensive agencies 
-              with agile, AI-enhanced design solutions that move at the speed of business.
+              Where executive strategy meets high-end creative production. We
+              replace expensive agencies with agile, AI-enhanced design
+              solutions that move at the speed of business.
             </p>
           </div>
         </section>
@@ -33,8 +41,9 @@ export default function Design() {
                 </div>
                 <h3 className="text-3xl font-bold">AI-Enhanced Production</h3>
                 <p className="text-lg text-gray-700 leading-relaxed">
-                  Leveraging cutting-edge AI tools to create agency-quality commercials and visuals 
-                  at a fraction of the cost and time. We don't just design; we engineer visual solutions.
+                  Leveraging cutting-edge AI tools to create agency-quality
+                  commercials and visuals at a fraction of the cost and time. We
+                  don't just design; we engineer visual solutions.
                 </p>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-3">
@@ -59,8 +68,9 @@ export default function Design() {
                 </div>
                 <h3 className="text-3xl font-bold">Executive Presentations</h3>
                 <p className="text-lg text-gray-700 leading-relaxed">
-                  Architecting the visual narrative for the C-Suite. From the "ValueVerse" CEO presentation 
-                  to board-level reviews, we turn complex strategy into compelling stories.
+                  Architecting the visual narrative for the C-Suite. From the
+                  "ValueVerse" CEO presentation to board-level reviews, we turn
+                  complex strategy into compelling stories.
                 </p>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-3">
@@ -85,8 +95,9 @@ export default function Design() {
                 </div>
                 <h3 className="text-3xl font-bold">Brand Identity</h3>
                 <p className="text-lg text-gray-700 leading-relaxed">
-                  Building cohesive visual systems that resonate. We ensure your internal and external 
-                  communications reflect the premium quality of your operations.
+                  Building cohesive visual systems that resonate. We ensure your
+                  internal and external communications reflect the premium
+                  quality of your operations.
                 </p>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-3">
@@ -111,8 +122,8 @@ export default function Design() {
                 </div>
                 <h3 className="text-3xl font-bold">Media Production</h3>
                 <p className="text-lg text-gray-700 leading-relaxed">
-                  End-to-end production support, from concept to edit. We bridge the gap between 
-                  technical requirements and creative vision.
+                  End-to-end production support, from concept to edit. We bridge
+                  the gap between technical requirements and creative vision.
                 </p>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-3">
@@ -139,20 +150,26 @@ export default function Design() {
             <div className="bg-white p-8 md:p-12 rounded-2xl shadow-xl border border-gray-100">
               <div className="grid md:grid-cols-2 gap-12 items-center">
                 <div>
-                  <h3 className="text-sm font-bold text-[#C4A137] uppercase tracking-wider mb-2">Featured Project</h3>
-                  <h2 className="text-3xl md:text-4xl font-bold mb-6">AI-Powered Commercial Production</h2>
+                  <h3 className="text-sm font-bold text-[#C4A137] uppercase tracking-wider mb-2">
+                    Featured Project
+                  </h3>
+                  <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                    AI-Powered Commercial Production
+                  </h2>
                   <p className="text-lg text-gray-700 mb-6">
-                    Created an agency-quality commercial for a major client's executive pitch deck using advanced AI tools. 
-                    The result? Thousands of dollars saved, faster turnaround, and a visual product that exceeded expectations.
+                    Created an agency-quality commercial for a major client's
+                    executive pitch deck using advanced AI tools. The result?
+                    Thousands of dollars saved, faster turnaround, and a visual
+                    product that exceeded expectations.
                   </p>
                   <Button className="bg-black text-white hover:bg-gray-800">
                     View Case Study <ArrowRight className="ml-2 w-4 h-4" />
                   </Button>
                 </div>
                 <div className="relative h-64 md:h-full min-h-[300px] bg-gray-200 rounded-lg overflow-hidden">
-                  <img 
-                    src="/team-collaboration.jpg" 
-                    alt="Creative Production" 
+                  <img
+                    src="/team-collaboration.jpg"
+                    alt="Creative Production"
                     className="absolute inset-0 w-full h-full object-cover"
                   />
                 </div>
@@ -165,9 +182,13 @@ export default function Design() {
         <section className="py-24 px-4 bg-black text-white text-center">
           <div className="container max-w-4xl">
             <h2 className="text-4xl md:text-5xl font-bold mb-8">
-              Need agency quality without the <span className="text-[#D4AF37]">agency bloat?</span>
+              Need agency quality without the{" "}
+              <span className="text-[#D4AF37]">agency bloat?</span>
             </h2>
-            <Button size="lg" className="bg-gradient-to-r from-[#D4AF37] to-[#C4A137] hover:from-[#C4A137] hover:to-[#B49137] text-black font-bold px-12 py-6 text-lg">
+            <Button
+              size="lg"
+              className="bg-gradient-to-r from-[#D4AF37] to-[#C4A137] hover:from-[#C4A137] hover:to-[#B49137] text-black font-bold px-12 py-6 text-lg"
+            >
               Book a Creative Strategy Call
               <ArrowRight className="ml-2 w-5 h-5" />
             </Button>

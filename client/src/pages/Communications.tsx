@@ -1,13 +1,20 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import { CheckCircle2, ArrowRight, Mic2, Users, MessageSquare, Newspaper } from "lucide-react";
+import {
+  CheckCircle2,
+  ArrowRight,
+  Mic2,
+  Users,
+  MessageSquare,
+  Newspaper,
+} from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export default function Communications() {
   return (
     <div className="min-h-screen flex flex-col bg-white">
       <Navigation />
-      
+
       <main className="flex-1">
         {/* Hero Section */}
         <section className="py-24 px-4 bg-black text-white">
@@ -16,8 +23,9 @@ export default function Communications() {
               Strategic <span className="text-[#D4AF37]">Communications</span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-300 max-w-3xl leading-relaxed">
-              We craft the narratives that move markets and mobilize teams. From internal change management 
-              to executive thought leadership, we ensure your message lands with precision.
+              We craft the narratives that move markets and mobilize teams. From
+              internal change management to executive thought leadership, we
+              ensure your message lands with precision.
             </p>
           </div>
         </section>
@@ -33,8 +41,9 @@ export default function Communications() {
                 </div>
                 <h3 className="text-3xl font-bold">Executive Messaging</h3>
                 <p className="text-lg text-gray-700 leading-relaxed">
-                  Positioning leaders as visionaries. We develop the talking points, scripts, and 
-                  keynote narratives that define your leadership brand.
+                  Positioning leaders as visionaries. We develop the talking
+                  points, scripts, and keynote narratives that define your
+                  leadership brand.
                 </p>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-3">
@@ -59,8 +68,9 @@ export default function Communications() {
                 </div>
                 <h3 className="text-3xl font-bold">Change Management</h3>
                 <p className="text-lg text-gray-700 leading-relaxed">
-                  Guiding organizations through transformation. We build the communication strategies 
-                  that drive adoption and minimize resistance during critical shifts.
+                  Guiding organizations through transformation. We build the
+                  communication strategies that drive adoption and minimize
+                  resistance during critical shifts.
                 </p>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-3">
@@ -85,8 +95,9 @@ export default function Communications() {
                 </div>
                 <h3 className="text-3xl font-bold">Internal Communications</h3>
                 <p className="text-lg text-gray-700 leading-relaxed">
-                  Keeping your workforce informed and inspired. We design the channels and content 
-                  that connect employees to the company mission.
+                  Keeping your workforce informed and inspired. We design the
+                  channels and content that connect employees to the company
+                  mission.
                 </p>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-3">
@@ -111,8 +122,9 @@ export default function Communications() {
                 </div>
                 <h3 className="text-3xl font-bold">Crisis Communications</h3>
                 <p className="text-lg text-gray-700 leading-relaxed">
-                  Protecting reputation under pressure. We provide real-time messaging support 
-                  during operational disruptions and public relations challenges.
+                  Protecting reputation under pressure. We provide real-time
+                  messaging support during operational disruptions and public
+                  relations challenges.
                 </p>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-3">
@@ -139,21 +151,26 @@ export default function Communications() {
             <div className="bg-white p-8 md:p-12 rounded-2xl shadow-xl border border-gray-100">
               <div className="grid md:grid-cols-2 gap-12 items-center">
                 <div>
-                  <h3 className="text-sm font-bold text-[#C4A137] uppercase tracking-wider mb-2">Featured Project</h3>
-                  <h2 className="text-3xl md:text-4xl font-bold mb-6">The "MOD Reset" Initiative</h2>
+                  <h3 className="text-sm font-bold text-[#C4A137] uppercase tracking-wider mb-2">
+                    Featured Project
+                  </h3>
+                  <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                    The "MOD Reset" Initiative
+                  </h2>
                   <p className="text-lg text-gray-700 mb-6">
-                    Designed the comprehensive communication strategy for a major operational reset. 
-                    Aligned cross-functional teams, launched enterprise microsites, and standardized 
-                    governance across the organization.
+                    Designed the comprehensive communication strategy for a
+                    major operational reset. Aligned cross-functional teams,
+                    launched enterprise microsites, and standardized governance
+                    across the organization.
                   </p>
                   <Button className="bg-black text-white hover:bg-gray-800">
                     View Case Study <ArrowRight className="ml-2 w-4 h-4" />
                   </Button>
                 </div>
                 <div className="relative h-64 md:h-full min-h-[300px] bg-gray-200 rounded-lg overflow-hidden">
-                  <img 
-                    src="/meeting-presentation.jpg" 
-                    alt="Strategic Communications" 
+                  <img
+                    src="/meeting-presentation.jpg"
+                    alt="Strategic Communications"
                     className="absolute inset-0 w-full h-full object-cover"
                   />
                 </div>
@@ -166,9 +183,13 @@ export default function Communications() {
         <section className="py-24 px-4 bg-black text-white text-center">
           <div className="container max-w-4xl">
             <h2 className="text-4xl md:text-5xl font-bold mb-8">
-              Words matter. <span className="text-[#D4AF37]">Make them count.</span>
+              Words matter.{" "}
+              <span className="text-[#D4AF37]">Make them count.</span>
             </h2>
-            <Button size="lg" className="bg-gradient-to-r from-[#D4AF37] to-[#C4A137] hover:from-[#C4A137] hover:to-[#B49137] text-black font-bold px-12 py-6 text-lg">
+            <Button
+              size="lg"
+              className="bg-gradient-to-r from-[#D4AF37] to-[#C4A137] hover:from-[#C4A137] hover:to-[#B49137] text-black font-bold px-12 py-6 text-lg"
+            >
               Refine Your Message
               <ArrowRight className="ml-2 w-5 h-5" />
             </Button>

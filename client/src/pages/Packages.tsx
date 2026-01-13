@@ -1,15 +1,27 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import { CheckCircle2, ArrowRight, ShieldCheck, Zap, Crown } from "lucide-react";
+import {
+  CheckCircle2,
+  ArrowRight,
+  ShieldCheck,
+  Zap,
+  Crown,
+} from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle, CardFooter } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardHeader,
+  CardTitle,
+  CardFooter,
+} from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 
 export default function Packages() {
   return (
     <div className="min-h-screen flex flex-col bg-white">
       <Navigation />
-      
+
       <main className="flex-1">
         {/* Hero Section */}
         <section className="py-24 px-4 bg-black text-white">
@@ -18,8 +30,9 @@ export default function Packages() {
               Engagement <span className="text-[#D4AF37]">Models</span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-              Flexible frameworks designed to meet you where you are. From targeted strategic interventions 
-              to full-scale fractional Chief of Staff support.
+              Flexible frameworks designed to meet you where you are. From
+              targeted strategic interventions to full-scale fractional Chief of
+              Staff support.
             </p>
           </div>
         </section>
@@ -28,7 +41,6 @@ export default function Packages() {
         <section className="py-24 px-4">
           <div className="container max-w-7xl">
             <div className="grid lg:grid-cols-3 gap-8">
-              
               {/* Tier 1: The Audit */}
               <Card className="flex flex-col border-gray-200 shadow-lg hover:shadow-xl transition-all duration-300 relative overflow-hidden">
                 <div className="absolute top-0 left-0 w-full h-2 bg-gray-300" />
@@ -36,34 +48,49 @@ export default function Packages() {
                   <div className="w-16 h-16 bg-gray-100 rounded-sm flex items-center justify-center mb-6">
                     <ShieldCheck className="w-8 h-8 text-gray-600" />
                   </div>
-                  <CardTitle className="text-2xl font-bold">Governance Audit</CardTitle>
+                  <CardTitle className="text-2xl font-bold">
+                    Governance Audit
+                  </CardTitle>
                   <p className="text-gray-500 mt-2">The Diagnostic Phase</p>
                 </CardHeader>
                 <CardContent className="flex-1">
                   <p className="text-gray-700 mb-8">
-                    A comprehensive review of your current operational governance, communication flows, and technical infrastructure against CCOS standards.
+                    A comprehensive review of your current operational
+                    governance, communication flows, and technical
+                    infrastructure against CCOS standards.
                   </p>
                   <ul className="space-y-4">
                     <li className="flex items-start gap-3">
                       <CheckCircle2 className="w-5 h-5 text-gray-400 mt-1 flex-shrink-0" />
-                      <span className="text-sm text-gray-600">Current State Assessment</span>
+                      <span className="text-sm text-gray-600">
+                        Current State Assessment
+                      </span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle2 className="w-5 h-5 text-gray-400 mt-1 flex-shrink-0" />
-                      <span className="text-sm text-gray-600">Gap Analysis Report</span>
+                      <span className="text-sm text-gray-600">
+                        Gap Analysis Report
+                      </span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle2 className="w-5 h-5 text-gray-400 mt-1 flex-shrink-0" />
-                      <span className="text-sm text-gray-600">Risk & Compliance Check (CFE)</span>
+                      <span className="text-sm text-gray-600">
+                        Risk & Compliance Check (CFE)
+                      </span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle2 className="w-5 h-5 text-gray-400 mt-1 flex-shrink-0" />
-                      <span className="text-sm text-gray-600">Quick-Win Roadmap</span>
+                      <span className="text-sm text-gray-600">
+                        Quick-Win Roadmap
+                      </span>
                     </li>
                   </ul>
                 </CardContent>
                 <CardFooter className="pt-8 pb-12">
-                  <Button variant="outline" className="w-full border-gray-300 hover:bg-gray-50">
+                  <Button
+                    variant="outline"
+                    className="w-full border-gray-300 hover:bg-gray-50"
+                  >
                     Inquire for Pricing
                   </Button>
                 </CardFooter>
@@ -73,35 +100,49 @@ export default function Packages() {
               <Card className="flex flex-col border-[#D4AF37] shadow-2xl scale-105 z-10 relative overflow-hidden bg-black text-white">
                 <div className="absolute top-0 left-0 w-full h-2 bg-[#D4AF37]" />
                 <div className="absolute top-4 right-4">
-                  <Badge className="bg-[#D4AF37] text-black hover:bg-[#E8C547]">Most Popular</Badge>
+                  <Badge className="bg-[#D4AF37] text-black hover:bg-[#E8C547]">
+                    Most Popular
+                  </Badge>
                 </div>
                 <CardHeader className="pt-12 pb-8">
                   <div className="w-16 h-16 bg-[#D4AF37]/20 rounded-sm flex items-center justify-center mb-6">
                     <Zap className="w-8 h-8 text-[#D4AF37]" />
                   </div>
-                  <CardTitle className="text-2xl font-bold">Strategic Sprint</CardTitle>
+                  <CardTitle className="text-2xl font-bold">
+                    Strategic Sprint
+                  </CardTitle>
                   <p className="text-gray-400 mt-2">Targeted Execution</p>
                 </CardHeader>
                 <CardContent className="flex-1">
                   <p className="text-gray-300 mb-8">
-                    Deploying the "Fixer" to solve a specific, high-stakes challenge. Perfect for product launches, reorgs, or crisis management.
+                    Deploying the "Fixer" to solve a specific, high-stakes
+                    challenge. Perfect for product launches, reorgs, or crisis
+                    management.
                   </p>
                   <ul className="space-y-4">
                     <li className="flex items-start gap-3">
                       <CheckCircle2 className="w-5 h-5 text-[#D4AF37] mt-1 flex-shrink-0" />
-                      <span className="text-sm text-gray-300">3-Month Intensive Engagement</span>
+                      <span className="text-sm text-gray-300">
+                        3-Month Intensive Engagement
+                      </span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle2 className="w-5 h-5 text-[#D4AF37] mt-1 flex-shrink-0" />
-                      <span className="text-sm text-gray-300">Custom Microsite / Dashboard</span>
+                      <span className="text-sm text-gray-300">
+                        Custom Microsite / Dashboard
+                      </span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle2 className="w-5 h-5 text-[#D4AF37] mt-1 flex-shrink-0" />
-                      <span className="text-sm text-gray-300">Executive Narrative Development</span>
+                      <span className="text-sm text-gray-300">
+                        Executive Narrative Development
+                      </span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle2 className="w-5 h-5 text-[#D4AF37] mt-1 flex-shrink-0" />
-                      <span className="text-sm text-gray-300">Weekly Steering Committee Leadership</span>
+                      <span className="text-sm text-gray-300">
+                        Weekly Steering Committee Leadership
+                      </span>
                     </li>
                   </ul>
                 </CardContent>
@@ -119,39 +160,52 @@ export default function Packages() {
                   <div className="w-16 h-16 bg-gray-100 rounded-sm flex items-center justify-center mb-6">
                     <Crown className="w-8 h-8 text-black" />
                   </div>
-                  <CardTitle className="text-2xl font-bold">Fractional CoS</CardTitle>
+                  <CardTitle className="text-2xl font-bold">
+                    Fractional CoS
+                  </CardTitle>
                   <p className="text-gray-500 mt-2">Long-Term Partnership</p>
                 </CardHeader>
                 <CardContent className="flex-1">
                   <p className="text-gray-700 mb-8">
-                    Ongoing "Right Hand" support for the C-Suite. We become an extension of your office, managing the rhythm of business.
+                    Ongoing "Right Hand" support for the C-Suite. We become an
+                    extension of your office, managing the rhythm of business.
                   </p>
                   <ul className="space-y-4">
                     <li className="flex items-start gap-3">
                       <CheckCircle2 className="w-5 h-5 text-black mt-1 flex-shrink-0" />
-                      <span className="text-sm text-gray-600">Annual Planning & OKR Management</span>
+                      <span className="text-sm text-gray-600">
+                        Annual Planning & OKR Management
+                      </span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle2 className="w-5 h-5 text-black mt-1 flex-shrink-0" />
-                      <span className="text-sm text-gray-600">Board Deck Production</span>
+                      <span className="text-sm text-gray-600">
+                        Board Deck Production
+                      </span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle2 className="w-5 h-5 text-black mt-1 flex-shrink-0" />
-                      <span className="text-sm text-gray-600">Town Hall & All-Hands Management</span>
+                      <span className="text-sm text-gray-600">
+                        Town Hall & All-Hands Management
+                      </span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle2 className="w-5 h-5 text-black mt-1 flex-shrink-0" />
-                      <span className="text-sm text-gray-600">On-Demand Crisis Response</span>
+                      <span className="text-sm text-gray-600">
+                        On-Demand Crisis Response
+                      </span>
                     </li>
                   </ul>
                 </CardContent>
                 <CardFooter className="pt-8 pb-12">
-                  <Button variant="outline" className="w-full border-black text-black hover:bg-black hover:text-white">
+                  <Button
+                    variant="outline"
+                    className="w-full border-black text-black hover:bg-black hover:text-white"
+                  >
                     Discuss Retainer
                   </Button>
                 </CardFooter>
               </Card>
-
             </div>
           </div>
         </section>
@@ -163,10 +217,14 @@ export default function Packages() {
               Not sure which model fits?
             </h2>
             <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
-              We often start with a Governance Audit to identify the highest-leverage opportunities 
-              before moving into a Sprint or Retainer.
+              We often start with a Governance Audit to identify the
+              highest-leverage opportunities before moving into a Sprint or
+              Retainer.
             </p>
-            <Button size="lg" className="bg-black text-white hover:bg-gray-800 px-8">
+            <Button
+              size="lg"
+              className="bg-black text-white hover:bg-gray-800 px-8"
+            >
               Book a Free Consultation <ArrowRight className="ml-2 w-4 h-4" />
             </Button>
           </div>
