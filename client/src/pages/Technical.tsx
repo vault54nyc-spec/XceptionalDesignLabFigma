@@ -1,13 +1,20 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import { CheckCircle2, ArrowRight, Database, Cpu, Lock, Network } from "lucide-react";
+import {
+  CheckCircle2,
+  ArrowRight,
+  Database,
+  Cpu,
+  Lock,
+  Network,
+} from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export default function Technical() {
   return (
     <div className="min-h-screen flex flex-col bg-white">
       <Navigation />
-      
+
       <main className="flex-1">
         {/* Hero Section */}
         <section className="py-24 px-4 bg-black text-white">
@@ -16,8 +23,9 @@ export default function Technical() {
               Technical <span className="text-[#D4AF37]">Architecture</span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-300 max-w-3xl leading-relaxed">
-              Systems that scale. We implement the technical infrastructure and AI-driven workflows 
-              that modern Chief of Staff offices require to operate at global standards.
+              Systems that scale. We implement the technical infrastructure and
+              AI-driven workflows that modern Chief of Staff offices require to
+              operate at global standards.
             </p>
           </div>
         </section>
@@ -33,8 +41,9 @@ export default function Technical() {
                 </div>
                 <h3 className="text-3xl font-bold">AI & Automation</h3>
                 <p className="text-lg text-gray-700 leading-relaxed">
-                  Moving beyond hype to practical application. We integrate AI tools that automate 
-                  routine governance, streamline reporting, and enhance decision-making velocity.
+                  Moving beyond hype to practical application. We integrate AI
+                  tools that automate routine governance, streamline reporting,
+                  and enhance decision-making velocity.
                 </p>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-3">
@@ -59,8 +68,9 @@ export default function Technical() {
                 </div>
                 <h3 className="text-3xl font-bold">Systems Governance</h3>
                 <p className="text-lg text-gray-700 leading-relaxed">
-                  Establishing the "Single Source of Truth." We build centralized repositories and 
-                  microsites that house your organization's critical data and processes.
+                  Establishing the "Single Source of Truth." We build
+                  centralized repositories and microsites that house your
+                  organization's critical data and processes.
                 </p>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-3">
@@ -85,8 +95,9 @@ export default function Technical() {
                 </div>
                 <h3 className="text-3xl font-bold">Security & Compliance</h3>
                 <p className="text-lg text-gray-700 leading-relaxed">
-                  Leveraging CFE (Certified Fraud Examiner) standards to ensure your technical 
-                  implementations are secure, compliant, and audit-ready.
+                  Leveraging CFE (Certified Fraud Examiner) standards to ensure
+                  your technical implementations are secure, compliant, and
+                  audit-ready.
                 </p>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-3">
@@ -111,8 +122,9 @@ export default function Technical() {
                 </div>
                 <h3 className="text-3xl font-bold">Integration Strategy</h3>
                 <p className="text-lg text-gray-700 leading-relaxed">
-                  Connecting the dots between disparate tools. We ensure your tech stack talks 
-                  to itself, eliminating silos and reducing manual data entry.
+                  Connecting the dots between disparate tools. We ensure your
+                  tech stack talks to itself, eliminating silos and reducing
+                  manual data entry.
                 </p>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-3">
@@ -139,21 +151,27 @@ export default function Technical() {
             <div className="bg-white p-8 md:p-12 rounded-2xl shadow-xl border border-gray-100">
               <div className="grid md:grid-cols-2 gap-12 items-center">
                 <div>
-                  <h3 className="text-sm font-bold text-[#C4A137] uppercase tracking-wider mb-2">Featured Capability</h3>
-                  <h2 className="text-3xl md:text-4xl font-bold mb-6">Enterprise Microsite Architecture</h2>
+                  <h3 className="text-sm font-bold text-[#C4A137] uppercase tracking-wider mb-2">
+                    Featured Capability
+                  </h3>
+                  <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                    Enterprise Microsite Architecture
+                  </h2>
                   <p className="text-lg text-gray-700 mb-6">
-                    Developed and deployed 3 centralized microsites to serve as the "Single Source of Truth" 
-                    for organizational governance. Reduced information retrieval time by 40% and standardized 
+                    Developed and deployed 3 centralized microsites to serve as
+                    the "Single Source of Truth" for organizational governance.
+                    Reduced information retrieval time by 40% and standardized
                     onboarding across global teams.
                   </p>
                   <Button className="bg-black text-white hover:bg-gray-800">
-                    Explore Technical Solutions <ArrowRight className="ml-2 w-4 h-4" />
+                    Explore Technical Solutions{" "}
+                    <ArrowRight className="ml-2 w-4 h-4" />
                   </Button>
                 </div>
                 <div className="relative h-64 md:h-full min-h-[300px] bg-gray-200 rounded-lg overflow-hidden">
-                  <img 
-                    src="/code-screen.jpg" 
-                    alt="Technical Architecture" 
+                  <img
+                    src="/code-screen.jpg"
+                    alt="Technical Architecture"
                     className="absolute inset-0 w-full h-full object-cover"
                   />
                 </div>
@@ -166,9 +184,13 @@ export default function Technical() {
         <section className="py-24 px-4 bg-black text-white text-center">
           <div className="container max-w-4xl">
             <h2 className="text-4xl md:text-5xl font-bold mb-8">
-              Build a foundation that <span className="text-[#D4AF37]">scales.</span>
+              Build a foundation that{" "}
+              <span className="text-[#D4AF37]">scales.</span>
             </h2>
-            <Button size="lg" className="bg-gradient-to-r from-[#D4AF37] to-[#C4A137] hover:from-[#C4A137] hover:to-[#B49137] text-black font-bold px-12 py-6 text-lg">
+            <Button
+              size="lg"
+              className="bg-gradient-to-r from-[#D4AF37] to-[#C4A137] hover:from-[#C4A137] hover:to-[#B49137] text-black font-bold px-12 py-6 text-lg"
+            >
               Audit Your Infrastructure
               <ArrowRight className="ml-2 w-5 h-5" />
             </Button>

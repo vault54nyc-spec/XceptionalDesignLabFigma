@@ -19,6 +19,7 @@ Before deploying, ensure you have the following installed:
 ## Environment Variables Setup
 
 1. Copy the example environment file:
+
    ```bash
    cp .env.example .env
    ```
@@ -35,7 +36,6 @@ Before deploying, ensure you have the following installed:
      - Sign up at [formspree.io](https://formspree.io/)
      - Create a new form and copy the endpoint URL
      - Format: `https://formspree.io/f/YOUR_FORM_ID`
-   
    - `VITE_ANALYTICS_ENDPOINT` - Umami analytics endpoint (optional)
    - `VITE_ANALYTICS_WEBSITE_ID` - Umami website ID (optional)
 
@@ -44,16 +44,19 @@ Before deploying, ensure you have the following installed:
 Before deploying to Vercel, test the build locally:
 
 1. Install dependencies:
+
    ```bash
    pnpm install
    ```
 
 2. Run the build:
+
    ```bash
    pnpm build
    ```
 
 3. Test the production build locally:
+
    ```bash
    pnpm start
    ```
@@ -90,16 +93,19 @@ Before deploying to Vercel, test the build locally:
 ### Method 2: Deploy via Vercel CLI
 
 1. **Login to Vercel**
+
    ```bash
    vercel login
    ```
 
 2. **Deploy to Preview**
+
    ```bash
    vercel
    ```
 
 3. **Deploy to Production**
+
    ```bash
    vercel --prod
    ```
@@ -124,11 +130,13 @@ Before deploying to Vercel, test the build locally:
 Add the following DNS records to your domain provider:
 
 **For root domain:**
+
 - Type: A
 - Name: @
 - Value: 76.76.21.21
 
 **For www subdomain:**
+
 - Type: CNAME
 - Name: www
 - Value: cname.vercel-dns.com
@@ -145,38 +153,46 @@ After domain configuration, update:
 ### Build Failures
 
 **Issue: "Module not found" errors**
+
 - Solution: Ensure all dependencies are listed in `package.json`
 - Run `pnpm install` to verify dependency installation
 
 **Issue: "Out of memory" during build**
+
 - Solution: Vercel Pro plan provides more memory
 - Or optimize bundle size by code splitting
 
 **Issue: Environment variables not working**
+
 - Solution: Ensure variables are prefixed with `VITE_`
 - Redeploy after adding new environment variables
 
 ### Runtime Issues
 
 **Issue: 404 on page refresh**
+
 - Solution: Already configured in `vercel.json` with rewrites
 - Verify `vercel.json` is in the repository root
 
 **Issue: Images not loading**
+
 - Solution: Ensure images are in `client/public` directory
 - Check image paths start with `/`
 
 **Issue: Contact form not working**
+
 - Solution: Verify `VITE_FORMSPREE_ENDPOINT` is set in Vercel environment variables
 - Check Formspree endpoint is active and correct
 
 ### Performance Issues
 
 **Issue: Slow initial load**
+
 - Solution: Implement lazy loading for heavy components
 - Use image optimization (see IMAGE-OPTIMIZATION.md)
 
 **Issue: Large bundle size**
+
 - Solution: Analyze bundle with `pnpm build` output
 - Consider code splitting for routes
 
@@ -199,6 +215,7 @@ After successful deployment, verify:
 ## Continuous Deployment
 
 Vercel automatically deploys:
+
 - **Production**: Commits to `main` branch
 - **Preview**: Pull requests and other branches
 
@@ -207,21 +224,25 @@ Every push triggers a new build. Preview deployments get unique URLs for testing
 ## Monitoring and Logs
 
 ### View Deployment Logs
+
 1. Go to Vercel Dashboard
 2. Select your project
 3. Click on a deployment
 4. View build logs and runtime logs
 
 ### Analytics
+
 - Built-in Vercel Analytics available in dashboard
 - Umami analytics (if configured via environment variables)
 
 ## Support
 
 For deployment issues:
+
 - Check Vercel documentation: https://vercel.com/docs
 - Vercel Discord: https://vercel.com/discord
 - GitHub Issues: Create an issue in the repository
 
 For application-specific issues:
+
 - Contact: hello@xceptionaldesignlab.com

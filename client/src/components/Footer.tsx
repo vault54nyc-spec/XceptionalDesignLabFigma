@@ -12,13 +12,22 @@ export default function Footer() {
               Xceptional <span className="text-[#D4AF37]">Design Lab</span>
             </h3>
             <p className="text-sm text-[#666666] mb-4">
-              Strategic operations by design. Fortune 500 expertise for growing companies.
+              Strategic operations by design. Fortune 500 expertise for growing
+              companies.
             </p>
             <div className="flex space-x-4">
-              <a href="mailto:contact@xceptionaldesignlab.com" className="text-black hover:text-[#D4AF37] transition-colors">
+              <a
+                href="mailto:contact@xceptionaldesignlab.com"
+                className="text-black hover:text-[#D4AF37] transition-colors"
+              >
                 <Mail size={20} />
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-black hover:text-[#D4AF37] transition-colors">
+              <a
+                href="https://linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-black hover:text-[#D4AF37] transition-colors"
+              >
                 <Linkedin size={20} />
               </a>
             </div>
@@ -26,7 +35,9 @@ export default function Footer() {
 
           {/* Services */}
           <div>
-            <h4 className="text-sm font-semibold text-black mb-4 tracking-wide">SERVICES</h4>
+            <h4 className="text-sm font-semibold text-black mb-4 tracking-wide">
+              SERVICES
+            </h4>
             <ul className="space-y-2">
               <li>
                 <Link href="/operations">
@@ -61,7 +72,9 @@ export default function Footer() {
 
           {/* Company */}
           <div>
-            <h4 className="text-sm font-semibold text-black mb-4 tracking-wide">COMPANY</h4>
+            <h4 className="text-sm font-semibold text-black mb-4 tracking-wide">
+              COMPANY
+            </h4>
             <ul className="space-y-2">
               <li>
                 <Link href="/about">
@@ -96,7 +109,9 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <h4 className="text-sm font-semibold text-black mb-4 tracking-wide">GET IN TOUCH</h4>
+            <h4 className="text-sm font-semibold text-black mb-4 tracking-wide">
+              GET IN TOUCH
+            </h4>
             <p className="text-sm text-[#666666] mb-2">
               Ready to scale your operations?
             </p>
@@ -110,7 +125,8 @@ export default function Footer() {
 
         <div className="border-t border-[#E5E5E5] mt-8 pt-8 text-center">
           <p className="text-sm text-[#666666]">
-            © {new Date().getFullYear()} Xceptional Design Lab. All rights reserved.
+            © {new Date().getFullYear()} Xceptional Design Lab. All rights
+            reserved.
           </p>
         </div>
       </div>

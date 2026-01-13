@@ -14,10 +14,12 @@ This guide helps you optimize images for the Xceptional Design Lab website to im
 The following images in the `client/public` directory may benefit from optimization:
 
 ### High Priority
+
 - `xceptional-logo-hero.png` - Main logo
 - `torn-paper-bg.png` - Background texture
 
 ### Check These Directories
+
 - `client/public/images/` - Check all images in this directory
 - `client/public/assets/` - Review assets for large files
 
@@ -34,6 +36,7 @@ Aim for these maximum file sizes:
 ## Recommended Tools
 
 ### Online Tools (Free)
+
 1. **TinyPNG** (https://tinypng.com/)
    - Best for PNG images
    - Lossy compression with minimal quality loss
@@ -52,23 +55,26 @@ Aim for these maximum file sizes:
    - Lossless and lossy options
 
 ### Command Line Tools
+
 1. **ImageMagick**
+
    ```bash
    # Install (Mac)
    brew install imagemagick
-   
+
    # Optimize PNG
    convert input.png -strip -quality 85 output.png
-   
+
    # Resize image
    convert input.png -resize 1920x1080 output.png
    ```
 
 2. **pngquant**
+
    ```bash
    # Install (Mac)
    brew install pngquant
-   
+
    # Optimize PNG
    pngquant --quality=65-80 input.png
    ```
@@ -103,7 +109,6 @@ Aim for these maximum file sizes:
      - **AVIF**: Better than WebP, newer format
      - **MozJPEG**: Optimized JPG
      - **OxiPNG**: Optimized PNG
-   
 4. **Adjust Quality**
    - Use the slider to find the sweet spot
    - Watch the file size indicator
@@ -139,12 +144,14 @@ Choose the right format for each use case:
 ## Optimization Workflow
 
 1. **Identify Large Images**
+
    ```bash
    # Find images over 200KB
    find client/public -type f \( -name "*.png" -o -name "*.jpg" \) -size +200k -exec ls -lh {} \;
    ```
 
 2. **Backup Originals**
+
    ```bash
    # Create backup directory
    mkdir -p /tmp/image-backups
@@ -160,9 +167,11 @@ Choose the right format for each use case:
    - Keep the same filenames
 
 5. **Test**
+
    ```bash
    pnpm dev
    ```
+
    - Verify images load correctly
    - Check visual quality
 
@@ -178,11 +187,11 @@ For better performance, consider serving different image sizes for different dev
 
 ```html
 <!-- Example: Responsive image -->
-<img 
+<img
   src="/images/hero-800.jpg"
   srcset="
-    /images/hero-400.jpg 400w,
-    /images/hero-800.jpg 800w,
+    /images/hero-400.jpg   400w,
+    /images/hero-800.jpg   800w,
     /images/hero-1200.jpg 1200w
   "
   sizes="(max-width: 600px) 400px, (max-width: 900px) 800px, 1200px"
@@ -230,7 +239,7 @@ pnpm add -D vite-plugin-image-optimizer
 Update `vite.config.ts`:
 
 ```ts
-import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
+import { ViteImageOptimizer } from "vite-plugin-image-optimizer";
 
 export default {
   plugins: [
@@ -271,5 +280,6 @@ Before considering optimization complete:
 ## Support
 
 For questions about image optimization:
+
 - Create an issue in the repository
 - Contact: hello@xceptionaldesignlab.com

@@ -9,6 +9,7 @@ Xceptional Design Lab provides Chief of Staff-level strategic consulting across 
 ## Tech Stack
 
 ### Frontend
+
 - **React 18** - UI library
 - **TypeScript** - Type-safe development
 - **Vite** - Build tool and dev server
@@ -19,10 +20,12 @@ Xceptional Design Lab provides Chief of Staff-level strategic consulting across 
 - **Lucide React** - Icon library
 
 ### Backend
+
 - **Express** - Node.js web framework
 - **TypeScript** - Type-safe server code
 
 ### Development Tools
+
 - **pnpm** - Fast, disk space efficient package manager
 - **Prettier** - Code formatting
 - **ESBuild** - JavaScript bundler
@@ -35,33 +38,38 @@ Xceptional Design Lab provides Chief of Staff-level strategic consulting across 
 ## Local Development Setup
 
 1. **Clone the repository**
+
    ```bash
    git clone https://github.com/vault54nyc-spec/xceptional-design-lab.git
    cd xceptional-design-lab
    ```
 
 2. **Install pnpm** (if not already installed)
+
    ```bash
    npm install -g pnpm@10.4.1
    ```
 
 3. **Install dependencies**
+
    ```bash
    pnpm install
    ```
 
 4. **Set up environment variables**
+
    ```bash
    cp .env.example .env
    ```
-   
+
    Edit `.env` and configure variables as needed. See [Environment Variables](#environment-variables) section below.
 
 5. **Start development server**
+
    ```bash
    pnpm dev
    ```
-   
+
    The application will be available at `http://localhost:3000`
 
 ## Available Scripts
@@ -78,11 +86,13 @@ Xceptional Design Lab provides Chief of Staff-level strategic consulting across 
 Create a `.env` file based on `.env.example`:
 
 ### Required
+
 - `VITE_APP_TITLE` - Application title (default: "Xceptional Design Lab")
 - `VITE_APP_LOGO` - Path to logo (default: "/xceptional-logo-hero.png")
 - `NODE_ENV` - Environment (development/production)
 
 ### Optional
+
 - `PORT` - Server port (default: 3000)
 - `VITE_FORMSPREE_ENDPOINT` - Formspree endpoint for contact form
   - Sign up at [formspree.io](https://formspree.io/)
@@ -118,19 +128,21 @@ xceptional-design-lab/
 ## Building for Production
 
 1. **Build the application**
+
    ```bash
    pnpm build
    ```
-   
+
    This creates optimized production files in `dist/`:
    - `dist/public/` - Frontend static files
    - `dist/index.js` - Backend server bundle
 
 2. **Test production build locally**
+
    ```bash
    pnpm start
    ```
-   
+
    Open `http://localhost:3000` to verify
 
 ## Deployment
@@ -144,6 +156,7 @@ The application is configured for deployment on Vercel.
 ### Manual Deployment
 
 See [DEPLOYMENT.md](./DEPLOYMENT.md) for comprehensive deployment instructions including:
+
 - Vercel deployment setup
 - Environment variable configuration
 - Custom domain setup
@@ -168,6 +181,7 @@ The contact form uses Formspree for submissions:
 For image optimization guidance, see [IMAGE-OPTIMIZATION.md](./IMAGE-OPTIMIZATION.md).
 
 Key optimizations already implemented:
+
 - Code splitting by route
 - Lazy loading of components
 - Optimized asset caching via Vercel headers
@@ -205,6 +219,7 @@ MIT
 ## Support
 
 For questions or support:
+
 - Email: hello@xceptionaldesignlab.com
 - Website: [https://xceptionaldesignlab.com](https://xceptionaldesignlab.com)
 
