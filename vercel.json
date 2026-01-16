@@ -7,7 +7,7 @@
   "outputDirectory": "dist/public",
   "rewrites": [
     {
-      "source": "/(.*)",
+      "source": "/:path*",
       "destination": "/index.html"
     }
   ],
@@ -34,7 +34,7 @@
       ]
     },
     {
-      "source": "/(.+\\.(jpg|jpeg|png|gif|svg|ico|webp|woff|woff2|ttf|eot))",
+      "source": "/:file*.(jpg|jpeg|png|gif|svg|ico|webp|woff|woff2|ttf|eot)",
       "headers": [
         {
           "key": "Cache-Control",
