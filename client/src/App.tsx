@@ -13,6 +13,7 @@ import Packages from "./pages/Packages";
 import About from "./pages/About";
 import CaseStudies from "./pages/CaseStudies";
 import Contact from "./pages/Contact";
+import Services from "./pages/Services";
 
 function Router() {
   return (
@@ -23,6 +24,7 @@ function Router() {
       <Route path={"/communications"} component={Communications} />
       <Route path={"/design"} component={Design} />
       <Route path={"/packages"} component={Packages} />
+      <Route path={"/services"} component={Services} />
       <Route path={"/about"} component={About} />
       <Route path={"/case-studies"} component={CaseStudies} />
       <Route path={"/contact"} component={Contact} />
