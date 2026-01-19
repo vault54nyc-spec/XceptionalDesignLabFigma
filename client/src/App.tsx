@@ -4,6 +4,7 @@ import NotFound from "@/pages/NotFound";
 import { Route, Switch } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
+import ScrollToTop from "./components/ScrollToTop"; // ✅ ADDED: Import ScrollToTop
 import Home from "./pages/Home";
 import Operations from "./pages/Operations";
 import Technical from "./pages/Technical";
@@ -17,21 +18,25 @@ import Services from "./pages/Services";
 
 function Router() {
   return (
-    <Switch>
-      <Route path={"/"} component={Home} />
-      <Route path={"/operations"} component={Operations} />
-      <Route path={"/technical"} component={Technical} />
-      <Route path={"/communications"} component={Communications} />
-      <Route path={"/design"} component={Design} />
-      <Route path={"/packages"} component={Packages} />
-      <Route path={"/services"} component={Services} />
-      <Route path={"/about"} component={About} />
-      <Route path={"/case-studies"} component={CaseStudies} />
-      <Route path={"/contact"} component={Contact} />
-      <Route path={"/404"} component={NotFound} />
-      {/* Final fallback route */}
-      <Route component={NotFound} />
-    </Switch>
+    <>
+      {/* ✅ ADDED: ScrollToTop component to fix navigation scroll positioning */}
+      <ScrollToTop />
+      <Switch>
+        <Route path={"/"} component={Home} />
+        <Route path={"/operations"} component={Operations} />
+        <Route path={"/technical"} component={Technical} />
+        <Route path={"/communications"} component={Communications} />
+        <Route path={"/design"} component={Design} />
+        <Route path={"/packages"} component={Packages} />
+        <Route path={"/services"} component={Services} />
+        <Route path={"/about"} component={About} />
+        <Route path={"/case-studies"} component={CaseStudies} />
+        <Route path={"/contact"} component={Contact} />
+        <Route path={"/404"} component={NotFound} />
+        {/* Final fallback route */}
+        <Route component={NotFound} />
+      </Switch>
+    </>
   );
 }
 
