@@ -87,12 +87,14 @@ export default function Packages() {
                   </ul>
                 </CardContent>
                 <CardFooter className="pt-8 pb-12">
-                  <Button
-                    variant="outline"
-                    className="w-full border-gray-300 hover:bg-gray-50"
-                  >
-                    Inquire for Pricing
-                  </Button>
+                  <a href="#book-call">
+                    <Button
+                      variant="outline"
+                      className="w-full border-gray-300 hover:bg-gray-50"
+                    >
+                      Get Started
+                    </Button>
+                  </a>
                 </CardFooter>
               </Card>
 
@@ -147,9 +149,11 @@ export default function Packages() {
                   </ul>
                 </CardContent>
                 <CardFooter className="pt-8 pb-12">
-                  <Button className="w-full bg-[#D4AF37] text-black hover:bg-[#E8C547] font-bold">
-                    Start a Sprint
-                  </Button>
+                  <a href="#book-call">
+                    <Button className="w-full bg-[#D4AF37] text-black hover:bg-[#E8C547] font-bold">
+                      Start a Sprint
+                    </Button>
+                  </a>
                 </CardFooter>
               </Card>
 
@@ -198,12 +202,14 @@ export default function Packages() {
                   </ul>
                 </CardContent>
                 <CardFooter className="pt-8 pb-12">
-                  <Button
-                    variant="outline"
-                    className="w-full border-black text-black hover:bg-black hover:text-white"
-                  >
-                    Discuss Retainer
-                  </Button>
+                  <a href="#book-call">
+                    <Button
+                      variant="outline"
+                      className="w-full border-black text-black hover:bg-black hover:text-white"
+                    >
+                      Discuss Retainer
+                    </Button>
+                  </a>
                 </CardFooter>
               </Card>
             </div>
@@ -221,12 +227,14 @@ export default function Packages() {
               highest-leverage opportunities before moving into a Sprint or
               Retainer.
             </p>
-            <Button
-              size="lg"
-              className="bg-black text-white hover:bg-gray-800 px-8"
-            >
-              Book a Free Consultation <ArrowRight className="ml-2 w-4 h-4" />
-            </Button>
+            <a href="#book-call">
+              <Button
+                size="lg"
+                className="bg-black text-white hover:bg-gray-800 px-8"
+              >
+                Book a Free Consultation <ArrowRight className="ml-2 w-4 h-4" />
+              </Button>
+            </a>
           </div>
         </section>
       </main>

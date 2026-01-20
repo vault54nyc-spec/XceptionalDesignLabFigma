@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -20,13 +20,12 @@ import { Badge } from "@/components/ui/badge";
 
 export default function Home() {
   const [entered, setEntered] = useState(false);
-  const [videoEnded, setVideoEnded] = useState(false);
+  const [hovered, setHovered] = useState(false);
   const [, setLocation] = useLocation();
-  const videoRef = useRef<HTMLVideoElement>(null);
 
   // Prevent scrolling when the entrance overlay is active
   useEffect(() => {
-    if (!videoEnded) {
+    if (!entered) {
       document.body.style.overflow = "hidden";
     } else {
       document.body.style.overflow = "auto";
@@ -34,20 +33,7 @@ export default function Home() {
     return () => {
       document.body.style.overflow = "auto";
     };
-  }, [videoEnded]);
-
-  // Auto-play video on mount
-  useEffect(() => {
-    if (videoRef.current) {
-      videoRef.current.play();
-    }
-  }, []);
-
-  // Handle video end
-  const handleVideoEnd = () => {
-    setVideoEnded(true);
-    setTimeout(() => setEntered(true), 500);
-  };
+  }, [entered]);
 
   // Scroll to top when component mounts or route changes
   useEffect(() => {
@@ -56,22 +42,46 @@ export default function Home() {
 
   return (
     <div className="min-h-screen flex flex-col bg-white font-sans relative overflow-x-hidden">
-      {/* Opening Animation Video */}
+      {/* Entrance Overlay */}
       <div
-        className={`fixed inset-0 z-50 flex items-center justify-center bg-black transition-opacity duration-1000 ease-in-out ${
+        className={`fixed inset-0 z-50 flex items-center justify-center bg-white transition-opacity duration-1000 ease-in-out ${
           entered ? "opacity-0 pointer-events-none" : "opacity-100"
         }`}
       >
-        <video
-          ref={videoRef}
-          className="w-full h-full object-cover"
-          onEnded={handleVideoEnd}
-          playsInline
-          muted
-          preload="auto"
+        <div
+          className="relative cursor-pointer transform transition-transform duration-700 hover:scale-105"
+          onMouseEnter={() => setHovered(true)}
+          onMouseLeave={() => setHovered(false)}
+          onClick={() => setEntered(true)}
         >
-          <source src="/assets/videos/opening-animation.mp4" type="video/mp4" />
-        </video>
+          {/* Golden Glow Effect */}
+          <div
+            className={`absolute inset-0 rounded-full bg-[#D4AF37] blur-[100px] transition-opacity duration-700 ${
+              hovered ? "opacity-40" : "opacity-0"
+            }`}
+          />
+
+          {/* Logo Image with Radial Mask */}
+          <img
+            src="/xceptional-logo-hero.png"
+            alt="Xceptional Design Lab Entrance"
+            className="relative z-10 w-[300px] sm:w-[400px] md:w-[600px] h-auto object-contain transition-all duration-700"
+            style={{
+              maskImage: "radial-gradient(circle, black 60%, transparent 100%)",
+              WebkitMaskImage:
+                "radial-gradient(circle, black 60%, transparent 100%)",
+            }}
+          />
+
+          {/* Click to Enter Prompt */}
+          <div
+            className={`absolute -bottom-12 left-1/2 transform -translate-x-1/2 text-gray-400 text-sm tracking-[0.3em] uppercase transition-opacity duration-500 ${
+              hovered ? "opacity-100" : "opacity-0"
+            }`}
+          >
+            Click to Enter
+          </div>
+        </div>
       </div>
 
       {/* Main Website Content */}
@@ -138,11 +148,24 @@ export default function Home() {
                 <div className="relative lg:block hidden">
                   <div className="relative aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl">
                     {/* PLACEHOLDER - Replace with your actual photo */}
-                    <img 
+                    <div className="absolute inset-0 bg-gradient-to-br from-gray-800 to-gray-900 flex items-center justify-center">
+                      <div className="text-center text-white p-8">
+                        <div className="w-32 h-32 mx-auto mb-4 rounded-full bg-[#D4AF37] flex items-center justify-center">
+                          <span className="text-4xl font-bold text-black">SC</span>
+                        </div>
+                        <p className="text-sm text-gray-400">
+                          Replace with professional photo
+                          <br />
+                          Recommended: 900x1200px
+                        </p>
+                      </div>
+                    </div>
+                    {/* Uncomment when you have your photo */}
+                    {/* <img 
                       src="/assets/images/hero-professional-photo.jpg" 
                       alt="Sir Christopher DeMarkus - Chief of Staff"
                       className="w-full h-full object-cover"
-                    />
+                    /> */}
                   </div>
 
                   {/* Decorative Element */}
@@ -455,50 +478,26 @@ export default function Home() {
             </div>
           </section>
 
-          {/* Book a Call Section with Calendar */}
-          <section id="book-call" className="py-16 sm:py-20 md:py-24 px-4 sm:px-6 lg:px-8 bg-black text-white">
-            <div className="container max-w-6xl mx-auto">
-              <div className="text-center mb-12">
-                <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold mb-6 sm:mb-8">
-                  Ready to scale with <br />
-                  <span className="text-[#D4AF37]">Enterprise Precision?</span>
-                </h2>
-                <p className="text-lg sm:text-xl text-gray-400 mb-8 sm:mb-10 max-w-2xl mx-auto">
-                  Whether you need a fractional Chief of Staff, a financial
-                  dashboard, or a complete operational overhaul—we've done it at
-                  the highest levels.
-                </p>
-              </div>
-              
-              {/* Calendar Booking */}
-              <div className="bg-white rounded-2xl p-8 max-w-4xl mx-auto">
-                <div className="text-center mb-8">
-                  <h3 className="text-2xl font-bold text-black mb-2">Schedule Your Free Strategy Call</h3>
-                  <p className="text-gray-600">Choose a time that works best for you</p>
-                </div>
-                
-                {/* Cal.com Embed - Replace with your Cal.com link */}
-                <div className="cal-embed-container">
-                  <iframe
-                    src="https://cal.com/xceptional-design-lab/strategy-call?embed=true"
-                    width="100%"
-                    height="600"
-                    frameBorder="0"
-                    className="rounded-lg"
-                  ></iframe>
-                </div>
-                
-                {/* Alternative: Contact Email */}
-                <div className="mt-8 text-center border-t border-gray-200 pt-8">
-                  <p className="text-gray-600 mb-2">Prefer to reach out directly?</p>
-                  <a 
-                    href="mailto:xceptional.designlab@gmail.com" 
-                    className="text-[#D4AF37] hover:text-[#c5a028] font-semibold text-lg"
-                  >
-                    xceptional.designlab@gmail.com
-                  </a>
-                </div>
-              </div>
+          {/* CTA Section */}
+          <section className="py-16 sm:py-20 md:py-24 px-4 sm:px-6 lg:px-8 bg-black text-white text-center">
+            <div className="container max-w-4xl mx-auto">
+              <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold mb-6 sm:mb-8">
+                Ready to scale with <br />
+                <span className="text-[#D4AF37]">Enterprise Precision?</span>
+              </h2>
+              <p className="text-lg sm:text-xl text-gray-400 mb-8 sm:mb-10 max-w-2xl mx-auto">
+                Whether you need a fractional Chief of Staff, a financial
+                dashboard, or a complete operational overhaul—we've done it at
+                the highest levels.
+              </p>
+              <Link href="/contact">
+                <Button
+                  size="lg"
+                  className="bg-[#D4AF37] text-black hover:bg-[#c5a028] font-bold px-10 sm:px-12 py-6 text-base sm:text-lg rounded-full"
+                >
+                  Book a Free Strategy Call
+                </Button>
+              </Link>
             </div>
           </section>
         </main>
