@@ -6,17 +6,19 @@ export default function Navigation() {
   const [location] = useLocation();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  // Navigation order: Home → About → Operations → Technical → Communications → Design → Packages → Services → Portfolio
+  // ✅ FIXED: Reversed order for vertical layout (top to bottom)
+  // Book Call → Contact → Portfolio → Services → Packages → Design → Communications → Technical → Operations → About → Home
   const navLinks = [
-    { href: "/", label: "Home" },
-    { href: "/about", label: "About" },
-    { href: "/operations", label: "Operations" },
-    { href: "/technical", label: "Technical" },
-    { href: "/communications", label: "Communications" },
-    { href: "/design", label: "Design" },
-    { href: "/packages", label: "Packages" },
-    { href: "/services", label: "Services" },
+    { href: "/contact", label: "Contact" },
     { href: "/case-studies", label: "Portfolio" },
+    { href: "/services", label: "Services" },
+    { href: "/packages", label: "Packages" },
+    { href: "/design", label: "Design" },
+    { href: "/communications", label: "Communications" },
+    { href: "/technical", label: "Technical" },
+    { href: "/operations", label: "Operations" },
+    { href: "/about", label: "About" },
+    { href: "/", label: "Home" },
   ];
 
   return (
@@ -31,24 +33,24 @@ export default function Navigation() {
           scrollbarColor: 'rgba(0,0,0,0.3) transparent'
         }}
       >
-        {/* Logo - Image */}
-        <Link href="/home">
-          <div className="cursor-pointer transition-opacity hover:opacity-80 mb-8 flex-shrink-0">
-            <img 
-              src="/assets/images/logo.gif" 
-              alt="Xceptional Design Lab"
-              className="w-16 h-16 object-contain"
-              style={{
-                filter: 'drop-shadow(0 0 8px rgba(212, 175, 55, 0.3))'
-              }}
-              onMouseEnter={(e) => e.currentTarget.style.filter = 'drop-shadow(0 0 12px rgba(212, 175, 55, 0.6))'}
-              onMouseLeave={(e) => e.currentTarget.style.filter = 'drop-shadow(0 0 8px rgba(212, 175, 55, 0.3))'}
-            />
+        {/* Logo - Vertical Text Rotated 180deg */}
+        <Link href="/">
+          <div
+            className="cursor-pointer transition-opacity hover:opacity-80 mb-8 flex-shrink-0"
+            style={{
+              writingMode: "vertical-rl",
+              transform: "rotate(180deg)",
+              letterSpacing: "2px",
+            }}
+          >
+            <span className="text-black font-bold text-lg tracking-wider">
+              XCEPTIONAL.
+            </span>
           </div>
         </Link>
 
         {/* CTA Button - Vertical - AT TOP */}
-        <a href="#book-call">
+        <Link href="/contact">
           <div
             className="hidden md:block bg-black text-[#D4AF37] px-4 py-6 cursor-pointer transition-all hover:bg-[#2C2C2C] mb-8 flex-shrink-0"
             style={{
@@ -58,7 +60,7 @@ export default function Navigation() {
           >
             <span className="font-bold text-sm tracking-wider">BOOK CALL</span>
           </div>
-        </a>
+        </Link>
 
         {/* Desktop Navigation Links - Vertical Text Rotated 180deg */}
         <div className="hidden md:flex flex-col items-center gap-6 flex-1">
@@ -106,13 +108,14 @@ export default function Navigation() {
               <h3 className="text-lg font-bold mb-4 text-black">Menu</h3>
               
               {/* Book Call Button First */}
-              <a href="#book-call" onClick={() => setMobileMenuOpen(false)}>
+              <Link href="/contact">
                 <div
                   className="bg-black text-[#D4AF37] px-6 py-3 text-center font-bold cursor-pointer hover:bg-[#2C2C2C] transition-all rounded"
+                  onClick={() => setMobileMenuOpen(false)}
                 >
                   Book a Call
                 </div>
-              </a>
+              </Link>
               
               {/* Navigation Links in Reversed Order */}
               {navLinks.map(link => (
