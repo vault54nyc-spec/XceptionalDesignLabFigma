@@ -63,7 +63,7 @@ export default function Home() {
 
           {/* Logo Image with Radial Mask */}
           <img
-            src="/xceptional-logo-hero.png"
+            src="https://pub-28a5a1ab60b44821b2111f74965f9cbf.r2.dev/LOGO.png"
             alt="Xceptional Design Lab Entrance"
             className="relative z-10 w-[300px] sm:w-[400px] md:w-[600px] h-auto object-contain transition-all duration-700"
             style={{
