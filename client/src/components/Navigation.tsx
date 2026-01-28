@@ -35,7 +35,7 @@ export default function Navigation() {
         <Link href="/home">
           <div className="cursor-pointer transition-opacity hover:opacity-80 mb-8 flex-shrink-0">
             <img 
-              src="/assets/images/logo.gif" 
+              src="https://pub-28a5a1ab60b44821b2111f74965f9cbf.r2.dev/LOGO.png" 
               alt="Xceptional Design Lab"
               className="w-16 h-16 object-contain"
               style={{
