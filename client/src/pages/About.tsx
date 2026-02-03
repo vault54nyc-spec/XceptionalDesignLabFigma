@@ -37,9 +37,8 @@ export default function About() {
                 </p>
               </div>
               <div className="w-full md:w-1/3 aspect-[3/4] bg-gray-800 rounded-2xl overflow-hidden relative grayscale hover:grayscale-0 transition-all duration-500">
-                {/* Placeholder for Headshot */}
                 <img
-                  src="/images/headshot-placeholder.jpg"
+                  src="/assets/images/hero-professional-photo.jpg"
                   alt="Principal Consultant"
                   className="absolute inset-0 w-full h-full object-cover opacity-80"
                 />

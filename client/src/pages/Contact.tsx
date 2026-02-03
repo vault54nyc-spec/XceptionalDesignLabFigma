@@ -1,6 +1,13 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import { Mail, Calendar, MapPin, ArrowRight, CheckCircle2 } from "lucide-react";
+import {
+  Mail,
+  Calendar,
+  MapPin,
+  ArrowRight,
+  CheckCircle2,
+  Phone,
+} from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -22,7 +29,7 @@ export default function Contact() {
     // If no Formspree endpoint is configured, show a message
     if (!formspreeEndpoint) {
       alert(
-        "Contact form is not yet configured. Please email us directly at hello@xceptionaldesignlab.com"
+        "Contact form is not yet configured. Please email us directly at xceptional.designlab@gmail.com"
       );
       return;
     }
@@ -102,8 +109,17 @@ export default function Contact() {
                       <div>
                         <h3 className="font-bold text-lg">Email Us</h3>
                         <p className="text-gray-600">
-                          hello@xceptionaldesignlab.com
+                          xceptional.designlab@gmail.com
                         </p>
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-4">
+                      <div className="w-12 h-12 bg-yellow-100 rounded-sm flex items-center justify-center flex-shrink-0">
+                        <Phone className="w-6 h-6 text-[#C4A137]" />
+                      </div>
+                      <div>
+                        <h3 className="font-bold text-lg">Call Us</h3>
+                        <p className="text-gray-600">551.655.9184</p>
                       </div>
                     </div>
 

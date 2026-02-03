@@ -17,7 +17,7 @@ export default function Footer() {
             </p>
             <div className="flex space-x-4">
               <a
-                href="mailto:contact@xceptionaldesignlab.com"
+                href="mailto:xceptional.designlab@gmail.com"
                 className="text-black hover:text-[#D4AF37] transition-colors"
               >
                 <Mail size={20} />
@@ -115,6 +115,10 @@ export default function Footer() {
             <p className="text-sm text-[#666666] mb-2">
               Ready to scale your operations?
             </p>
+            <p className="text-sm text-[#666666] mb-1">
+              xceptional.designlab@gmail.com
+            </p>
+            <p className="text-sm text-[#666666] mb-3">551.655.9184</p>
             <Link href="/contact">
               <span className="text-sm text-[#D4AF37] hover:text-black font-semibold cursor-pointer border-b border-[#D4AF37] pb-1 inline-block transition-colors">
                 Book a Strategy Call →

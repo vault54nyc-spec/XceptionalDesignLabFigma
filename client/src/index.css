@@ -131,7 +131,7 @@
     font-family:
       -apple-system, BlinkMacSystemFont, "Segoe UI", "Lato", "Open Sans",
       sans-serif;
-    margin-left: 100px; /* Space for fixed sidebar on desktop */
+    margin-left: 0;
   }
   h1,
   h2,
@@ -160,10 +160,10 @@
     @apply cursor-pointer;
   }
 
-  /* Mobile: reduce sidebar spacing */
-  @media (max-width: 768px) {
+  /* Desktop: add space for fixed sidebar */
+  @media (min-width: 1024px) {
     body {
-      margin-left: 0;
+      margin-left: 100px;
     }
   }
 }

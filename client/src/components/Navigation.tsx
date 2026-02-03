@@ -24,7 +24,7 @@ export default function Navigation() {
       {/* Desktop: Benjamin Aesthetic - Vertical Sidebar Navigation */}
       {/* ✅ FIXED: Added overflow-y-auto for scrollability */}
       <nav
-        className="fixed left-0 top-0 hidden h-full w-[100px] bg-[#D4AF37] z-50 md:flex flex-col items-center py-8 overflow-y-auto overflow-x-hidden"
+        className="fixed left-0 top-0 hidden h-full w-[100px] bg-[#D4AF37] z-50 lg:flex flex-col items-center py-8 overflow-y-auto overflow-x-hidden"
         style={{
           maxHeight: "100vh",
           scrollbarWidth: "thin",
@@ -87,7 +87,7 @@ export default function Navigation() {
       </nav>
 
       {/* Mobile: Top App Bar */}
-      <div className="fixed left-0 right-0 top-0 z-50 flex h-14 items-center justify-between bg-[#D4AF37] px-4 md:hidden">
+      <div className="fixed left-0 right-0 top-0 z-50 flex h-14 items-center justify-between bg-[#D4AF37] px-4 lg:hidden">
         <Link href="/home">
           <div className="flex items-center gap-2">
             <img
@@ -110,12 +110,12 @@ export default function Navigation() {
       </div>
 
       {/* Mobile: Spacer so content isn't hidden by fixed app bar */}
-      <div className="h-14 md:hidden" />
+      <div className="h-14 lg:hidden" />
 
       {/* Mobile Menu Overlay */}
       {/* ✅ FIXED: Simplified drawer + added overflow-y-auto */}
       {mobileMenuOpen && (
-        <div className="fixed inset-0 z-40 md:hidden">
+        <div className="fixed inset-0 z-40 lg:hidden">
           <div
             className="absolute inset-0 bg-black/50 backdrop-blur-sm"
             onClick={() => setMobileMenuOpen(false)}

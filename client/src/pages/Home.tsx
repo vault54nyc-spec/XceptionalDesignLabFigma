@@ -144,16 +144,16 @@ export default function Home() {
                 </div>
 
                 {/* RIGHT SIDE - Professional Photo */}
-                <div className="relative lg:block hidden">
+                <div className="relative order-first lg:order-last w-full max-w-sm lg:max-w-none mx-auto lg:mx-0">
                   <div className="relative aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl">
-                    <img 
-                      src="/assets/images/hero-professional-photo.jpg" 
+                    <img
+                      src="/assets/images/hero-professional-photo.jpg"
                       alt="Sir Christopher DeMarkus - Chief of Staff"
                       className="w-full h-full object-cover"
                     />
                   </div>
                   {/* Decorative Element */}
-                  <div className="absolute -bottom-6 -right-6 w-64 h-64 bg-[#D4AF37] opacity-20 rounded-full blur-3xl -z-10" />
+                  <div className="absolute -bottom-6 -right-6 w-40 h-40 lg:w-64 lg:h-64 bg-[#D4AF37] opacity-20 rounded-full blur-3xl -z-10" />
                 </div>
 
               </div>
