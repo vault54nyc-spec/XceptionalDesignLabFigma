@@ -163,7 +163,7 @@
   /* Mobile: reduce sidebar spacing */
   @media (max-width: 768px) {
     body {
-      margin-left: 60px;
+      margin-left: 0;
     }
   }
 }

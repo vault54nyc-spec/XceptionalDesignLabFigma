@@ -21,14 +21,14 @@ export default function Navigation() {
 
   return (
     <>
-      {/* Benjamin Aesthetic - Vertical Sidebar Navigation */}
+      {/* Desktop: Benjamin Aesthetic - Vertical Sidebar Navigation */}
       {/* ✅ FIXED: Added overflow-y-auto for scrollability */}
-      <nav 
-        className="fixed left-0 top-0 h-full w-[100px] md:w-[100px] sm:w-[60px] bg-[#D4AF37] z-50 flex flex-col items-center py-8 overflow-y-auto overflow-x-hidden"
-        style={{ 
-          maxHeight: '100vh',
-          scrollbarWidth: 'thin',
-          scrollbarColor: 'rgba(0,0,0,0.3) transparent'
+      <nav
+        className="fixed left-0 top-0 hidden h-full w-[100px] bg-[#D4AF37] z-50 md:flex flex-col items-center py-8 overflow-y-auto overflow-x-hidden"
+        style={{
+          maxHeight: "100vh",
+          scrollbarWidth: "thin",
+          scrollbarColor: "rgba(0,0,0,0.3) transparent",
         }}
       >
         {/* Logo - Image */}
@@ -84,51 +84,76 @@ export default function Navigation() {
         </div>
 
         {/* Mobile Menu Toggle */}
+      </nav>
+
+      {/* Mobile: Top App Bar */}
+      <div className="fixed left-0 right-0 top-0 z-50 flex h-14 items-center justify-between bg-[#D4AF37] px-4 md:hidden">
+        <Link href="/home">
+          <div className="flex items-center gap-2">
+            <img
+              src="https://pub-28a5a1ab60b44821b2111f74965f9cbf.r2.dev/LOGO.png"
+              alt="Xceptional Design Lab"
+              className="h-8 w-8 object-contain"
+            />
+            <span className="text-sm font-bold tracking-wide text-black">
+              Xceptional
+            </span>
+          </div>
+        </Link>
         <button
-          className="md:hidden text-black p-2 mt-auto flex-shrink-0"
+          className="text-black p-2"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           aria-label="Toggle menu"
         >
           {mobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
         </button>
-      </nav>
+      </div>
+
+      {/* Mobile: Spacer so content isn't hidden by fixed app bar */}
+      <div className="h-14 md:hidden" />
 
       {/* Mobile Menu Overlay */}
-      {/* ✅ FIXED: Reversed order for mobile + added overflow-y-auto */}
+      {/* ✅ FIXED: Simplified drawer + added overflow-y-auto */}
       {mobileMenuOpen && (
         <div className="fixed inset-0 z-40 md:hidden">
           <div
             className="absolute inset-0 bg-black/50 backdrop-blur-sm"
             onClick={() => setMobileMenuOpen(false)}
           />
-          <div className="absolute left-[60px] top-0 bottom-0 w-64 bg-white shadow-2xl p-6 overflow-y-auto">
-            <div className="flex flex-col gap-4">
-              <h3 className="text-lg font-bold mb-4 text-black">Menu</h3>
-              
-              {/* Book Call Button First */}
+          <div className="absolute right-0 top-0 h-[100dvh] w-[80vw] max-w-[320px] bg-white shadow-2xl overflow-y-auto">
+            <div className="flex items-center justify-between border-b border-black/10 px-5 py-4">
+              <span className="text-base font-bold text-black">Menu</span>
+              <button
+                className="text-black p-2"
+                onClick={() => setMobileMenuOpen(false)}
+                aria-label="Close menu"
+              >
+                <X size={18} />
+              </button>
+            </div>
+            <div className="flex flex-col gap-2 px-5 py-4">
+              {/* Book Call Button */}
               <a href="#book-call" onClick={() => setMobileMenuOpen(false)}>
-                <div
-                  className="bg-black text-[#D4AF37] px-6 py-3 text-center font-bold cursor-pointer hover:bg-[#2C2C2C] transition-all rounded"
-                >
+                <div className="bg-black text-[#D4AF37] px-6 py-3 text-center font-bold cursor-pointer hover:bg-[#2C2C2C] transition-all rounded">
                   Book a Call
                 </div>
               </a>
-              
-              {/* Navigation Links in Reversed Order */}
-              {navLinks.map(link => (
-                <Link key={link.href} href={link.href}>
-                  <div
-                    className={`py-2 text-base font-medium transition-colors cursor-pointer ${
-                      location === link.href
-                        ? "text-[#D4AF37] font-bold"
-                        : "text-black hover:text-[#D4AF37]"
-                    }`}
-                    onClick={() => setMobileMenuOpen(false)}
-                  >
-                    {link.label}
-                  </div>
-                </Link>
-              ))}
+              <div className="mt-2 flex flex-col gap-1">
+                {navLinks.map((link) => (
+                  <Link key={link.href} href={link.href}>
+                    <div
+                      className={`py-2 text-base font-medium transition-colors cursor-pointer ${
+                        location === link.href
+                          ? "text-[#D4AF37] font-bold"
+                          : "text-black hover:text-[#D4AF37]"
+                      }`}
+                      onClick={() => setMobileMenuOpen(false)}
+                    >
+                      {link.label}
+                    </div>
+                  </Link>
+                ))}
+              </div>
             </div>
           </div>
         </div>
