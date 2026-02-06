@@ -23,6 +23,7 @@ export default function Home() {
   const [videoEnded, setVideoEnded] = useState(false);
   const [, setLocation] = useLocation();
   const videoRef = useRef<HTMLVideoElement>(null);
+  const didInitPlayback = useRef(false);
 
   // Prevent scrolling when the entrance overlay is active
   useEffect(() => {
@@ -36,17 +37,27 @@ export default function Home() {
     };
   }, [videoEnded]);
 
-  // Auto-play video on mount
+  // Auto-play video on mount. If autoplay is blocked or the video errors, reveal the site.
   useEffect(() => {
-    if (videoRef.current) {
-      videoRef.current.play();
+    if (didInitPlayback.current) return;
+    didInitPlayback.current = true;
+
+    const v = videoRef.current;
+    if (!v) return;
+
+    const maybePromise = v.play();
+    if (maybePromise && typeof (maybePromise as any).catch === "function") {
+      (maybePromise as any).catch(() => {
+        setVideoEnded(true);
+        setEntered(true);
+      });
     }
   }, []);
 
   // Handle video end
   const handleVideoEnd = () => {
     setVideoEnded(true);
-    setTimeout(() => setEntered(true), 500);
+    setEntered(true);
   };
 
   // Scroll to top when component mounts or route changes
@@ -66,17 +77,24 @@ export default function Home() {
           ref={videoRef}
           className="w-full h-full object-cover"
           onEnded={handleVideoEnd}
+          onError={handleVideoEnd}
+          autoPlay
           playsInline
           muted
           preload="auto"
         >
-          <source src="/assets/videos/opening-animation.mp4" type="video/mp4" />
+          <source
+            src="https://pub-28a5a1ab60b44821b2111f74965f9cbf.r2.dev/Sequence%2003.mp4"
+            type="video/mp4"
+          />
         </video>
       </div>
 
       {/* Main Website Content */}
       <div
-        className={`transition-opacity duration-1000 delay-500 ${entered ? "opacity-100" : "opacity-0"}`}
+        className={`transition-opacity duration-1000 ${
+          entered ? "opacity-100" : "opacity-0"
+        }`}
       >
         <Navigation />
 
