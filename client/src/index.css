@@ -160,12 +160,7 @@
     @apply cursor-pointer;
   }
 
-  /* Desktop: add space for fixed sidebar */
-  @media (min-width: 1024px) {
-    body {
-      margin-left: 100px;
-    }
-  }
+  /* Navigation is now top-based; no left gutter needed. */
 }
 
 @layer components {

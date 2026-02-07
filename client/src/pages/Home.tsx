@@ -6,6 +6,7 @@ import {
   ArrowRight,
   CheckCircle2,
   ShieldCheck,
+  Play,
   Zap,
   BarChart3,
   Layers,
@@ -99,6 +100,30 @@ export default function Home() {
         <Navigation />
 
         <main className="flex-1">
+          {/* Hero Video Placeholder (anchored at top) */}
+          <section className="relative bg-[#050507]">
+            <div className="relative h-56 sm:h-72 overflow-hidden">
+              <div className="absolute inset-0 bg-[radial-gradient(1200px_400px_at_20%_20%,rgba(34,211,238,0.20),transparent_60%),radial-gradient(900px_380px_at_80%_30%,rgba(217,70,239,0.16),transparent_55%),linear-gradient(to_bottom,rgba(255,255,255,0.06),transparent_30%)]" />
+              <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-black/35 to-black/80" />
+              <div className="relative h-full flex items-center justify-center px-6">
+                <div className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/5 px-5 py-3 backdrop-blur-xl">
+                  <div className="flex h-9 w-9 items-center justify-center rounded-full border border-white/15 bg-white/10">
+                    <Play className="h-4 w-4 text-white/80" />
+                  </div>
+                  <div>
+                    <div className="text-xs font-semibold tracking-[0.2em] text-white/70">
+                      HERO VIDEO
+                    </div>
+                    <div className="text-sm text-white/85">
+                      Placeholder (coming soon)
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/15 to-transparent" />
+            </div>
+          </section>
+
           {/* PERPLEXITY-STYLE HERO - Split Screen with Photo */}
           <section className="relative min-h-screen flex items-center bg-white overflow-hidden">
             <div className="container mx-auto px-6 sm:px-8 lg:px-12 py-20">
@@ -106,15 +131,6 @@ export default function Home() {
                 
                 {/* LEFT SIDE - Text Content */}
                 <div className="space-y-8">
-                  {/* Logo on Homepage */}
-                  <div className="mb-8">
-                    <img 
-                      src="https://pub-28a5a1ab60b44821b2111f74965f9cbf.r2.dev/LOGO.png"
-                      alt="Xceptional Design Lab"
-                      className="w-48 h-auto object-contain"
-                    />
-                  </div>
-
                   <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold leading-tight">
                     Fortune 500 Operations<span className="text-[#D4AF37]">.</span>
                     <br />
@@ -168,6 +184,13 @@ export default function Home() {
                       src="/assets/images/hero-professional-photo.jpg"
                       alt="Sir Christopher DeMarkus - Chief of Staff"
                       className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div className="mt-4 flex justify-center">
+                    <img
+                      src="https://pub-28a5a1ab60b44821b2111f74965f9cbf.r2.dev/Credentials%20(2).svg"
+                      alt="Credentials"
+                      className="h-12 w-auto opacity-95"
                     />
                   </div>
                   {/* Decorative Element */}
