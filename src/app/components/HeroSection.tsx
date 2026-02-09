@@ -1,0 +1,169 @@
+import { ImageWithFallback } from "./figma/ImageWithFallback";
+import { Link } from "react-router";
+import { motion } from "motion/react";
+
+export function HeroSection() {
+  return (
+    <section className="relative w-full overflow-hidden">
+      {/* ========== HERO CONTENT ========== */}
+      <div className="relative z-10 max-w-[1600px] mx-auto px-8 md:px-12 lg:px-16 w-full pt-32 md:pt-40 pb-16 md:pb-24">
+        <div className="grid lg:grid-cols-2 gap-16 items-center">
+          {/* Left: Typography */}
+          <div className="space-y-10">
+            {/* Micro-label */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="inline-block"
+            >
+              <p className="text-[#D4AF37] text-xs md:text-sm tracking-[0.3em] uppercase font-medium">
+                STRATEGIC DESIGN × CORPORATE INTELLIGENCE
+              </p>
+              <div className="w-28 h-[2px] bg-gradient-to-r from-[#D4AF37] to-transparent mt-3" />
+            </motion.div>
+
+            {/* Primary Headline */}
+            <motion.h1
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{
+                duration: 0.8,
+                delay: 0.4,
+                ease: [0.25, 0.46, 0.45, 0.94],
+              }}
+              className="text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-bold text-[#FAFAFA] leading-[0.9] tracking-[-0.02em]"
+            >
+              WE BUILD THE BRANDS THAT BUILD{" "}
+              <span className="text-gold-gradient text-glow">EMPIRES.</span>
+            </motion.h1>
+
+            {/* Sub-headline */}
+            <motion.p
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, delay: 0.7 }}
+              className="text-xl md:text-2xl text-[#A0A0A0] leading-relaxed max-w-2xl"
+            >
+              Xceptional Design Lab is a strategic design and digital
+              infrastructure studio for organizations that refuse to look
+              ordinary. 16 years of enterprise experience. 61 services. Zero
+              compromises.
+            </motion.p>
+
+            {/* Trust indicators */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.6, delay: 0.85 }}
+              className="flex flex-wrap gap-6 text-xs tracking-[0.2em] text-[#A0A0A0] uppercase"
+            >
+              <span>
+                PMP® Certified
+              </span>
+              <span className="text-[#D4AF37]/40">|</span>
+              <span>Fortune 10 Experience</span>
+              <span className="text-[#D4AF37]/40">|</span>
+              <span>Full-Stack Studio</span>
+            </motion.div>
+
+            {/* CTA Buttons */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.9 }}
+              className="flex flex-wrap gap-4 pt-4"
+            >
+              <Link
+                to="/case-studies"
+                className="floating-card rounded-full px-8 py-4 text-[#FAFAFA] group"
+              >
+                <span className="tracking-wide font-medium">
+                  VIEW OUR WORK
+                </span>
+                <span className="inline-block ml-2 group-hover:translate-x-2 transition-transform text-[#D4AF37]">
+                  →
+                </span>
+              </Link>
+              <Link
+                to="/contact"
+                className="floating-card rounded-full px-8 py-4 text-[#D4AF37] border-[#D4AF37]"
+              >
+                <span className="tracking-wide font-medium">
+                  BOOK A STRATEGY CALL
+                </span>
+              </Link>
+            </motion.div>
+          </div>
+
+          {/* Right: Photo with Credentials Badge */}
+          <motion.div
+            initial={{ opacity: 0, x: 60 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{
+              duration: 1,
+              delay: 0.5,
+              ease: [0.25, 0.46, 0.45, 0.94],
+            }}
+            className="relative lg:justify-self-end w-full max-w-[700px]"
+          >
+            {/* Photo container with gold overlay */}
+            <div className="relative">
+              <div className="relative aspect-[3/4]">
+                <ImageWithFallback
+                  src="https://pub-28a5a1ab60b44821b2111f74965f9cbf.r2.dev/image.jpeg"
+                  alt="Sir Christopher DeMarkus, Founder & Creative Director"
+                  className="w-full h-full object-contain"
+                />
+              </div>
+            </div>
+
+            {/* Credentials Badge */}
+            <motion.div
+              initial={{ opacity: 0, y: 40, scale: 0.95 }}
+              animate={{ opacity: 1, y: 0, scale: 1 }}
+              transition={{ duration: 0.7, delay: 1.2 }}
+              className="absolute -bottom-10 -right-6 lg:right-0 floating-card rounded-2xl p-6 md:p-8 max-w-md border-glow-strong"
+            >
+              <div className="space-y-3">
+                <h3 className="text-xl md:text-2xl font-bold text-[#FAFAFA] tracking-tight leading-tight">
+                  SIR CHRISTOPHER DEMARKUS
+                </h3>
+                <p className="text-[#D4AF37] text-sm tracking-wide font-medium">
+                  Founder & Creative Director
+                </p>
+
+                <div className="pt-3 border-t border-[#D4AF37]/30 space-y-2">
+                  <p className="text-[#A0A0A0] text-sm leading-relaxed">
+                    <span className="text-[#F5E6B8] font-medium">
+                      PMP® · CCOS · CFE
+                    </span>
+                  </p>
+                  <p className="text-[#A0A0A0] text-sm leading-relaxed">
+                    Former Verizon | Portfolio & Program Management
+                  </p>
+                  <p className="text-[#D4AF37] text-sm font-medium">
+                    16+ Years | Design × Operations × Technology
+                  </p>
+                </div>
+              </div>
+            </motion.div>
+          </motion.div>
+        </div>
+      </div>
+
+      {/* Scroll indicator */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 0.6 }}
+        transition={{ delay: 1.5, duration: 0.8 }}
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-3 animate-bounce z-10"
+      >
+        <span className="text-[#D4AF37] text-xs tracking-[0.3em] font-light">
+          SCROLL
+        </span>
+        <div className="w-[1px] h-12 bg-gradient-to-b from-[#D4AF37] to-transparent" />
+      </motion.div>
+    </section>
+  );
+}

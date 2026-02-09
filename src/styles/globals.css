@@ -1,0 +1,239 @@
+@import "tailwindcss";
+@import "./theme.css";
+@import "./fonts.css";
+
+/* ============================================
+   XDL Glassmorphism System v5.0 - MAXIMUM DARKNESS
+   Updated: 2025-02-08 20:10 UTC
+   ULTRA DARK HEAVY Glass Effect 
+   ============================================ */
+
+.glass {
+  background: linear-gradient(135deg, rgba(10, 10, 10, 0.85), rgba(0, 0, 0, 0.75)) !important;
+  backdrop-filter: blur(80px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(80px) saturate(180%) !important;
+  border: 1px solid rgba(212, 175, 55, 0.3) !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.8),
+              0 0 80px rgba(212, 175, 55, 0.05),
+              inset 0 1px 2px rgba(255, 255, 255, 0.1) !important;
+}
+
+.glass-heavy {
+  background: rgba(0, 0, 0, 0.98) !important;
+  backdrop-filter: blur(80px) saturate(220%) !important;
+  -webkit-backdrop-filter: blur(80px) saturate(220%) !important;
+  border: 3px solid rgba(255, 255, 255, 0.25) !important;
+  box-shadow: 0 24px 96px rgba(0, 0, 0, 0.99),
+              0 12px 48px rgba(0, 0, 0, 0.95),
+              inset 0 3px 6px rgba(255, 255, 255, 0.12),
+              inset 0 -3px 6px rgba(0, 0, 0, 0.6) !important;
+  transform: translateZ(0);
+}
+
+.glass-card {
+  background: rgba(0, 0, 0, 0.95) !important;
+  backdrop-filter: blur(60px) saturate(200%) !important;
+  -webkit-backdrop-filter: blur(60px) saturate(200%) !important;
+  border: 2px solid rgba(255, 255, 255, 0.2) !important;
+  box-shadow: 0 16px 64px rgba(0, 0, 0, 0.98),
+              0 8px 32px rgba(0, 0, 0, 0.9),
+              inset 0 2px 4px rgba(255, 255, 255, 0.15) !important;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateZ(0);
+}
+
+.glass-card:hover {
+  background: rgba(0, 0, 0, 0.97) !important;
+  border-color: rgba(212, 175, 55, 0.7) !important;
+  box-shadow: 0 32px 128px rgba(0, 0, 0, 0.99),
+              0 16px 64px rgba(212, 175, 55, 0.3),
+              0 0 100px rgba(212, 175, 55, 0.2),
+              inset 0 3px 6px rgba(255, 255, 255, 0.18) !important;
+  transform: translateY(-4px) translateZ(0);
+}
+
+/* Floating card effect - Golden Holographic Glassmorphism */
+.floating-card {
+  background: linear-gradient(135deg, rgba(212,175,55,0.15), rgba(212,175,55,0.08), rgba(212,175,55,0.03)) !important;
+  backdrop-filter: blur(60px) saturate(200%) !important;
+  -webkit-backdrop-filter: blur(60px) saturate(200%) !important;
+  border: 2px solid rgba(212, 175, 55, 0.3) !important;
+  box-shadow: 0 8px 32px rgba(212, 175, 55, 0.15),
+              0 16px 64px rgba(0, 0, 0, 0.4),
+              inset 0 2px 4px rgba(255, 255, 255, 0.1) !important;
+  transform: translateZ(0);
+  position: relative;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.floating-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: linear-gradient(135deg, rgba(255,255,255,0.1), transparent, transparent);
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.floating-card:hover {
+  background: linear-gradient(135deg, rgba(212,175,55,0.25), rgba(212,175,55,0.12), rgba(0,0,0,0.3)) !important;
+  border-color: rgba(212, 175, 55, 0.6) !important;
+  box-shadow: 0 0 60px rgba(212, 175, 55, 0.4),
+              0 0 100px rgba(212, 175, 55, 0.2),
+              0 16px 64px rgba(0, 0, 0, 0.6),
+              inset 0 3px 6px rgba(255, 255, 255, 0.18),
+              inset 0 0 40px rgba(212, 175, 55, 0.1) !important;
+  transform: translateY(-4px) translateZ(0) scale(1.01);
+}
+
+/* ============================================
+   Gold Typography & Glow Utility Classes
+   ============================================ */
+
+.text-gold-gradient {
+  background: linear-gradient(135deg, #D4AF37 0%, #F5E6B8 40%, #D4AF37 60%, #B8962E 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-glow {
+  filter: drop-shadow(0 0 20px rgba(212, 175, 55, 0.4))
+          drop-shadow(0 0 40px rgba(212, 175, 55, 0.2));
+}
+
+.text-glow-strong {
+  filter: drop-shadow(0 0 30px rgba(212, 175, 55, 0.6))
+          drop-shadow(0 0 60px rgba(212, 175, 55, 0.4))
+          drop-shadow(0 0 100px rgba(212, 175, 55, 0.2));
+}
+
+.border-glow-strong {
+  border: 2px solid rgba(212, 175, 55, 0.4);
+  box-shadow: 0 0 30px rgba(212, 175, 55, 0.15),
+              0 0 60px rgba(212, 175, 55, 0.08),
+              inset 0 0 30px rgba(212, 175, 55, 0.05);
+}
+
+/* ============================================
+   Custom Scrollbar - Gold Accent
+   ============================================ */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0A0A0A;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #D4AF37 0%, #B8962E 100%);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #F5E6B8 0%, #D4AF37 100%);
+}
+
+/* ============================================
+   Smooth Scrolling & Selection
+   ============================================ */
+
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background: rgba(212, 175, 55, 0.3);
+  color: #FAFAFA;
+}
+
+/* ============================================
+   Gold Divider Utility
+   ============================================ */
+
+.gold-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, rgba(212, 175, 55, 0.5) 50%, transparent 100%);
+}
+
+/* ============================================
+   Shimmer animation for loading states
+   ============================================ */
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.gold-shimmer {
+  background: linear-gradient(
+    90deg,
+    rgba(212, 175, 55, 0) 0%,
+    rgba(212, 175, 55, 0.3) 50%,
+    rgba(212, 175, 55, 0) 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 3s ease-in-out infinite;
+}
+
+/* ============================================
+   Performance & Smart Defaults
+   ============================================ */
+
+/* GPU-accelerated transforms for all animated elements */
+.floating-card,
+.glass-card,
+.glass {
+  will-change: transform;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Focus visible for keyboard navigation */
+:focus-visible {
+  outline: 2px solid #D4AF37;
+  outline-offset: 2px;
+}
+
+/* Improved form input autofill styling */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  -webkit-text-fill-color: #FAFAFA;
+  -webkit-box-shadow: 0 0 0px 1000px #0A0A0A inset;
+  border-color: rgba(212, 175, 55, 0.3);
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+/* Logo glow animation */
+@keyframes logoGlow {
+  0%, 100% {
+    filter: drop-shadow(0 0 25px rgba(212, 175, 55, 0.8))
+            drop-shadow(0 0 50px rgba(212, 175, 55, 0.5))
+            drop-shadow(0 0 80px rgba(212, 175, 55, 0.3));
+  }
+  50% {
+    filter: drop-shadow(0 0 35px rgba(212, 175, 55, 1))
+            drop-shadow(0 0 70px rgba(212, 175, 55, 0.6))
+            drop-shadow(0 0 100px rgba(212, 175, 55, 0.4));
+  }
+}
+
+.logo-glow {
+  animation: logoGlow 3s ease-in-out infinite;
+}
