@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "motion/react";
+import { Volume2, VolumeX } from "lucide-react";
 
 interface EntranceAnimationProps {
   onComplete: () => void;
@@ -7,6 +8,7 @@ interface EntranceAnimationProps {
 
 export function EntranceAnimation({ onComplete }: EntranceAnimationProps) {
   const [isVideoEnded, setIsVideoEnded] = useState(false);
+  const [isMuted, setIsMuted] = useState(true);
   const videoRef = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
@@ -24,6 +26,13 @@ export function EntranceAnimation({ onComplete }: EntranceAnimationProps) {
     setTimeout(() => onComplete(), 800);
   };
 
+  const toggleMute = () => {
+    if (videoRef.current) {
+      videoRef.current.muted = !videoRef.current.muted;
+      setIsMuted(!isMuted);
+    }
+  };
+
   return (
     <AnimatePresence>
       <motion.div
@@ -39,7 +48,7 @@ export function EntranceAnimation({ onComplete }: EntranceAnimationProps) {
           className="w-full h-full object-cover"
           onEnded={handleVideoEnd}
           playsInline
-          muted={false}
+          muted={isMuted}
         >
           <source
             src="https://pub-28a5a1ab60b44821b2111f74965f9cbf.r2.dev/Xceptional%20Design%20Lab%20(1).mp4"
@@ -56,6 +65,17 @@ export function EntranceAnimation({ onComplete }: EntranceAnimationProps) {
           className="absolute bottom-12 right-12 glass rounded-full px-6 py-3 text-[#D4AF37] text-sm tracking-wider hover:bg-[#D4AF37] hover:text-black transition-all duration-300 font-medium z-20"
         >
           SKIP
+        </motion.button>
+
+        {/* Mute button */}
+        <motion.button
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.8, duration: 0.4 }}
+          onClick={toggleMute}
+          className="absolute bottom-12 left-12 glass rounded-full px-6 py-3 text-[#D4AF37] text-sm tracking-wider hover:bg-[#D4AF37] hover:text-black transition-all duration-300 font-medium z-20"
+        >
+          {isMuted ? <VolumeX size={24} /> : <Volume2 size={24} />}
         </motion.button>
       </motion.div>
     </AnimatePresence>
