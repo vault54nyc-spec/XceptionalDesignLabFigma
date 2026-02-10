@@ -90,7 +90,7 @@ export function Navigation() {
                 <img
                   src="https://pub-28a5a1ab60b44821b2111f74965f9cbf.r2.dev/3.png"
                   alt="Phone"
-                  className="h-4 md:h-5 w-auto opacity-80"
+                  className="h-7 md:h-8 w-auto opacity-80"
                 />
               </a>
               {/* Email */}
@@ -102,7 +102,7 @@ export function Navigation() {
                 <img
                   src="https://pub-28a5a1ab60b44821b2111f74965f9cbf.r2.dev/MAIL.png"
                   alt="Email"
-                  className="h-4 md:h-5 w-auto opacity-80"
+                  className="h-7 md:h-8 w-auto opacity-80"
                 />
               </a>
               {/* Instagram */}
@@ -116,7 +116,7 @@ export function Navigation() {
                 <img
                   src="https://pub-28a5a1ab60b44821b2111f74965f9cbf.r2.dev/IG.png"
                   alt="Instagram"
-                  className="h-4 md:h-5 w-auto opacity-80"
+                  className="h-7 md:h-8 w-auto opacity-80"
                 />
               </a>
             </div>
