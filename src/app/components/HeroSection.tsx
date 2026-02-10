@@ -111,7 +111,7 @@ export function HeroSection() {
             <div className="relative">
               <div className="relative">
                 <ImageWithFallback
-                  src="https://pub-28a5a1ab60b44821b2111f74965f9cbf.r2.dev/Black%20Minimalist%20Favorite%20Part%20Podcast%20Desktop%20Wallpaper%20(3).png"
+                  src="https://pub-28a5a1ab60b44821b2111f74965f9cbf.r2.dev/Black%20Minimalist%20Favorite%20Part%20Podcast%20Desktop%20Wallpaper%20(4).png"
                   alt="Christopher DeMarkus, Founder & Creative Director"
                   className="w-full h-auto object-contain"
                 />
