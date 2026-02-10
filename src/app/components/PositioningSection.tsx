@@ -13,8 +13,8 @@ export function PositioningSection() {
             01 — POSITIONING
           </p>
           <h2 className="text-5xl md:text-7xl lg:text-8xl font-bold text-[#FAFAFA] leading-[0.95] tracking-tight">
-            NOT AN AGENCY.{" "}
-            <span className="text-gold-gradient text-glow">A STUDIO.</span>
+            NOT YOUR TYPICAL{" "}
+            <span className="text-gold-gradient text-glow">DESIGN PARTNER.</span>
           </h2>
         </AnimatedSection>
 
@@ -27,7 +27,7 @@ export function PositioningSection() {
               </h3>
               <StaggerContainer className="space-y-4" staggerDelay={0.08}>
                 {[
-                  'A design agency that asks, "What\'s your brand color?"',
+                  'A typical design firm that asks, "What\'s your brand color?"',
                   'A template shop peddling off-the-shelf "solutions."',
                   "A vendor that disappears after the logo's delivered.",
                   "A team that charges by the hour and drags it out.",

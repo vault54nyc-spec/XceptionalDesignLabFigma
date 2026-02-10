@@ -34,23 +34,20 @@ export function Navigation() {
       initial={{ y: -100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] }}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        scrolled
-          ? "glass border-b border-[#D4AF37]/20"
-          : "bg-gradient-to-b from-black/80 via-black/40 to-transparent"
-      }`}
+      className={`fixed top-0 left-0 right-0 z-[100] transition-all duration-500 glass border-b border-[#D4AF37]/20 backdrop-blur-xl`}
     >
       <div className="max-w-[1600px] mx-auto px-4 sm:px-8 md:px-12 lg:px-16 py-3 md:py-4">
         <div className="flex items-center justify-between">
           {/* Logo — Large with strong gold glow */}
           <Link to="/" className="flex items-center group flex-shrink-0">
             <img
-              src="https://pub-28a5a1ab60b44821b2111f74965f9cbf.r2.dev/XDL%20White.svg"
+              src="https://pub-28a5a1ab60b44821b2111f74965f9cbf.r2.dev/XDL%20White%20(1).svg"
               alt="Xceptional Design Lab"
               className="h-14 sm:h-16 md:h-20 w-auto transition-all duration-500 group-hover:scale-110"
               style={{
                 filter:
                   "drop-shadow(0 0 25px rgba(212, 175, 55, 0.8)) drop-shadow(0 0 50px rgba(212, 175, 55, 0.5)) drop-shadow(0 0 80px rgba(212, 175, 55, 0.3)) drop-shadow(0 0 120px rgba(212, 175, 55, 0.15))",
+                mixBlendMode: "screen",
               }}
             />
           </Link>

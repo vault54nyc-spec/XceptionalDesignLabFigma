@@ -46,7 +46,7 @@ export function HeroSection() {
               className="text-xl md:text-2xl text-[#A0A0A0] leading-relaxed max-w-2xl"
             >
               Xceptional Design Lab is a strategic design and digital
-              infrastructure studio for organizations that refuse to look
+              infrastructure practice for organizations that refuse to look
               ordinary. 16 years of enterprise experience. 61 services. Zero
               compromises.
             </motion.p>
@@ -64,7 +64,7 @@ export function HeroSection() {
               <span className="text-[#D4AF37]/40">|</span>
               <span>Fortune 10 Experience</span>
               <span className="text-[#D4AF37]/40">|</span>
-              <span>Full-Stack Studio</span>
+              <span>Full-Stack Practice</span>
             </motion.div>
 
             {/* CTA Buttons */}
@@ -105,29 +105,29 @@ export function HeroSection() {
               delay: 0.5,
               ease: [0.25, 0.46, 0.45, 0.94],
             }}
-            className="relative lg:justify-self-end w-full max-w-[700px]"
+            className="relative lg:justify-self-end w-full max-w-[7000px] space-y-8"
           >
-            {/* Photo container with gold overlay */}
+            {/* Photo container */}
             <div className="relative">
-              <div className="relative aspect-[3/4]">
+              <div className="relative">
                 <ImageWithFallback
-                  src="https://pub-28a5a1ab60b44821b2111f74965f9cbf.r2.dev/image.jpeg"
-                  alt="Sir Christopher DeMarkus, Founder & Creative Director"
-                  className="w-full h-full object-contain"
+                  src="https://pub-28a5a1ab60b44821b2111f74965f9cbf.r2.dev/Black%20Minimalist%20Favorite%20Part%20Podcast%20Desktop%20Wallpaper%20(3).png"
+                  alt="Christopher DeMarkus, Founder & Creative Director"
+                  className="w-full h-auto object-contain"
                 />
               </div>
             </div>
 
-            {/* Credentials Badge */}
+            {/* Credentials Badge - Below Image */}
             <motion.div
               initial={{ opacity: 0, y: 40, scale: 0.95 }}
               animate={{ opacity: 1, y: 0, scale: 1 }}
               transition={{ duration: 0.7, delay: 1.2 }}
-              className="absolute -bottom-10 -right-6 lg:right-0 floating-card rounded-2xl p-6 md:p-8 max-w-md border-glow-strong"
+              className="floating-card rounded-2xl p-6 md:p-8 border-glow-strong"
             >
               <div className="space-y-3">
                 <h3 className="text-xl md:text-2xl font-bold text-[#FAFAFA] tracking-tight leading-tight">
-                  SIR CHRISTOPHER DEMARKUS
+                  CHRISTOPHER DEMARKUS
                 </h3>
                 <p className="text-[#D4AF37] text-sm tracking-wide font-medium">
                   Founder & Creative Director
@@ -140,7 +140,7 @@ export function HeroSection() {
                     </span>
                   </p>
                   <p className="text-[#A0A0A0] text-sm leading-relaxed">
-                    Former Verizon | Portfolio & Program Management
+                    Verizon | Portfolio & Program Management
                   </p>
                   <p className="text-[#D4AF37] text-sm font-medium">
                     16+ Years | Design × Operations × Technology

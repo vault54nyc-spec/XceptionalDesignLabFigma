@@ -112,7 +112,7 @@ export function ServicesPage() {
             <AnimatedSection delay={0.2}>
               <div className="floating-card rounded-3xl p-8 md:p-16 max-w-5xl mb-20">
                 <p className="text-xl md:text-2xl text-[#A0A0A0] leading-relaxed mb-6">
-                  Every service category below represents a core studio
+                  Every service category below represents a core
                   capability — backed by 16+ years of enterprise experience and
                   three professional certifications. Click any category to
                   explore the full range of services we offer within that

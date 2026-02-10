@@ -32,17 +32,16 @@ export function AboutPage() {
             <AnimatedSection delay={0.2}>
               <div className="floating-card rounded-3xl p-6 md:p-10 max-w-5xl space-y-6">
                 <p className="md:text-2xl text-[#A0A0A0] leading-relaxed text-[16px]">
-                  Xceptional Design Lab was founded by Sir Christopher DeMarkus
-                  — a PMP®-certified portfolio and program management
-                  professional with <strong className="text-[#F5E6B8]">16+ years</strong> operating at the intersection of
+                  Xceptional Design Lab was founded by Christopher DeMarkus
+                  — Chief of Staff, Portfolio Management, Senior Level Auditor with <strong className="text-[#F5E6B8]">16+ years</strong> operating at the intersection of
                   enterprise operations, creative direction, and digital
                   technology.
                 </p>
                 <p className="md:text-2xl text-[#A0A0A0] leading-relaxed text-[16px]">
-                  XDL is not an agency. It's an independent creative and operational
+                  XDL is an independent creative and operational
                   consultancy specializing in brand architecture, digital
-                  infrastructure, and operational design for founders, executives,
-                  and growth-stage companies who refuse to look ordinary.
+                   infrastructure, and operational design for founders, executives,
+                   and growth-stage companies who refuse to look ordinary.
                 </p>
                 <p className="md:text-2xl text-[#A0A0A0] leading-relaxed text-[16px]">
                   Before founding XDL, Christopher served as Associate Director
@@ -66,7 +65,7 @@ export function AboutPage() {
                 <span className="text-gold-gradient text-glow">XDL?</span>
               </h2>
               <p className="text-xl md:text-2xl text-[#A0A0A0] leading-relaxed max-w-4xl mb-16">
-                Because most design studios can make it look good. We make it
+                Because most partners can make it look good. We make it
                 work. The difference is 16 years of building systems that
                 survive contact with reality.
               </p>
@@ -122,24 +121,56 @@ export function AboutPage() {
         {/* Credentials Grid */}
         <section className="relative py-24 px-8 md:px-12 lg:px-16">
           <div className="relative z-10 max-w-[1400px] mx-auto">
-            {/* Credential Badges */}
+            {/* Credential Logos - 2 rows of 4 */}
             <AnimatedSection>
-              <div className="mb-16 flex flex-wrap justify-center items-center gap-12">
-                <img
-                  src="https://pub-28a5a1ab60b44821b2111f74965f9cbf.r2.dev/Credentials%20(2).svg"
-                  alt="PMP Certification"
-                  className="w-48 md:w-64 h-auto"
-                />
-                <img
-                  src="https://pub-28a5a1ab60b44821b2111f74965f9cbf.r2.dev/Credentials%20(2).svg"
-                  alt="CCOS Certification"
-                  className="w-48 md:w-64 h-auto"
-                />
-                <img
-                  src="https://pub-28a5a1ab60b44821b2111f74965f9cbf.r2.dev/Credentials%20(2).svg"
-                  alt="CFE Certification"
-                  className="w-48 md:w-64 h-auto"
-                />
+              <div className="mb-16 space-y-8">
+                {/* Row 1: UH, TWU, CFE, PMP */}
+                <div className="flex justify-center items-center gap-8 md:gap-12 lg:gap-16 flex-wrap">
+                  <img
+                    src="https://pub-28a5a1ab60b44821b2111f74965f9cbf.r2.dev/uh.svg"
+                    alt="University of Houston"
+                    className="h-16 md:h-20 w-auto opacity-80 hover:opacity-100 transition-opacity"
+                  />
+                  <img
+                    src="https://pub-28a5a1ab60b44821b2111f74965f9cbf.r2.dev/twu.svg"
+                    alt="Texas Woman's University"
+                    className="h-16 md:h-20 w-auto opacity-80 hover:opacity-100 transition-opacity"
+                  />
+                  <img
+                    src="https://pub-28a5a1ab60b44821b2111f74965f9cbf.r2.dev/cfe.svg"
+                    alt="Certified Fraud Examiner"
+                    className="h-16 md:h-20 w-auto opacity-80 hover:opacity-100 transition-opacity"
+                  />
+                  <img
+                    src="https://pub-28a5a1ab60b44821b2111f74965f9cbf.r2.dev/2.svg"
+                    alt="PMP Certification"
+                    className="h-16 md:h-20 w-auto opacity-80 hover:opacity-100 transition-opacity"
+                  />
+                </div>
+                
+                {/* Row 2: V, CCOS, APA, NPHC */}
+                <div className="flex justify-center items-center gap-8 md:gap-12 lg:gap-16 flex-wrap">
+                  <img
+                    src="https://pub-28a5a1ab60b44821b2111f74965f9cbf.r2.dev/8.svg"
+                    alt="Verizon"
+                    className="h-16 md:h-20 w-auto opacity-80 hover:opacity-100 transition-opacity"
+                  />
+                  <img
+                    src="https://pub-28a5a1ab60b44821b2111f74965f9cbf.r2.dev/pmp.svg"
+                    alt="PMP Certification"
+                    className="h-16 md:h-20 w-auto opacity-80 hover:opacity-100 transition-opacity"
+                  />
+                  <img
+                    src="https://pub-28a5a1ab60b44821b2111f74965f9cbf.r2.dev/apa.svg"
+                    alt="Alpha Phi Alpha Fraternity, Inc."
+                    className="h-16 md:h-20 w-auto opacity-80 hover:opacity-100 transition-opacity"
+                  />
+                  <img
+                    src="https://pub-28a5a1ab60b44821b2111f74965f9cbf.r2.dev/nphc.svg"
+                    alt="NPHC"
+                    className="h-16 md:h-20 w-auto opacity-80 hover:opacity-100 transition-opacity"
+                  />
+                </div>
               </div>
             </AnimatedSection>
 
@@ -169,10 +200,10 @@ export function AboutPage() {
                   </h3>
                   <div className="space-y-3 text-[#A0A0A0]">
                     <p className="text-[#F5E6B8] font-medium">
-                      Associate Director, Portfolio & Program Management
+                      Chief of Staff, Growth Revenue Organization
                     </p>
                     <p>Verizon Communications</p>
-                    <p>SVP-Level Executive Support | Value Brands Division</p>
+                    <p>Commercial Growth & Brand Portfolio</p>
                     <p className="text-[#D4AF37] text-sm font-medium pt-2">
                       16+ years combined experience
                     </p>
@@ -188,7 +219,7 @@ export function AboutPage() {
                   </h3>
                   <div className="space-y-3 text-[#A0A0A0]">
                     <p>
-                      Xceptional Design Lab — Design & Digital Infrastructure
+                      Xceptional Design Lab — Brand Strategy & Executive Operations
                     </p>
                     <p>VAULT54NYC — Exclusive Membership Platform</p>
                     <p>Debonair Demographics — Market Intelligence</p>

@@ -42,7 +42,7 @@ export function ComparisonSection() {
           {/* Headline */}
           <h2 className="text-5xl md:text-7xl lg:text-8xl font-bold text-[#FAFAFA] leading-[0.95] tracking-tight mb-20">
             WE'RE NOT YOUR{" "}
-            <span className="text-gold-gradient text-glow">TYPICAL AGENCY.</span>
+            <span className="text-gold-gradient text-glow">TYPICAL PARTNER.</span>
           </h2>
         </AnimatedSection>
 

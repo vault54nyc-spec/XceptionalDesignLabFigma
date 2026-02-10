@@ -1,70 +1,51 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "motion/react";
-import { ImageWithFallback } from "./figma/ImageWithFallback";
 
 interface EntranceAnimationProps {
   onComplete: () => void;
 }
 
 export function EntranceAnimation({ onComplete }: EntranceAnimationProps) {
-  const [stage, setStage] = useState<"zoom" | "fade">("zoom");
+  const [isVideoEnded, setIsVideoEnded] = useState(false);
+  const videoRef = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
-    // Zoom out phase: 0-3 seconds
-    const timer1 = setTimeout(() => setStage("fade"), 3000);
-    // Fade out phase: 3-4 seconds
-    const timer2 = setTimeout(() => onComplete(), 4000);
+    // Auto-play video when component mounts
+    if (videoRef.current) {
+      videoRef.current.play().catch((error) => {
+        console.log("Video autoplay prevented:", error);
+      });
+    }
+  }, []);
 
-    return () => {
-      clearTimeout(timer1);
-      clearTimeout(timer2);
-    };
-  }, [onComplete]);
+  const handleVideoEnd = () => {
+    setIsVideoEnded(true);
+    // Delay slightly before calling onComplete to allow fade animation
+    setTimeout(() => onComplete(), 800);
+  };
 
   return (
     <AnimatePresence>
       <motion.div
-        className="fixed inset-0 z-50 bg-[#0A0A0A] flex items-center justify-center overflow-hidden"
+        className="fixed inset-0 z-50 bg-black flex items-center justify-center overflow-hidden"
+        initial={{ opacity: 1 }}
+        animate={{ opacity: isVideoEnded ? 0 : 1 }}
         exit={{ opacity: 0 }}
         transition={{ duration: 0.8 }}
       >
-        {/* Main image with zoom-out animation */}
-        <motion.div
-          className="absolute inset-0"
-          initial={{ scale: 2.5 }}
-          animate={{
-            scale: stage === "zoom" ? 1 : 1,
-            opacity: stage === "fade" ? 0 : 1,
-          }}
-          transition={{
-            scale: {
-              duration: 3,
-              ease: [0.25, 0.46, 0.45, 0.94],
-            },
-            opacity: {
-              duration: 1,
-              ease: "easeInOut",
-            },
-          }}
+        {/* Video element */}
+        <video
+          ref={videoRef}
+          className="w-full h-full object-cover"
+          onEnded={handleVideoEnd}
+          playsInline
+          muted={false}
         >
-          <ImageWithFallback
-            src="https://pub-28a5a1ab60b44821b2111f74965f9cbf.r2.dev/F2E137CE-917F-444E-8B86-88F3832608C4_1_102_o.jpeg"
-            alt="XDL Opening"
-            className="w-full h-full object-cover"
+          <source
+            src="https://pub-28a5a1ab60b44821b2111f74965f9cbf.r2.dev/Xceptional%20Design%20Lab%20(1).mp4"
+            type="video/mp4"
           />
-          
-          {/* Dark overlay for better contrast */}
-          <div className="absolute inset-0 bg-black/40" />
-          
-          {/* Gold gradient overlay */}
-          <div
-            className="absolute inset-0"
-            style={{
-              background:
-                "radial-gradient(ellipse at center, rgba(212,175,55,0.15) 0%, transparent 70%)",
-            }}
-          />
-        </motion.div>
+        </video>
 
         {/* Skip button */}
         <motion.button
