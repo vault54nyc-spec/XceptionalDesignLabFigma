@@ -131,13 +131,49 @@ export function Footer() {
               <h4 className="text-[#F5E6B8] font-medium mb-4 uppercase tracking-wide text-sm">
                 Get In Touch
               </h4>
-              <ul className="space-y-3 text-[#A0A0A0]">
-                <li>
+              <ul className="space-y-4 text-[#A0A0A0]">
+                {/* Phone */}
+                <li className="flex items-center gap-3">
+                  <img
+                    src="https://pub-28a5a1ab60b44821b2111f74965f9cbf.r2.dev/3.png"
+                    alt="Phone"
+                    className="h-5 w-5 opacity-80"
+                  />
+                  <a
+                    href="tel:+15516559184"
+                    className="hover:text-[#D4AF37] transition-colors"
+                  >
+                    551.655.9184
+                  </a>
+                </li>
+                {/* Email */}
+                <li className="flex items-center gap-3">
+                  <img
+                    src="https://pub-28a5a1ab60b44821b2111f74965f9cbf.r2.dev/MAIL.png"
+                    alt="Email"
+                    className="h-5 w-5 opacity-80"
+                  />
                   <a
                     href="mailto:xceptional.designlab@gmail.com"
                     className="hover:text-[#D4AF37] transition-colors"
                   >
                     xceptional.designlab@gmail.com
+                  </a>
+                </li>
+                {/* Instagram */}
+                <li className="flex items-center gap-3">
+                  <img
+                    src="https://pub-28a5a1ab60b44821b2111f74965f9cbf.r2.dev/IG.png"
+                    alt="Instagram"
+                    className="h-5 w-5 opacity-80"
+                  />
+                  <a
+                    href="https://instagram.com/X.Design.Lab"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-[#D4AF37] transition-colors"
+                  >
+                    @X.Design.Lab
                   </a>
                 </li>
                 <li>New York Metropolitan Area</li>
@@ -150,28 +186,6 @@ export function Footer() {
                   >
                     xdesignlabs.co
                   </a>
-                </li>
-                <li className="pt-4">
-                  <div className="flex gap-4">
-                    <a
-                      href="#"
-                      className="hover:text-[#D4AF37] transition-colors"
-                    >
-                      LinkedIn
-                    </a>
-                    <a
-                      href="#"
-                      className="hover:text-[#D4AF37] transition-colors"
-                    >
-                      Instagram
-                    </a>
-                    <a
-                      href="#"
-                      className="hover:text-[#D4AF37] transition-colors"
-                    >
-                      Behance
-                    </a>
-                  </div>
                 </li>
               </ul>
 

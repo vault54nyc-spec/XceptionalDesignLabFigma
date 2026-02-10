@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { PageLayout } from "../components/PageLayout";
 import { useServicesCart } from "../context/ServicesCartContext";
 import { AnimatedSection } from "../components/AnimatedSection";
@@ -128,6 +129,13 @@ export function ContactPage() {
 
   return (
     <PageLayout>
+      <Helmet>
+        <title>Contact Xceptional Design Lab</title>
+        <meta
+          name="description"
+          content="Get in touch with Xceptional Design Lab for strategic design and digital infrastructure services. Contact us today to discuss your project needs."
+        />
+      </Helmet>
       <div className="min-h-screen pt-32">
         <section className="relative py-24 md:py-32 px-8 md:px-12 lg:px-16">
           <div className="relative z-10 max-w-[1400px] mx-auto">

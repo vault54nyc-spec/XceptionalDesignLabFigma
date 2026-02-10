@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { PageLayout } from "../components/PageLayout";
 import { ServicesCartButton } from "../components/ServicesCartButton";
 import { Link } from "react-router";
@@ -91,6 +92,21 @@ export function ServicesPage() {
 
   return (
     <PageLayout>
+      <Helmet>
+        <title>Services | Xceptional Design Lab, LLC</title>
+        <meta
+          name="description"
+          content="61 strategic design and digital services across 6 core disciplines — Brand & Identity, Digital Platforms, Operational Design, Technical Services, Communications, and Strategic Consulting."
+        />
+        <meta property="og:title" content="Services | Xceptional Design Lab, LLC" />
+        <meta property="og:description" content="61 services. Zero compromises. Full-service strategic design and digital infrastructure." />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://pub-28a5a1ab60b44821b2111f74965f9cbf.r2.dev/XDL%20White%20(1).svg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Services | Xceptional Design Lab, LLC" />
+        <meta name="twitter:description" content="61 services. Zero compromises." />
+        <meta name="twitter:image" content="https://pub-28a5a1ab60b44821b2111f74965f9cbf.r2.dev/XDL%20White%20(1).svg" />
+      </Helmet>
       <div className="min-h-screen pt-32">
         <section className="relative py-32 px-6 md:px-12 lg:px-16">
           <div className="relative z-10 max-w-[1400px] mx-auto">
@@ -114,7 +130,7 @@ export function ServicesPage() {
                 <p className="text-xl md:text-2xl text-[#A0A0A0] leading-relaxed mb-6">
                   Every service category below represents a core
                   capability — backed by 16+ years of enterprise experience and
-                  three professional certifications. Click any category to
+                   three professional certifications. Click any category to
                   explore the full range of services we offer within that
                   discipline.
                 </p>

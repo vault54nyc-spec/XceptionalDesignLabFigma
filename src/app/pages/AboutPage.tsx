@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { PageLayout } from "../components/PageLayout";
 import { Link } from "react-router";
 import {
@@ -9,6 +10,18 @@ import {
 export function AboutPage() {
   return (
     <PageLayout>
+      <Helmet>
+        <title>About | Xceptional Design Lab, LLC</title>
+        <meta name="description" content="Meet Christopher DeMarkus — Chief of Staff, Portfolio Management, Senior Level Auditor with 16+ years at the intersection of enterprise operations, creative direction, and digital technology." />
+        <meta property="og:title" content="About | Xceptional Design Lab, LLC" />
+        <meta property="og:description" content="Corporate-trained. Creatively wired. Relentlessly thorough." />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://pub-28a5a1ab60b44821b2111f74965f9cbf.r2.dev/XDL%20White%20(1).svg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="About | Xceptional Design Lab, LLC" />
+        <meta name="twitter:description" content="Corporate-trained. Creatively wired. Relentlessly thorough." />
+        <meta name="twitter:image" content="https://pub-28a5a1ab60b44821b2111f74965f9cbf.r2.dev/XDL%20White%20(1).svg" />
+      </Helmet>
       <div className="min-h-screen pt-32">
         {/* Hero Section */}
         <section className="relative py-24 md:py-32 px-8 md:px-12 lg:px-16">

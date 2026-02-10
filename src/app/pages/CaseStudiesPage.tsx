@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { PageLayout } from "../components/PageLayout";
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
 import { Link } from "react-router";
@@ -72,6 +73,21 @@ export function CaseStudiesPage() {
 
   return (
     <PageLayout>
+      <Helmet>
+        <title>Case Studies | Xceptional Design Lab, LLC</title>
+        <meta
+          name="description"
+          content="Selected work across brand identity, digital platforms, operational design, and strategic consulting — featuring 16+ years of enterprise experience."
+        />
+        <meta property="og:title" content="Case Studies | Xceptional Design Lab, LLC" />
+        <meta property="og:description" content="Results speak louder than promises. Selected work from 16+ years of enterprise experience." />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://pub-28a5a1ab60b44821b2111f74965f9cbf.r2.dev/XDL%20White%20(1).svg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Case Studies | Xceptional Design Lab, LLC" />
+        <meta name="twitter:description" content="Results speak louder than promises." />
+        <meta name="twitter:image" content="https://pub-28a5a1ab60b44821b2111f74965f9cbf.r2.dev/XDL%20White%20(1).svg" />
+      </Helmet>
       <div className="min-h-screen pt-32">
         <section className="relative py-32 px-8 md:px-12 lg:px-16">
           <div className="relative z-10 max-w-[1400px] mx-auto">

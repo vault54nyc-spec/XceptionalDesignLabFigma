@@ -77,8 +77,51 @@ export function Navigation() {
             ))}
           </div>
 
-          {/* Right side: Cart badge + CTA */}
-          <div className="flex items-center gap-3">
+          {/* Right side: Contact icons + Cart badge + CTA */}
+          <div className="flex items-center gap-3 md:gap-4">
+            {/* Contact Icons */}
+            <div className="flex items-center gap-2 md:gap-3">
+              {/* Phone */}
+              <a
+                href="tel:+15516559184"
+                className="hover:opacity-70 transition-opacity"
+                title="Call us"
+              >
+                <img
+                  src="https://pub-28a5a1ab60b44821b2111f74965f9cbf.r2.dev/3.png"
+                  alt="Phone"
+                  className="h-4 md:h-5 w-auto opacity-80"
+                />
+              </a>
+              {/* Email */}
+              <a
+                href="mailto:xceptional.designlab@gmail.com"
+                className="hover:opacity-70 transition-opacity"
+                title="Email us"
+              >
+                <img
+                  src="https://pub-28a5a1ab60b44821b2111f74965f9cbf.r2.dev/MAIL.png"
+                  alt="Email"
+                  className="h-4 md:h-5 w-auto opacity-80"
+                />
+              </a>
+              {/* Instagram */}
+              <a
+                href="https://instagram.com/X.Design.Lab"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:opacity-70 transition-opacity"
+                title="Follow on Instagram"
+              >
+                <img
+                  src="https://pub-28a5a1ab60b44821b2111f74965f9cbf.r2.dev/IG.png"
+                  alt="Instagram"
+                  className="h-4 md:h-5 w-auto opacity-80"
+                />
+              </a>
+            </div>
+
+            {/* Cart Badge */}
             {selectedServices.length > 0 && (
               <Link
                 to="/contact"
@@ -93,6 +136,8 @@ export function Navigation() {
                 </span>
               </Link>
             )}
+            
+            {/* CTA Button */}
             <Link
               to="/contact"
               className="hidden sm:inline-block floating-card rounded-full px-4 md:px-6 py-2 md:py-3 bg-[#D4AF37] text-black text-xs md:text-sm tracking-wide hover:bg-[#B8962E] transition-all duration-300"
