@@ -19,9 +19,9 @@ export function Footer() {
                 }}
               />
               <p className="text-[#A0A0A0] leading-relaxed mb-4">
-                Strategic design and digital infrastructure for brands that
-                build empires. 16+ years of enterprise experience distilled
-                into every engagement.
+                Full-spectrum business operations, strategy, and brand for
+                companies that demand more. 16+ years of Fortune 10 experience
+                distilled into every engagement.
               </p>
               <p className="text-sm text-[#D4AF37] tracking-wide">
                 Est. 2025 | New York Metropolitan Area
@@ -39,7 +39,7 @@ export function Footer() {
                     to="/services/brand-identity"
                     className="text-[#A0A0A0] hover:text-[#D4AF37] transition-colors"
                   >
-                    Brand & Identity
+                    Brand & Communications
                   </Link>
                 </li>
                 <li>
@@ -55,7 +55,7 @@ export function Footer() {
                     to="/services/operational-design"
                     className="text-[#A0A0A0] hover:text-[#D4AF37] transition-colors"
                   >
-                    Operational Design
+                    Operations & Programs
                   </Link>
                 </li>
                 <li>

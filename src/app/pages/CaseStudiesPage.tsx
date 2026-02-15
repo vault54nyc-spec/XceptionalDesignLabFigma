@@ -109,10 +109,10 @@ export function CaseStudiesPage() {
             <AnimatedSection delay={0.2}>
               <div className="floating-card rounded-3xl p-10 md:p-16 max-w-5xl mb-20">
                 <p className="text-xl md:text-2xl text-[#A0A0A0] leading-relaxed mb-4">
-                  A curated selection of engagements across brand identity,
-                  digital platforms, operational design, and strategic
-                  consulting. Due to NDA agreements, some client names have been
-                  anonymized.
+                  A curated selection of engagements across strategic
+                  operations, program leadership, technology solutions, and
+                  brand systems. Due to NDA agreements, some client names have
+                  been anonymized.
                 </p>
                 <p className="text-lg text-[#A0A0A0] leading-relaxed">
                   16+ years of enterprise experience. Every project shown here
@@ -262,8 +262,8 @@ export function CaseStudiesPage() {
                     <span className="text-gold-gradient">EXCEPTIONAL.</span>
                   </h2>
                   <p className="text-lg md:text-xl text-[#A0A0A0] leading-relaxed mb-8">
-                    Every project starts with a conversation. Tell us what
-                    you're building.
+                    Every transformation starts with a conversation. Tell us
+                    what needs to change.
                   </p>
                   <Link
                     to="/contact"

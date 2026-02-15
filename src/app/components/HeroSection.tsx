@@ -18,7 +18,7 @@ export function HeroSection() {
               className="inline-block"
             >
               <p className="text-[#D4AF37] text-xs md:text-sm tracking-[0.3em] uppercase font-medium">
-                STRATEGIC DESIGN × CORPORATE INTELLIGENCE
+                OPERATIONS × STRATEGY × DESIGN
               </p>
               <div className="w-28 h-[2px] bg-gradient-to-r from-[#D4AF37] to-transparent mt-3" />
             </motion.div>
@@ -34,8 +34,8 @@ export function HeroSection() {
               }}
               className="text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-bold text-[#FAFAFA] leading-[0.9] tracking-[-0.02em]"
             >
-              WE BUILD THE BRANDS THAT BUILD{" "}
-              <span className="text-gold-gradient text-glow">EMPIRES.</span>
+              WE BUILD THE BUSINESSES THAT{" "}
+              <span className="text-gold-gradient text-glow">WIN</span>
             </motion.h1>
 
             {/* Sub-headline */}
@@ -45,10 +45,12 @@ export function HeroSection() {
               transition={{ duration: 0.7, delay: 0.7 }}
               className="text-xl md:text-2xl text-[#A0A0A0] leading-relaxed max-w-2xl"
             >
-              Xceptional Design Lab is a strategic design and digital
-              infrastructure practice for organizations that refuse to look
-              ordinary. 16 years of enterprise experience. 61 services. Zero
-              compromises.
+              Xceptional Design Lab is a full-spectrum business operations and
+              strategy practice for companies that demand more than
+              surface-level solutions. 16+ years of Fortune 10 enterprise
+              experience across operations, finance, technology, and brand —
+              distilled into 61 services that transform how your business runs,
+              looks, and grows.
             </motion.p>
 
             {/* Trust indicators */}
@@ -112,7 +114,7 @@ export function HeroSection() {
               <div className="relative">
                 <ImageWithFallback
                   src="https://pub-28a5a1ab60b44821b2111f74965f9cbf.r2.dev/Black%20Minimalist%20Favorite%20Part%20Podcast%20Desktop%20Wallpaper%20(4).png"
-                  alt="Christopher DeMarkus, Founder & Creative Director"
+                  alt="Christopher DeMarkus, Founder & Principal"
                   className="w-full h-auto object-contain"
                 />
               </div>
@@ -130,7 +132,7 @@ export function HeroSection() {
                   CHRISTOPHER DEMARKUS
                 </h3>
                 <p className="text-[#D4AF37] text-sm tracking-wide font-medium">
-                  Founder & Creative Director
+                  Founder & Principal
                 </p>
 
                 <div className="pt-3 border-t border-[#D4AF37]/30 space-y-2">
@@ -143,7 +145,7 @@ export function HeroSection() {
                     Verizon | Portfolio & Program Management
                   </p>
                   <p className="text-[#D4AF37] text-sm font-medium">
-                    16+ Years | Design × Operations × Technology
+                    16+ Years | Strategy × Operations × Finance × Technology × Brand
                   </p>
                 </div>
               </div>

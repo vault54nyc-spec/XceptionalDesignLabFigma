@@ -5,26 +5,30 @@ export function CapabilitiesSection() {
   const capabilities = [
     {
       number: "01",
-      title: "Strategy & Consulting",
-      description: "We don't start with design. We start with the business problem.",
+      title: "Strategic Operations & Advisory",
+      description:
+        "We start with the business problem — then we build the operational solution around it.",
       route: "/services/strategic-consulting",
     },
     {
       number: "02",
-      title: "Brand Identity & Visual Systems",
-      description: "Logos are the beginning. Brand systems are the destination.",
+      title: "Brand, Communications & Creative",
+      description:
+        "Every brand asset we create is built on audience research, competitive analysis, and long-term strategy — then made to look exceptional.",
       route: "/services/brand-identity",
     },
     {
       number: "03",
       title: "Digital Presence & Web Development",
-      description: "Sites that perform, convert, and scale — not just look good.",
+      description:
+        "Technology built to perform, convert, and scale — engineered with the same rigor we bring to enterprise operations.",
       route: "/services/digital-platforms",
     },
     {
       number: "04",
-      title: "Environmental & Print Design",
-      description: "Physical spaces deserve the same intelligence as digital ones.",
+      title: "Financial Operations & Compliance",
+      description:
+        "From cash flow management to compliance frameworks — financial clarity that fuels confident decisions.",
       route: "/services/communications",
     },
     {
@@ -35,8 +39,9 @@ export function CapabilitiesSection() {
     },
     {
       number: "06",
-      title: "Operations & Digital Infrastructure",
-      description: "The backend no one sees — until it breaks. We make sure it doesn't.",
+      title: "Program & Project Leadership",
+      description:
+        "End-to-end program governance, process optimization, and operational infrastructure — from startup scale to enterprise complexity.",
       route: "/services/operational-design",
     },
     {
