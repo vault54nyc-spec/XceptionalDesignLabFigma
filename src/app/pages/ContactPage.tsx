@@ -4,6 +4,7 @@ import { AnimatedSection } from "../components/AnimatedSection";
 import { useState } from "react";
 import { toast } from "sonner";
 import { projectId, publicAnonKey } from "/utils/supabase/info";
+import { usePageMeta } from "../hooks/usePageMeta";
 
 // ============================================
 // RESEND EMAIL — SECURE SERVER-SIDE INTEGRATION
@@ -44,6 +45,11 @@ async function sendConsultationRequest(payload: {
 }
 
 export function ContactPage() {
+  usePageMeta({
+    description:
+      "Get in touch with Xceptional Design Lab for strategic operations, business advisory, and brand services. Contact us today to discuss how we can improve your business.",
+  });
+
   const { selectedServices, removeService, clearCart } = useServicesCart();
   const [formData, setFormData] = useState({
     name: "",
@@ -146,9 +152,9 @@ export function ContactPage() {
               </h1>
 
               <p className="text-xl md:text-2xl text-[#A0A0A0] leading-relaxed max-w-4xl mb-16">
-                Whether you need a full brand system, a website that actually
-                converts, or operational infrastructure that doesn't break —
-                it starts with a conversation.
+                Whether you need operational infrastructure, a growth strategy,
+                a brand that commands attention, or technology that actually
+                works — it starts with a conversation.
               </p>
             </AnimatedSection>
 
@@ -198,7 +204,7 @@ export function ContactPage() {
                         XCEPTIONAL DESIGN LAB
                       </h2>
                       <p className="text-[#A0A0A0]">
-                        Strategic Design & Digital Infrastructure
+                        Strategic Operations & Business Design
                       </p>
                     </div>
 
@@ -425,13 +431,22 @@ export function ContactPage() {
                             }}
                           >
                             <option value="">Select an option</option>
-                            <option value="brand">Brand Identity System</option>
-                            <option value="website">Website / Web Application</option>
-                            <option value="platform">Full Platform Build</option>
-                            <option value="operations">Operational Infrastructure</option>
-                            <option value="consulting">Strategic Consulting</option>
+                            <option value="strategic-operations-advisory">
+                              Strategic Operations & Advisory
+                            </option>
+                            <option value="brand-communications-creative">
+                              Brand, Communications & Creative
+                            </option>
+                            <option value="technology-digital-platforms">
+                              Technology & Digital Platforms
+                            </option>
+                            <option value="financial-operations-compliance">
+                              Financial Operations & Compliance
+                            </option>
+                            <option value="program-project-leadership">
+                              Program & Project Leadership
+                            </option>
                             <option value="ai">AI & Automation</option>
-                            <option value="not-sure">Not Sure Yet — Let's Talk</option>
                           </select>
                         </div>
                       </div>

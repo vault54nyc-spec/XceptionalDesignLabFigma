@@ -130,7 +130,7 @@ app.post("/make-server-7d38c017/send-email", async (c) => {
           <p style="color:#A0A0A0;font-size:14px;margin:0;">PMP&reg; &middot; CCOS &middot; CFE &middot; Fortune 10 Background</p>
         </div>
         <div style="margin-top:30px;padding-top:20px;border-top:1px solid rgba(212,175,55,0.2);color:#A0A0A0;font-size:12px;">
-          <p style="margin:0;">Xceptional Design Lab &middot; Strategic Design & Digital Infrastructure</p>
+          <p style="margin:0;">Xceptional Design Lab &middot; Strategic Operations & Business Design</p>
           <p style="margin:4px 0 0;">xdesignlabs.co &middot; xceptional.designlab@gmail.com</p>
         </div>
       </div>

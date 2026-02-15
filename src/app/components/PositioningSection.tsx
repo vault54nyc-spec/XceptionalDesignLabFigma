@@ -27,9 +27,9 @@ export function PositioningSection() {
               </h3>
               <StaggerContainer className="space-y-4" staggerDelay={0.08}>
                 {[
-                  'A design agency that asks, "What\'s your brand color?"',
+                  "A typical firm gives you a deliverable and moves on.",
                   'A template shop peddling off-the-shelf "solutions."',
-                  "A vendor that disappears after the logo's delivered.",
+                  "A consultant gives you a strategy with no one to execute it. We give you the strategy behind it, the operational system that sustains it, the financial clarity to measure it — and then we make it all look world-class.",
                   "A team that charges by the hour and drags it out.",
                   "A freelancer juggling 20 clients with no process.",
                 ].map((text, idx) => (
@@ -56,9 +56,9 @@ export function PositioningSection() {
               >
                 {[
                   "We're the team you call when the brand identity needs to match the business strategy.",
-                  "We're the team that builds the website AND the CRM AND the email system AND the workflows that keep it all running.",
+                  "We're the partner that builds your operational framework AND your technology stack AND your brand system AND the workflows that keep it all running — because we see the whole picture, not just one piece of it.",
                   "We're the team that documents everything, trains your people, and makes you self-sufficient.",
-                  "We're backed by 16+ years of Fortune 10 enterprise experience, PMP® certification, and three professional credentials.",
+                  "Backed by 16+ years inside Fortune 10 operations — managing programs across four continents, auditing enterprise risk, leading cross-functional strategy, and turning complexity into competitive advantage.",
                 ].map((text, idx) => (
                   <StaggerItem key={idx}>
                     <p className="flex items-start gap-3">
@@ -69,7 +69,7 @@ export function PositioningSection() {
                 ))}
                 <StaggerItem>
                   <p className="text-[#F5E6B8] font-medium pt-4">
-                    We don't design decoration. We design infrastructure.
+                    We don't deliver pieces. We build the whole machine — and we make it Xceptional.
                   </p>
                 </StaggerItem>
               </StaggerContainer>

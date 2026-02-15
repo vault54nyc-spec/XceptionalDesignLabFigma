@@ -1,7 +1,7 @@
 
-  # Design Futuristic UI Elements
+  # Xceptional Design Lab | Strategic Operations & Business Design
 
-  This is a code bundle for Design Futuristic UI Elements. The original project is available at https://www.figma.com/design/AMnyWfygGeKDeFK1riEBgZ/Design-Futuristic-UI-Elements.
+  This is a code bundle for Xceptional Design Lab. The original project is available at https://www.figma.com/design/AMnyWfygGeKDeFK1riEBgZ/Design-Futuristic-UI-Elements.
 
   ## Running the code
 
