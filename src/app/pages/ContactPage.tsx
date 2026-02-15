@@ -5,7 +5,6 @@ import { AnimatedSection } from "../components/AnimatedSection";
 import { useState } from "react";
 import { toast } from "sonner";
 import { projectId, publicAnonKey } from "/utils/supabase/info";
-import { usePageMeta } from "../hooks/usePageMeta";
 
 // ============================================
 // RESEND EMAIL — SECURE SERVER-SIDE INTEGRATION
@@ -46,11 +45,6 @@ async function sendConsultationRequest(payload: {
 }
 
 export function ContactPage() {
-  usePageMeta({
-    description:
-      "Get in touch with Xceptional Design Lab for strategic operations, business advisory, and brand services. Contact us today to discuss how we can improve your business.",
-  });
-
   const { selectedServices, removeService, clearCart } = useServicesCart();
   const [formData, setFormData] = useState({
     name: "",
@@ -139,7 +133,7 @@ export function ContactPage() {
         <title>Contact Xceptional Design Lab</title>
         <meta
           name="description"
-          content="Get in touch with Xceptional Design Lab for strategic design and digital infrastructure services. Contact us today to discuss your project needs."
+          content="Get in touch with Xceptional Design Lab for strategic operations, business advisory, and brand services. Contact us today to discuss how we can improve your business."
         />
       </Helmet>
       <div className="min-h-screen pt-32">

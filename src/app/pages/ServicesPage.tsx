@@ -96,15 +96,15 @@ export function ServicesPage() {
         <title>Services | Xceptional Design Lab, LLC</title>
         <meta
           name="description"
-          content="61 strategic design and digital services across 6 core disciplines — Brand & Identity, Digital Platforms, Operational Design, Technical Services, Communications, and Strategic Consulting."
+          content="61 services across strategic operations, advisory, technology, and brand — designed to transform how your business runs, looks, and grows."
         />
         <meta property="og:title" content="Services | Xceptional Design Lab, LLC" />
-        <meta property="og:description" content="61 services. Zero compromises. Full-service strategic design and digital infrastructure." />
+        <meta property="og:description" content="61 services. Zero compromises. Strategic operations & business design for companies that demand more." />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://pub-28a5a1ab60b44821b2111f74965f9cbf.r2.dev/XDL%20White%20(1).svg" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Services | Xceptional Design Lab, LLC" />
-        <meta name="twitter:description" content="61 services. Zero compromises." />
+        <meta name="twitter:description" content="61 services. Zero compromises. Strategic operations & business design." />
         <meta name="twitter:image" content="https://pub-28a5a1ab60b44821b2111f74965f9cbf.r2.dev/XDL%20White%20(1).svg" />
       </Helmet>
       <div className="min-h-screen pt-32">

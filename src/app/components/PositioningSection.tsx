@@ -14,7 +14,7 @@ export function PositioningSection() {
           </p>
           <h2 className="text-5xl md:text-7xl lg:text-8xl font-bold text-[#FAFAFA] leading-[0.95] tracking-tight">
             NOT YOUR TYPICAL{" "}
-            <span className="text-gold-gradient text-glow">DESIGN PARTNER.</span>
+            <span className="text-gold-gradient text-glow">OPERATIONAL PARTNER.</span>
           </h2>
         </AnimatedSection>
 

@@ -77,15 +77,15 @@ export function CaseStudiesPage() {
         <title>Case Studies | Xceptional Design Lab, LLC</title>
         <meta
           name="description"
-          content="Selected work across brand identity, digital platforms, operational design, and strategic consulting — featuring 16+ years of enterprise experience."
+          content="Selected work across strategic operations, program leadership, technology, and brand — featuring 16+ years of Fortune 10 enterprise experience."
         />
         <meta property="og:title" content="Case Studies | Xceptional Design Lab, LLC" />
-        <meta property="og:description" content="Results speak louder than promises. Selected work from 16+ years of enterprise experience." />
+        <meta property="og:description" content="Results speak louder than promises. Selected work from 16+ years across operations, strategy, and brand." />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://pub-28a5a1ab60b44821b2111f74965f9cbf.r2.dev/XDL%20White%20(1).svg" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Case Studies | Xceptional Design Lab, LLC" />
-        <meta name="twitter:description" content="Results speak louder than promises." />
+        <meta name="twitter:description" content="Results speak louder than promises. 16+ years across operations, strategy, and brand." />
         <meta name="twitter:image" content="https://pub-28a5a1ab60b44821b2111f74965f9cbf.r2.dev/XDL%20White%20(1).svg" />
       </Helmet>
       <div className="min-h-screen pt-32">
