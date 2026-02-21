@@ -96,15 +96,15 @@ export function ServicesPage() {
         <title>Services | Xceptional Design Lab, LLC</title>
         <meta
           name="description"
-          content="61 services across strategic operations, advisory, technology, and brand — designed to transform how your business runs, looks, and grows."
+          content="Enterprise services across strategic operations, advisory, technology, and brand — designed to transform how your business runs, looks, and grows."
         />
         <meta property="og:title" content="Services | Xceptional Design Lab, LLC" />
-        <meta property="og:description" content="61 services. Zero compromises. Strategic operations & business design for companies that demand more." />
+        <meta property="og:description" content="Enterprise services. Zero compromises. Strategic operations & business design for companies that demand more." />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://pub-28a5a1ab60b44821b2111f74965f9cbf.r2.dev/XDL%20White%20(1).svg" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Services | Xceptional Design Lab, LLC" />
-        <meta name="twitter:description" content="61 services. Zero compromises. Strategic operations & business design." />
+        <meta name="twitter:description" content="Enterprise services. Zero compromises. Strategic operations & business design." />
         <meta name="twitter:image" content="https://pub-28a5a1ab60b44821b2111f74965f9cbf.r2.dev/XDL%20White%20(1).svg" />
       </Helmet>
       <div className="min-h-screen pt-32">
@@ -118,7 +118,7 @@ export function ServicesPage() {
               </div>
 
               <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-[#FAFAFA] leading-[0.95] tracking-tight mb-12">
-                61 SERVICES.{" "}
+                ENTERPRISE SERVICES.{" "}
                 <span className="text-gold-gradient text-glow">
                   ZERO COMPROMISES.
                 </span>

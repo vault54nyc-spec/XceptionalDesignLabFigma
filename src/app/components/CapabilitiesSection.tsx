@@ -71,7 +71,7 @@ export function CapabilitiesSection() {
             </span>
           </h2>
           <p className="text-xl text-[#A0A0A0] leading-relaxed max-w-4xl mb-20">
-            61 services across 7 disciplines — each backed by 16+ years of
+            Enterprise services across 7 disciplines — each backed by 16+ years of
             enterprise experience, three professional certifications, and a
             Fortune 10 pedigree. Click any capability to explore the full
             service catalog.

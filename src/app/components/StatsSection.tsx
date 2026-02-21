@@ -86,8 +86,8 @@ export function StatsSection() {
                 delay={0}
               />
               <AnimatedStat
-                value={61}
-                label="SERVICES OFFERED"
+                value={7}
+                label="CAPABILITY VERTICALS"
                 delay={0.1}
               />
               <AnimatedStat

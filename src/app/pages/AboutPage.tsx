@@ -348,7 +348,7 @@ export function AboutPage() {
                     to="/services"
                     className="floating-card rounded-full px-12 py-5 text-[#D4AF37] text-lg font-medium tracking-wide border-2 border-[#D4AF37] hover:bg-[#D4AF37] hover:text-black transition-all duration-300"
                   >
-                    VIEW ALL 61 SERVICES
+                    VIEW SERVICE CATALOG
                   </Link>
                 </div>
               </div>

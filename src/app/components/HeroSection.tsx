@@ -49,7 +49,7 @@ export function HeroSection() {
               strategy practice for companies that demand more than
               surface-level solutions. 16+ years of Fortune 10 enterprise
               experience across operations, finance, technology, and brand —
-              distilled into 61 services that transform how your business runs,
+              distilled into an enterprise-grade service catalog that transforms how your business runs,
               looks, and grows.
             </motion.p>
 

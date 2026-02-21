@@ -268,9 +268,9 @@ export function ContactPage() {
                         </div>
                         <div>
                           <div className="text-2xl font-bold text-gold-gradient">
-                            61
+                            7
                           </div>
-                          <p className="text-[#A0A0A0] text-xs mt-1">SERVICES</p>
+                          <p className="text-[#A0A0A0] text-xs mt-1">VERTICALS</p>
                         </div>
                         <div>
                           <div className="text-2xl font-bold text-gold-gradient">
