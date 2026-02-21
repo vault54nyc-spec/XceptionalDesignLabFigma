@@ -77,6 +77,22 @@ export function HeroSection() {
               className="flex flex-wrap gap-4 pt-4"
             >
               <Link
+                to="/lightening-fast-services"
+                className="floating-card rounded-full px-8 py-4 bg-[#D4AF37] text-[#FAFAFA] hover:bg-[#B8962E] transition-all duration-300"
+              >
+                <span className="tracking-wide font-medium">
+                  LIGHTENING FAST SERVICES
+                </span>
+              </Link>
+              <Link
+                to="/contact"
+                className="floating-card rounded-full px-8 py-4 text-[#D4AF37] border border-[#D4AF37]/70 hover:bg-[#D4AF37]/10 transition-all duration-300"
+              >
+                <span className="tracking-wide font-medium">
+                  BOOK A STRATEGY CALL
+                </span>
+              </Link>
+              <Link
                 to="/case-studies"
                 className="floating-card rounded-full px-8 py-4 text-[#FAFAFA] group"
               >
@@ -85,22 +101,6 @@ export function HeroSection() {
                 </span>
                 <span className="inline-block ml-2 group-hover:translate-x-2 transition-transform text-[#D4AF37]">
                   →
-                </span>
-              </Link>
-              <Link
-                to="/contact"
-                className="floating-card rounded-full px-8 py-4 text-[#D4AF37] border-[#D4AF37]"
-              >
-                <span className="tracking-wide font-medium">
-                  BOOK A STRATEGY CALL
-                </span>
-              </Link>
-              <Link
-                to="/lightening-fast-services"
-                className="floating-card rounded-full px-8 py-4 text-[#F5E6B8] border border-[#D4AF37]/60 hover:bg-[#D4AF37]/10 transition-all duration-300"
-              >
-                <span className="tracking-wide font-medium">
-                  LIGHTENING FAST SERVICES
                 </span>
               </Link>
             </motion.div>
