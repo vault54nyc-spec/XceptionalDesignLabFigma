@@ -234,7 +234,7 @@ export function AboutPage() {
                     <p>
                       Xceptional Design Lab — Brand Strategy & Executive Operations
                     </p>
-                    <p>VAULT54NYC — Exclusive Membership Platform</p>
+                    <p>NPHC of Hudson County — Digital Command Center Portal</p>
                     <p>Debonair Demographics — Market Intelligence</p>
                     <p>Urbane Elite Holdings — Portfolio Entity</p>
                   </div>

@@ -10,14 +10,14 @@ import {
 
 const projects = [
   {
-    title: "VAULT54NYC",
-    category: "BRAND IDENTITY · DIGITAL PLATFORM · MEMBERSHIP",
+    title: "NPHC OF HUDSON COUNTY PORTAL",
+    category: "DIGITAL PLATFORM · OPERATIONS COMMAND CENTER · COMMUNITY ENGAGEMENT",
     description:
-      "Built and launched an exclusive membership platform from zero — complete brand identity system, custom web application, member management infrastructure, and automated onboarding workflows.",
+      "Built and launched the NPHC of Hudson County digital command center portal from scratch — website architecture, brand system, communication workflows, and operational infrastructure for chapter-wide coordination.",
     results: [
-      "Full brand system delivered in 4 weeks",
-      "Custom membership platform built & deployed",
-      "Automated member onboarding & billing",
+      "Full portal built and deployed from scratch",
+      "Integrated communication and resource workflows",
+      "Operational hub for chapter leadership and members",
     ],
     image:
       "https://images.unsplash.com/photo-1759563874711-b026ac0b6c6e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBicmFuZCUyMGlkZW50aXR5JTIwZGVzaWduJTIwZGFya3xlbnwxfHx8fDE3NzA1NDQxMDJ8MA&ixlib=rb-4.1.0&q=80&w=1080",

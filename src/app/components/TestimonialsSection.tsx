@@ -7,10 +7,10 @@ import {
 const testimonials = [
   {
     quote:
-      "XDL didn't just design our brand — they built the entire operational engine behind it. CRM, email system, website, automations, documentation. Everything. We went from zero to fully operational in 6 weeks.",
-    name: "Executive Director",
-    org: "VAULT54NYC",
-    highlight: "Zero to launch in 6 weeks",
+      "XDL didn't just design our portal — they built the full operational backbone behind it. Website, communications workflow, resource structure, documentation, and implementation. We went from concept to a functioning chapter command center in 6 weeks.",
+    name: "Chapter Leadership",
+    org: "NPHC of Hudson County",
+    highlight: "Portal launched in 6 weeks",
   },
   {
     quote:

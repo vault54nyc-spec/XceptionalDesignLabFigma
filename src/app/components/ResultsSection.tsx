@@ -15,8 +15,8 @@ export function ResultsSection() {
     },
     {
       quote:
-        "Built and launched a membership platform from zero — brand identity through production deployment in under 6 weeks.",
-      attribution: "VAULT54NYC",
+        "Built and launched the NPHC of Hudson County command center portal from scratch — from brand direction through production deployment in under 6 weeks.",
+      attribution: "NPHC of Hudson County",
       metric: "6",
       metricLabel: "WEEK DELIVERY",
     },
