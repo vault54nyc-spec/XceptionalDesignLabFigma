@@ -18,7 +18,7 @@ export function Footer() {
                     "drop-shadow(0 0 15px rgba(212, 175, 55, 0.5)) drop-shadow(0 0 30px rgba(212, 175, 55, 0.3))",
                 }}
               />
-              <p className="text-[#A0A0A0] leading-relaxed mb-4">
+              <p className="text-[#D0D0D0] leading-relaxed mb-4">
                 Full-spectrum business operations, strategy, and brand for
                 companies that demand more. 16+ years of Fortune 10 experience
                 distilled into every engagement.
@@ -37,7 +37,7 @@ export function Footer() {
                 <li>
                   <Link
                     to="/services/brand-identity"
-                    className="text-[#A0A0A0] hover:text-[#D4AF37] transition-colors"
+                    className="text-[#D0D0D0] hover:text-[#D4AF37] transition-colors"
                   >
                     Brand & Communications
                   </Link>
@@ -45,7 +45,7 @@ export function Footer() {
                 <li>
                   <Link
                     to="/services/digital-platforms"
-                    className="text-[#A0A0A0] hover:text-[#D4AF37] transition-colors"
+                    className="text-[#D0D0D0] hover:text-[#D4AF37] transition-colors"
                   >
                     Digital Platforms
                   </Link>
@@ -53,7 +53,7 @@ export function Footer() {
                 <li>
                   <Link
                     to="/services/operational-design"
-                    className="text-[#A0A0A0] hover:text-[#D4AF37] transition-colors"
+                    className="text-[#D0D0D0] hover:text-[#D4AF37] transition-colors"
                   >
                     Operations & Programs
                   </Link>
@@ -61,7 +61,7 @@ export function Footer() {
                 <li>
                   <Link
                     to="/services/strategic-consulting"
-                    className="text-[#A0A0A0] hover:text-[#D4AF37] transition-colors"
+                    className="text-[#D0D0D0] hover:text-[#D4AF37] transition-colors"
                   >
                     Strategic Consulting
                   </Link>
@@ -69,7 +69,7 @@ export function Footer() {
                 <li>
                   <Link
                     to="/services/communications"
-                    className="text-[#A0A0A0] hover:text-[#D4AF37] transition-colors"
+                    className="text-[#D0D0D0] hover:text-[#D4AF37] transition-colors"
                   >
                     Communications
                   </Link>
@@ -77,7 +77,7 @@ export function Footer() {
                 <li>
                   <Link
                     to="/services/technical-services"
-                    className="text-[#A0A0A0] hover:text-[#D4AF37] transition-colors"
+                    className="text-[#D0D0D0] hover:text-[#D4AF37] transition-colors"
                   >
                     Technical Services
                   </Link>
@@ -94,7 +94,7 @@ export function Footer() {
                 <li>
                   <Link
                     to="/about"
-                    className="text-[#A0A0A0] hover:text-[#D4AF37] transition-colors"
+                    className="text-[#D0D0D0] hover:text-[#D4AF37] transition-colors"
                   >
                     About & Credentials
                   </Link>
@@ -102,7 +102,7 @@ export function Footer() {
                 <li>
                   <Link
                     to="/case-studies"
-                    className="text-[#A0A0A0] hover:text-[#D4AF37] transition-colors"
+                    className="text-[#D0D0D0] hover:text-[#D4AF37] transition-colors"
                   >
                     Projects & Case Studies
                   </Link>
@@ -110,7 +110,7 @@ export function Footer() {
                 <li>
                   <Link
                     to="/services"
-                    className="text-[#A0A0A0] hover:text-[#D4AF37] transition-colors"
+                    className="text-[#D0D0D0] hover:text-[#D4AF37] transition-colors"
                   >
                     Full Service Catalog
                   </Link>
@@ -118,7 +118,7 @@ export function Footer() {
                 <li>
                   <Link
                     to="/lightening-fast-services"
-                    className="text-[#A0A0A0] hover:text-[#D4AF37] transition-colors"
+                    className="text-[#D0D0D0] hover:text-[#D4AF37] transition-colors"
                   >
                     Lightening Fast Services
                   </Link>
@@ -126,7 +126,7 @@ export function Footer() {
                 <li>
                   <Link
                     to="/contact"
-                    className="text-[#A0A0A0] hover:text-[#D4AF37] transition-colors"
+                    className="text-[#D0D0D0] hover:text-[#D4AF37] transition-colors"
                   >
                     Book a Strategy Call
                   </Link>
@@ -139,7 +139,7 @@ export function Footer() {
               <h4 className="text-[#F5E6B8] font-medium mb-4 uppercase tracking-wide text-sm">
                 Get In Touch
               </h4>
-              <ul className="space-y-4 text-[#A0A0A0]">
+              <ul className="space-y-4 text-[#D0D0D0]">
                 {/* Phone */}
                 <li className="flex items-center gap-3">
                   <img
@@ -202,7 +202,7 @@ export function Footer() {
                 <p className="text-xs text-[#D4AF37] tracking-wide">
                   PMP® · CCOS · CFE
                 </p>
-                <p className="text-xs text-[#A0A0A0] mt-1">
+                <p className="text-xs text-[#D0D0D0] mt-1">
                   16+ Years Enterprise Experience
                 </p>
               </div>
@@ -214,11 +214,11 @@ export function Footer() {
 
           {/* Bottom Bar */}
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-sm text-[#A0A0A0]">
+            <p className="text-sm text-[#D0D0D0]">
               © 2025 Xceptional Design Lab. All rights reserved. | Urbane Elite
               Holdings Portfolio
             </p>
-            <div className="flex gap-6 text-sm text-[#A0A0A0]">
+            <div className="flex gap-6 text-sm text-[#D0D0D0]">
               <a href="#" className="hover:text-[#D4AF37] transition-colors">
                 Privacy Policy
               </a>

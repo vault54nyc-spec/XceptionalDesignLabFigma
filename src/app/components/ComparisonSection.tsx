@@ -52,7 +52,7 @@ export function ComparisonSection() {
             <div className="grid md:grid-cols-2 divide-x divide-[#D4AF37]/20">
               {/* Left Column - THEM */}
               <div className="p-6 md:p-10">
-                <h3 className="text-3xl font-bold text-[#A0A0A0] mb-12 uppercase tracking-wide">
+                <h3 className="text-3xl font-bold text-[#D0D0D0] mb-12 uppercase tracking-wide">
                   THEM
                 </h3>
                 <StaggerContainer className="space-y-8" staggerDelay={0.06}>
@@ -60,7 +60,7 @@ export function ComparisonSection() {
                     <StaggerItem key={index} direction="left">
                       <div className="flex items-start gap-4">
                         <div className="flex-shrink-0 w-6 h-6 rounded-full border border-[#A0A0A0]/30 mt-1" />
-                        <p className="text-[#A0A0A0] leading-relaxed">
+                        <p className="text-[#D0D0D0] leading-relaxed">
                           {item.them}
                         </p>
                       </div>
@@ -82,7 +82,7 @@ export function ComparisonSection() {
                     <StaggerItem key={index} direction="right">
                       <div className="flex items-start gap-4">
                         <div className="flex-shrink-0 w-6 h-6 rounded-full bg-[#D4AF37] flex items-center justify-center mt-1">
-                          <span className="text-black text-xs">✓</span>
+                          <span className="text-[#FAFAFA] text-xs">✓</span>
                         </div>
                         <p className="text-[#F5E6B8] leading-relaxed font-medium">
                           {item.us}

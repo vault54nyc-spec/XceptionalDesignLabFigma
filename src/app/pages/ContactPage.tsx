@@ -153,7 +153,7 @@ export function ContactPage() {
                 </span>
               </h1>
 
-              <p className="text-xl md:text-2xl text-[#A0A0A0] leading-relaxed max-w-4xl mb-16">
+              <p className="text-xl md:text-2xl text-[#D0D0D0] leading-relaxed max-w-4xl mb-16">
                 Whether you need operational infrastructure, a growth strategy,
                 a brand that commands attention, or technology that actually
                 works — it starts with a conversation.
@@ -165,7 +165,7 @@ export function ContactPage() {
                 <div className="floating-card rounded-3xl p-8 md:p-16 max-w-3xl mx-auto text-center border-2 border-[#D4AF37]/30">
                   <div className="w-20 h-20 mx-auto rounded-full bg-gradient-to-br from-[#D4AF37] to-[#B8962E] flex items-center justify-center mb-8 shadow-[0_0_60px_rgba(212,175,55,0.4)]">
                     <svg
-                      className="w-10 h-10 text-black"
+                      className="w-10 h-10 text-[#FAFAFA]"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -181,7 +181,7 @@ export function ContactPage() {
                   <h2 className="text-3xl md:text-4xl font-bold text-[#FAFAFA] mb-4">
                     MESSAGE RECEIVED.
                   </h2>
-                  <p className="text-xl text-[#A0A0A0] leading-relaxed mb-4">
+                  <p className="text-xl text-[#D0D0D0] leading-relaxed mb-4">
                     We'll review your request and respond within 24 hours.
                     Check your inbox for a confirmation email.
                   </p>
@@ -190,7 +190,7 @@ export function ContactPage() {
                   </p>
                   <button
                     onClick={() => setSubmitted(false)}
-                    className="mt-8 floating-card rounded-full px-8 py-3 text-[#D4AF37] border-2 border-[#D4AF37] hover:bg-[#D4AF37] hover:text-black transition-all duration-300"
+                    className="mt-8 floating-card rounded-full px-8 py-3 text-[#D4AF37] border-2 border-[#D4AF37] hover:bg-[#D4AF37] hover:text-[#FAFAFA] transition-all duration-300"
                   >
                     SEND ANOTHER MESSAGE
                   </button>
@@ -205,7 +205,7 @@ export function ContactPage() {
                       <h2 className="text-2xl font-bold text-[#FAFAFA] mb-2">
                         XCEPTIONAL DESIGN LAB
                       </h2>
-                      <p className="text-[#A0A0A0]">
+                      <p className="text-[#D0D0D0]">
                         Strategic Operations & Business Design
                       </p>
                     </div>
@@ -218,7 +218,7 @@ export function ContactPage() {
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                           </svg>
                         </span>
-                        <span className="text-[#A0A0A0]">
+                        <span className="text-[#D0D0D0]">
                           New York Metropolitan Area
                         </span>
                       </div>
@@ -230,7 +230,7 @@ export function ContactPage() {
                         </span>
                         <a
                           href="mailto:xceptional.designlab@gmail.com"
-                          className="text-[#A0A0A0] hover:text-[#D4AF37] transition-colors"
+                          className="text-[#D0D0D0] hover:text-[#D4AF37] transition-colors"
                         >
                           xceptional.designlab@gmail.com
                         </a>
@@ -241,7 +241,7 @@ export function ContactPage() {
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
                           </svg>
                         </span>
-                        <span className="text-[#A0A0A0]">xdesignlabs.co</span>
+                        <span className="text-[#D0D0D0]">xdesignlabs.co</span>
                       </div>
                     </div>
 
@@ -249,7 +249,7 @@ export function ContactPage() {
                       <h3 className="text-[#D4AF37] text-sm tracking-[0.3em] uppercase font-medium mb-4">
                         RESPONSE TIME
                       </h3>
-                      <p className="text-[#A0A0A0] leading-relaxed">
+                      <p className="text-[#D0D0D0] leading-relaxed">
                         Strategy call requests are typically confirmed within 24
                         hours. Urgent inquiries flagged in your message will be
                         prioritized.
@@ -262,7 +262,7 @@ export function ContactPage() {
                           <div className="text-2xl font-bold text-gold-gradient">
                             16+
                           </div>
-                          <p className="text-[#A0A0A0] text-xs mt-1">
+                          <p className="text-[#D0D0D0] text-xs mt-1">
                             YEARS EXP.
                           </p>
                         </div>
@@ -270,13 +270,13 @@ export function ContactPage() {
                           <div className="text-2xl font-bold text-gold-gradient">
                             7
                           </div>
-                          <p className="text-[#A0A0A0] text-xs mt-1">VERTICALS</p>
+                          <p className="text-[#D0D0D0] text-xs mt-1">VERTICALS</p>
                         </div>
                         <div>
                           <div className="text-2xl font-bold text-gold-gradient">
                             3
                           </div>
-                          <p className="text-[#A0A0A0] text-xs mt-1">CERTS</p>
+                          <p className="text-[#D0D0D0] text-xs mt-1">CERTS</p>
                         </div>
                       </div>
                     </div>
@@ -290,7 +290,7 @@ export function ContactPage() {
                           href="https://linkedin.com"
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="text-[#A0A0A0] hover:text-[#D4AF37] transition-colors"
+                          className="text-[#D0D0D0] hover:text-[#D4AF37] transition-colors"
                         >
                           LinkedIn
                         </a>
@@ -298,7 +298,7 @@ export function ContactPage() {
                           href="https://instagram.com"
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="text-[#A0A0A0] hover:text-[#D4AF37] transition-colors"
+                          className="text-[#D0D0D0] hover:text-[#D4AF37] transition-colors"
                         >
                           Instagram
                         </a>
@@ -306,7 +306,7 @@ export function ContactPage() {
                           href="https://behance.net"
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="text-[#A0A0A0] hover:text-[#D4AF37] transition-colors"
+                          className="text-[#D0D0D0] hover:text-[#D4AF37] transition-colors"
                         >
                           Behance
                         </a>
@@ -327,7 +327,7 @@ export function ContactPage() {
                           </h3>
                           <button
                             onClick={clearCart}
-                            className="text-xs text-[#A0A0A0] hover:text-[#D4AF37] transition-colors"
+                            className="text-xs text-[#D0D0D0] hover:text-[#D4AF37] transition-colors"
                           >
                             Clear All
                           </button>
@@ -342,13 +342,13 @@ export function ContactPage() {
                                 <span className="text-[#F5E6B8]">
                                   {service.name}
                                 </span>
-                                <span className="text-[#A0A0A0] text-xs ml-2">
+                                <span className="text-[#D0D0D0] text-xs ml-2">
                                   ({service.category})
                                 </span>
                               </div>
                               <button
                                 onClick={() => removeService(service.id)}
-                                className="text-[#A0A0A0] hover:text-[#D4AF37] transition-colors flex-shrink-0"
+                                className="text-[#D0D0D0] hover:text-[#D4AF37] transition-colors flex-shrink-0"
                               >
                                 ✕
                               </button>
@@ -535,7 +535,7 @@ export function ContactPage() {
                         >
                           Upload Reference Files (optional)
                         </label>
-                        <p className="text-[#A0A0A0] text-xs mb-3">
+                        <p className="text-[#D0D0D0] text-xs mb-3">
                           Share logos, brand guidelines, business plans, design
                           inspiration, or any reference materials
                         </p>
@@ -545,7 +545,7 @@ export function ContactPage() {
                             id="files"
                             multiple
                             accept=".pdf,.doc,.docx,.png,.jpg,.jpeg,.gif,.ai,.psd,.svg"
-                            className={`${inputClasses} file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-medium file:bg-[#D4AF37] file:text-black hover:file:bg-[#B8962E] file:cursor-pointer`}
+                            className={`${inputClasses} file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-medium file:bg-[#D4AF37] file:text-[#FAFAFA] hover:file:bg-[#B8962E] file:cursor-pointer`}
                             onChange={handleFileUpload}
                           />
                         </div>
@@ -568,14 +568,14 @@ export function ContactPage() {
                                     <span className="text-[#F5E6B8] truncate">
                                       {file.name}
                                     </span>
-                                    <span className="text-[#A0A0A0] text-xs flex-shrink-0">
+                                    <span className="text-[#D0D0D0] text-xs flex-shrink-0">
                                       ({(file.size / 1024).toFixed(0)} KB)
                                     </span>
                                   </div>
                                   <button
                                     type="button"
                                     onClick={() => removeFile(index)}
-                                    className="text-[#A0A0A0] hover:text-[#D4AF37] transition-colors flex-shrink-0"
+                                    className="text-[#D0D0D0] hover:text-[#D4AF37] transition-colors flex-shrink-0"
                                   >
                                     ✕
                                   </button>
@@ -589,7 +589,7 @@ export function ContactPage() {
                       <button
                         type="submit"
                         disabled={isSubmitting}
-                        className="w-full floating-card rounded-full px-8 py-4 bg-[#D4AF37] text-black text-lg font-medium tracking-wide hover:bg-[#B8962E] transition-all duration-300 group disabled:opacity-50 disabled:cursor-not-allowed"
+                        className="w-full floating-card rounded-full px-8 py-4 bg-[#D4AF37] text-[#FAFAFA] text-lg font-medium tracking-wide hover:bg-[#B8962E] transition-all duration-300 group disabled:opacity-50 disabled:cursor-not-allowed"
                       >
                         {isSubmitting ? (
                           <span className="flex items-center justify-center gap-3">
@@ -632,7 +632,7 @@ export function ContactPage() {
                 <h2 className="text-4xl font-bold text-[#FAFAFA] mb-4">
                   PREFER TO TALK?
                 </h2>
-                <p className="text-xl text-[#A0A0A0] leading-relaxed mb-8">
+                <p className="text-xl text-[#D0D0D0] leading-relaxed mb-8">
                   Book a free 30-minute strategy call. No decks. No pressure.
                   Just a real conversation about what you need and whether XDL
                   is the right fit.
@@ -641,7 +641,7 @@ export function ContactPage() {
                   href="https://calendly.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block floating-card rounded-full px-12 py-4 text-[#D4AF37] text-lg font-medium tracking-wide border-2 border-[#D4AF37] hover:bg-[#D4AF37] hover:text-black transition-all duration-300 group"
+                  className="inline-block floating-card rounded-full px-12 py-4 text-[#D4AF37] text-lg font-medium tracking-wide border-2 border-[#D4AF37] hover:bg-[#D4AF37] hover:text-[#FAFAFA] transition-all duration-300 group"
                 >
                   <span>BOOK A CALL</span>
                   <span className="inline-block ml-2 group-hover:translate-x-2 transition-transform">

@@ -34,7 +34,7 @@ export function PositioningSection() {
                   "A freelancer juggling 20 clients with no process.",
                 ].map((text, idx) => (
                   <StaggerItem key={idx}>
-                    <li className="text-[#A0A0A0] text-lg flex items-start gap-3 list-none">
+                    <li className="text-[#D0D0D0] text-lg flex items-start gap-3 list-none">
                       <span className="text-[#666] mt-1 flex-shrink-0">✗</span>
                       <span>{text}</span>
                     </li>

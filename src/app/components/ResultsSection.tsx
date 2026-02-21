@@ -9,42 +9,42 @@ export function ResultsSection() {
     {
       quote:
         "Reduced executive meeting overhead by 11+ hours per week through governance redesign.",
-      attribution: "Enterprise Telecom, VP-Level Engagement",
+      attribution: "See case study or example here.",
       metric: "11+",
       metricLabel: "HRS/WK SAVED",
     },
     {
       quote:
-        "Built and launched the NPHC of Hudson County command center portal from scratch — from brand direction through production deployment in under 6 weeks.",
-      attribution: "NPHC of Hudson County",
+        "Built and launched a community command center portal from scratch — from brand direction through production deployment in under 6 weeks.",
+      attribution: "See case study or example here.",
       metric: "6",
       metricLabel: "WEEK DELIVERY",
     },
     {
       quote:
-        "Designed the ValueVerse — a presentation showcasing brand demographics across a multi-billion dollar portfolio for C-suite review.",
-      attribution: "Fortune 10 Corporation",
+        "Designed a presentation system showcasing brand demographics across a multi-billion dollar portfolio for executive review.",
+      attribution: "See case study or example here.",
       metric: "F10",
       metricLabel: "C-SUITE DELIVERY",
     },
     {
       quote:
         "Operationalized disaster relief offers, Capex prioritization models, and cross-functional program governance from scratch.",
-      attribution: "National Carrier",
+      attribution: "See case study or example here.",
       metric: "100%",
       metricLabel: "FROM SCRATCH",
     },
     {
       quote:
         "Integrated CRM, email marketing, and automated workflows into a single cohesive operational system — replacing 5 disconnected tools.",
-      attribution: "Growth-Stage Startup",
+      attribution: "See case study or example here.",
       metric: "5→1",
       metricLabel: "TOOLS UNIFIED",
     },
     {
       quote:
         "Created comprehensive brand guidelines, website, and employee onboarding system — all documented and handed off with training.",
-      attribution: "Professional Services Firm",
+      attribution: "See case study or example here.",
       metric: "100%",
       metricLabel: "SELF-SUFFICIENT",
     },
@@ -65,7 +65,7 @@ export function ResultsSection() {
             <span className="text-gold-gradient text-glow">SYSTEMS BUILT.</span>
           </h2>
 
-          <p className="text-xl md:text-2xl text-[#A0A0A0] leading-relaxed max-w-4xl mb-20">
+          <p className="text-xl md:text-2xl text-[#D0D0D0] leading-relaxed max-w-4xl mb-20">
             Every engagement ends with something real — a system deployed, a
             process documented, a team trained. Here's what that looks like.
           </p>

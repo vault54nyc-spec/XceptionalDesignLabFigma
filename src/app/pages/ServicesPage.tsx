@@ -127,14 +127,14 @@ export function ServicesPage() {
 
             <AnimatedSection delay={0.2}>
               <div className="floating-card rounded-3xl p-8 md:p-16 max-w-5xl mb-20">
-                <p className="text-xl md:text-2xl text-[#A0A0A0] leading-relaxed mb-6">
+                <p className="text-xl md:text-2xl text-[#D0D0D0] leading-relaxed mb-6">
                   Every service category below represents a core
                   capability — backed by 16+ years of enterprise experience and
                    three professional certifications. Click any category to
                   explore the full range of services we offer within that
                   discipline.
                 </p>
-                <p className="text-lg text-[#A0A0A0] leading-relaxed">
+                <p className="text-lg text-[#D0D0D0] leading-relaxed">
                   Services can be engaged individually, combined into custom
                   packages, or selected for inclusion in your consultation
                   request. We don't do cookie-cutter. Every engagement is
@@ -158,7 +158,7 @@ export function ServicesPage() {
                       <h2 className="text-3xl md:text-4xl font-bold text-[#D4AF37] mb-3 group-hover:text-[#F5E6B8] transition-colors">
                         {category.title}
                       </h2>
-                      <p className="text-lg text-[#A0A0A0] leading-relaxed mb-4">
+                      <p className="text-lg text-[#D0D0D0] leading-relaxed mb-4">
                         {category.description}
                       </p>
                       <p className="text-sm text-[#D4AF37] font-medium">
@@ -199,23 +199,23 @@ export function ServicesPage() {
                 <h2 className="text-3xl md:text-4xl font-bold text-[#FAFAFA] mb-4">
                   READY TO GET STARTED?
                 </h2>
-                <p className="text-lg md:text-xl text-[#A0A0A0] leading-relaxed mb-8">
+                <p className="text-lg md:text-xl text-[#D0D0D0] leading-relaxed mb-8">
                   Book a free 30-minute strategy call to discuss which services
                   fit your needs — or explore our pre-built packages.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Link
                     to="/contact"
-                    className="inline-block floating-card rounded-full px-12 py-4 bg-[#D4AF37] text-black text-lg font-medium tracking-wide hover:bg-[#B8962E] transition-all duration-300 group"
+                    className="inline-block floating-card rounded-full px-12 py-4 bg-[#D4AF37] text-[#FAFAFA] text-lg font-medium tracking-wide hover:bg-[#B8962E] transition-all duration-300 group"
                   >
                     <span>BOOK A CALL</span>
-                    <span className="inline-block ml-2 group-hover:translate-x-2 transition-transform text-black">
+                    <span className="inline-block ml-2 group-hover:translate-x-2 transition-transform text-[#FAFAFA]">
                       →
                     </span>
                   </Link>
                   <Link
                     to="/services/brand-identity"
-                    className="inline-block floating-card rounded-full px-12 py-4 text-[#D4AF37] text-lg font-medium tracking-wide border-2 border-[#D4AF37] hover:bg-[#D4AF37] hover:text-black transition-all duration-300"
+                    className="inline-block floating-card rounded-full px-12 py-4 text-[#D4AF37] text-lg font-medium tracking-wide border-2 border-[#D4AF37] hover:bg-[#D4AF37] hover:text-[#FAFAFA] transition-all duration-300"
                   >
                     VIEW PACKAGES
                   </Link>

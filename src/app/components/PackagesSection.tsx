@@ -20,7 +20,7 @@ const DISCOUNT_OPTIONS = [
     label: "Alpha Phi Alpha Fraternity, Inc.",
     percent: 10,
   },
-  { id: "nphc-hudson", label: "NPHC of Hudson County", percent: 10 },
+  { id: "community-partner", label: "Community Leadership Partner", percent: 10 },
   {
     id: "referral",
     label: "Referral Redemption",
@@ -169,7 +169,7 @@ function PackageCard({
     >
       {pkg.popular && (
         <div className="absolute -top-3 left-1/2 -translate-x-1/2">
-          <span className="bg-[#D4AF37] text-black text-xs font-bold tracking-[0.15em] uppercase px-4 py-1.5 rounded-full">
+          <span className="bg-[#D4AF37] text-[#FAFAFA] text-xs font-bold tracking-[0.15em] uppercase px-4 py-1.5 rounded-full">
             MOST POPULAR
           </span>
         </div>
@@ -181,12 +181,12 @@ function PackageCard({
         <p className="text-xs text-[#D4AF37]/70 italic mb-1">
           {pkg.priceNote}
         </p>
-        <p className="text-xs text-[#A0A0A0] tracking-wide">
+        <p className="text-xs text-[#D0D0D0] tracking-wide">
           {pkg.timeline} typical delivery
         </p>
       </div>
 
-      <p className="text-[#A0A0A0] leading-relaxed mb-6">{pkg.description}</p>
+      <p className="text-[#D0D0D0] leading-relaxed mb-6">{pkg.description}</p>
 
       <div className="flex-1 mb-6">
         <p className="text-[#D4AF37] text-xs tracking-[0.2em] uppercase font-medium mb-4">
@@ -232,7 +232,7 @@ function PackageCard({
         {discountPercent > 0 && (
           <div className="mt-3 p-3 rounded-lg bg-[rgba(212,175,55,0.08)] border border-[#D4AF37]/20">
             <div className="flex items-center justify-between text-sm">
-              <span className="text-[#A0A0A0]">
+              <span className="text-[#D0D0D0]">
                 Starting at{" "}
                 <span className="line-through">
                   ${pkg.basePrice.toLocaleString()}
@@ -256,8 +256,8 @@ function PackageCard({
           disabled={isLoading}
           className={`w-full rounded-full px-6 py-3 font-medium tracking-wide transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed ${
             pkg.popular
-              ? "bg-[#D4AF37] text-black hover:bg-[#B8962E]"
-              : "border-2 border-[#D4AF37] text-[#D4AF37] hover:bg-[#D4AF37] hover:text-black"
+              ? "bg-[#D4AF37] text-[#FAFAFA] hover:bg-[#B8962E]"
+              : "border-2 border-[#D4AF37] text-[#D4AF37] hover:bg-[#D4AF37] hover:text-[#FAFAFA]"
           }`}
         >
           {isLoading ? (
@@ -286,7 +286,7 @@ function PackageCard({
         </button>
         <Link
           to="/contact"
-          className="block w-full text-center text-sm text-[#A0A0A0] hover:text-[#D4AF37] transition-colors py-2"
+          className="block w-full text-center text-sm text-[#D0D0D0] hover:text-[#D4AF37] transition-colors py-2"
         >
           or book a free consultation first →
         </Link>
@@ -308,7 +308,7 @@ export function PackagesSection() {
               FLEXIBLE{" "}
               <span className="text-gold-gradient text-glow">PRICING.</span>
             </h2>
-            <p className="text-xl md:text-2xl text-[#A0A0A0] leading-relaxed max-w-4xl mx-auto mb-4">
+            <p className="text-xl md:text-2xl text-[#D0D0D0] leading-relaxed max-w-4xl mx-auto mb-4">
               Every project is different — these ranges reflect typical
               engagements, not fixed rates. We scope and price based on your
               specific goals, complexity, and timeline.
@@ -341,9 +341,9 @@ export function PackagesSection() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
                   </svg>
                 </span>
-                <span className="text-[#A0A0A0]">
+                <span className="text-[#D0D0D0]">
                   <span className="text-[#F5E6B8] font-medium">Alpha Phi Alpha</span> &amp;{" "}
-                  <span className="text-[#F5E6B8] font-medium">NPHC</span>{" "}
+                  <span className="text-[#F5E6B8] font-medium">Partner Chapters</span>{" "}
                   — 10% off
                 </span>
               </div>
@@ -354,7 +354,7 @@ export function PackagesSection() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" />
                   </svg>
                 </span>
-                <span className="text-[#A0A0A0]">
+                <span className="text-[#D0D0D0]">
                   <span className="text-[#F5E6B8] font-medium">Referral</span>{" "}
                   — 15% off
                 </span>
@@ -366,7 +366,7 @@ export function PackagesSection() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
                   </svg>
                 </span>
-                <span className="text-[#A0A0A0]">
+                <span className="text-[#D0D0D0]">
                   <span className="text-[#F5E6B8] font-medium">Legacy</span>{" "}
                   — 20% off
                 </span>
@@ -378,7 +378,7 @@ export function PackagesSection() {
         {/* Custom Projects Note */}
         <AnimatedSection delay={0.35} className="mt-6 text-center">
           <div className="floating-card rounded-2xl p-6 md:p-8 max-w-3xl mx-auto">
-            <p className="text-[#A0A0A0] leading-relaxed">
+            <p className="text-[#D0D0D0] leading-relaxed">
               <span className="text-[#D4AF37] font-medium">
                 Need something custom?
               </span>{" "}

@@ -20,7 +20,7 @@ export function BookCallSection() {
               </span>
             </h2>
 
-            <p className="text-xl md:text-2xl text-[#A0A0A0] leading-relaxed max-w-3xl mx-auto mb-6">
+            <p className="text-xl md:text-2xl text-[#D0D0D0] leading-relaxed max-w-3xl mx-auto mb-6">
               30-minute discovery call. No decks. No pitches. Just an honest
               conversation about what you're building and whether we're the right
               team to build it.
@@ -33,7 +33,7 @@ export function BookCallSection() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 to="/contact"
-                className="floating-card rounded-full px-12 py-5 bg-[#D4AF37] text-black text-lg font-medium tracking-wide hover:bg-[#B8962E] transition-all duration-300 group"
+                className="floating-card rounded-full px-12 py-5 bg-[#D4AF37] text-[#FAFAFA] text-lg font-medium tracking-wide hover:bg-[#B8962E] transition-all duration-300 group"
               >
                 <span>SCHEDULE NOW</span>
                 <span className="inline-block ml-2 group-hover:translate-x-2 transition-transform">

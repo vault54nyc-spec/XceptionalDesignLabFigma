@@ -56,7 +56,7 @@ export function ProcessSection() {
             HOW WE{" "}
             <span className="text-gold-gradient text-glow">WORK.</span>
           </h2>
-          <p className="text-xl md:text-2xl text-[#A0A0A0] leading-relaxed max-w-4xl mb-20">
+          <p className="text-xl md:text-2xl text-[#D0D0D0] leading-relaxed max-w-4xl mb-20">
             Every engagement follows the same proven framework. No shortcuts.
             No ambiguity. Just a clear path from conversation to completion.
           </p>
@@ -83,7 +83,7 @@ export function ProcessSection() {
                         {step.duration}
                       </span>
                     </div>
-                    <p className="text-lg text-[#A0A0A0] leading-relaxed max-w-3xl">
+                    <p className="text-lg text-[#D0D0D0] leading-relaxed max-w-3xl">
                       {step.description}
                     </p>
                   </div>

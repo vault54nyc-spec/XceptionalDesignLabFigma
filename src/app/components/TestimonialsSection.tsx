@@ -8,29 +8,29 @@ const testimonials = [
   {
     quote:
       "XDL didn't just design our portal — they built the full operational backbone behind it. Website, communications workflow, resource structure, documentation, and implementation. We went from concept to a functioning chapter command center in 6 weeks.",
-    name: "Chapter Leadership",
-    org: "NPHC of Hudson County",
+    name: "Client Leadership Team",
+    org: "See case study or example here.",
     highlight: "Portal launched in 6 weeks",
   },
   {
     quote:
       "Most agencies deliver a logo and disappear. Christopher delivered a brand system, trained our team, documented everything, and made us completely self-sufficient. That's rare.",
-    name: "Founder & CEO",
-    org: "Growth-Stage Startup",
+    name: "Client Founder",
+    org: "See case study or example here.",
     highlight: "Full self-sufficiency",
   },
   {
     quote:
       "The governance framework he built reduced our executive meeting overhead by over 11 hours per week. That's not design — that's operational intelligence applied to real business problems.",
-    name: "VP, Program Management",
-    org: "Fortune 10 Telecom",
+    name: "Program Leader",
+    org: "See case study or example here.",
     highlight: "11+ hrs/week saved",
   },
   {
     quote:
       "We needed someone who could think at the executive level and execute at the pixel level. Christopher is one of the only people I've met who can do both — and document the entire thing so your team can run it.",
-    name: "Managing Partner",
-    org: "Professional Services Firm",
+    name: "Client Partner",
+    org: "See case study or example here.",
     highlight: "Executive + execution",
   },
 ];
@@ -80,7 +80,7 @@ export function TestimonialsSection() {
                 {/* Attribution */}
                 <div className="pt-4 border-t border-[#D4AF37]/20 flex items-center gap-4">
                   <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#D4AF37] to-[#B8962E] flex items-center justify-center flex-shrink-0">
-                    <span className="text-black text-sm font-bold">
+                    <span className="text-[#FAFAFA] text-sm font-bold">
                       {t.name.charAt(0)}
                     </span>
                   </div>

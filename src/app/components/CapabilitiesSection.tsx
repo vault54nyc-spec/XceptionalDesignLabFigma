@@ -70,7 +70,7 @@ export function CapabilitiesSection() {
               ONE STANDARD: EXCEPTIONAL.
             </span>
           </h2>
-          <p className="text-xl text-[#A0A0A0] leading-relaxed max-w-4xl mb-20">
+          <p className="text-xl text-[#D0D0D0] leading-relaxed max-w-4xl mb-20">
             Enterprise services across 7 disciplines — each backed by 16+ years of
             enterprise experience, three professional certifications, and a
             Fortune 10 pedigree. Click any capability to explore the full
@@ -92,7 +92,7 @@ export function CapabilitiesSection() {
                     {capability.number}
                   </span>
                   <div className="w-10 h-10 glass rounded-full flex items-center justify-center group-hover:bg-[#D4AF37] transition-all duration-300">
-                    <span className="text-[#D4AF37] group-hover:text-black transition-colors font-bold">
+                    <span className="text-[#D4AF37] group-hover:text-[#FAFAFA] transition-colors font-bold">
                       →
                     </span>
                   </div>
@@ -104,7 +104,7 @@ export function CapabilitiesSection() {
                 </h3>
 
                 {/* Description */}
-                <p className="text-[#A0A0A0] leading-relaxed">
+                <p className="text-[#D0D0D0] leading-relaxed">
                   {capability.description}
                 </p>
               </Link>

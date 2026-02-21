@@ -131,7 +131,7 @@ export function Navigation() {
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
                 </svg>
-                <span className="absolute -top-1.5 -right-1.5 bg-[#D4AF37] text-black text-[9px] font-bold rounded-full w-4 h-4 flex items-center justify-center">
+                <span className="absolute -top-1.5 -right-1.5 bg-[#D4AF37] text-[#FAFAFA] text-[9px] font-bold rounded-full w-4 h-4 flex items-center justify-center">
                   {selectedServices.length}
                 </span>
               </Link>
@@ -146,7 +146,7 @@ export function Navigation() {
             </Link>
             <Link
               to="/contact"
-              className="hidden sm:inline-block floating-card rounded-full px-4 md:px-6 py-2 md:py-3 bg-[#D4AF37] text-black text-xs md:text-sm tracking-wide hover:bg-[#B8962E] transition-all duration-300"
+              className="hidden sm:inline-block floating-card rounded-full px-4 md:px-6 py-2 md:py-3 bg-[#D4AF37] text-[#FAFAFA] text-xs md:text-sm tracking-wide hover:bg-[#B8962E] transition-all duration-300"
             >
               BOOK A CALL
             </Link>

@@ -44,19 +44,19 @@ export function AboutPage() {
 
             <AnimatedSection delay={0.2}>
               <div className="floating-card rounded-3xl p-6 md:p-10 max-w-5xl space-y-6">
-                <p className="md:text-2xl text-[#A0A0A0] leading-relaxed text-[16px]">
+                <p className="md:text-2xl text-[#D0D0D0] leading-relaxed text-[16px]">
                   Xceptional Design Lab was founded by Christopher DeMarkus
                   — Chief of Staff, Portfolio Management, Senior Level Auditor with <strong className="text-[#F5E6B8]">16+ years</strong> operating at the intersection of
                   enterprise operations, creative direction, and digital
                   technology.
                 </p>
-                <p className="md:text-2xl text-[#A0A0A0] leading-relaxed text-[16px]">
+                <p className="md:text-2xl text-[#D0D0D0] leading-relaxed text-[16px]">
                   XDL is an independent creative and operational
                   consultancy specializing in brand architecture, digital
                    infrastructure, and operational design for founders, executives,
                    and growth-stage companies who refuse to look ordinary.
                 </p>
-                <p className="md:text-2xl text-[#A0A0A0] leading-relaxed text-[16px]">
+                <p className="md:text-2xl text-[#D0D0D0] leading-relaxed text-[16px]">
                   Before founding XDL, Christopher served as Associate Director
                   of Portfolio & Program Management at Verizon Communications —
                   supporting SVP-level executives within the Value Brands
@@ -77,7 +77,7 @@ export function AboutPage() {
                 WHY{" "}
                 <span className="text-gold-gradient text-glow">XDL?</span>
               </h2>
-              <p className="text-xl md:text-2xl text-[#A0A0A0] leading-relaxed max-w-4xl mb-16">
+              <p className="text-xl md:text-2xl text-[#D0D0D0] leading-relaxed max-w-4xl mb-16">
                 Because most partners can make it look good. We make it
                 work. The difference is 16 years of building systems that
                 survive contact with reality.
@@ -94,7 +94,7 @@ export function AboutPage() {
                   <h3 className="text-xl font-bold text-[#FAFAFA] mb-3">
                     ENTERPRISE RIGOR
                   </h3>
-                  <p className="text-[#A0A0A0] leading-relaxed">
+                  <p className="text-[#D0D0D0] leading-relaxed">
                     We bring Fortune 10 governance, documentation standards, and
                     program management discipline to every engagement — whether
                     it's a startup brand or a corporate rebrand.
@@ -107,7 +107,7 @@ export function AboutPage() {
                   <h3 className="text-xl font-bold text-[#FAFAFA] mb-3">
                     FULL-STACK DELIVERY
                   </h3>
-                  <p className="text-[#A0A0A0] leading-relaxed">
+                  <p className="text-[#D0D0D0] leading-relaxed">
                     Strategy, design, development, automation, documentation, and
                     training — all under one roof. No handoffs to third parties.
                     No excuses. No gaps.
@@ -120,7 +120,7 @@ export function AboutPage() {
                   <h3 className="text-xl font-bold text-[#FAFAFA] mb-3">
                     SELF-SUFFICIENCY GUARANTEE
                   </h3>
-                  <p className="text-[#A0A0A0] leading-relaxed">
+                  <p className="text-[#D0D0D0] leading-relaxed">
                     Every engagement ends with your team fully trained on what we
                     built. We don't create dependency. We create capability and
                     hand over the keys.
@@ -161,7 +161,7 @@ export function AboutPage() {
                   />
                 </div>
                 
-                {/* Row 2: V, CCOS, APA, NPHC */}
+                {/* Row 2: V, CCOS, APA, Partner */}
                 <div className="flex justify-center items-center gap-8 md:gap-12 lg:gap-16 flex-wrap">
                   <img
                     src="https://pub-28a5a1ab60b44821b2111f74965f9cbf.r2.dev/8.svg"
@@ -180,7 +180,7 @@ export function AboutPage() {
                   />
                   <img
                     src="https://pub-28a5a1ab60b44821b2111f74965f9cbf.r2.dev/nphc.svg"
-                    alt="NPHC"
+                    alt="Partner Organization"
                     className="h-16 md:h-20 w-auto opacity-80 hover:opacity-100 transition-opacity"
                   />
                 </div>
@@ -197,7 +197,7 @@ export function AboutPage() {
                   <h3 className="text-xl font-bold text-[#D4AF37] mb-6">
                     CERTIFICATIONS
                   </h3>
-                  <div className="space-y-3 text-[#A0A0A0]">
+                  <div className="space-y-3 text-[#D0D0D0]">
                     <p>PMP® — Project Management Professional</p>
                     <p>CCOS — Certified Customer Operations Specialist</p>
                     <p>CFE — Certified Fraud Examiner</p>
@@ -211,7 +211,7 @@ export function AboutPage() {
                   <h3 className="text-xl font-bold text-[#D4AF37] mb-6">
                     ENTERPRISE EXPERIENCE
                   </h3>
-                  <div className="space-y-3 text-[#A0A0A0]">
+                  <div className="space-y-3 text-[#D0D0D0]">
                     <p className="text-[#F5E6B8] font-medium">
                       Chief of Staff, Growth Revenue Organization
                     </p>
@@ -230,11 +230,11 @@ export function AboutPage() {
                   <h3 className="text-xl font-bold text-[#D4AF37] mb-6">
                     VENTURES
                   </h3>
-                  <div className="space-y-3 text-[#A0A0A0]">
+                  <div className="space-y-3 text-[#D0D0D0]">
                     <p>
                       Xceptional Design Lab — Brand Strategy & Executive Operations
                     </p>
-                    <p>NPHC of Hudson County — Digital Command Center Portal</p>
+                    <p>Community Leadership Portal — Digital Command Center</p>
                     <p>Debonair Demographics — Market Intelligence</p>
                     <p>Urbane Elite Holdings — Portfolio Entity</p>
                   </div>
@@ -247,7 +247,7 @@ export function AboutPage() {
                   <h3 className="text-xl font-bold text-[#D4AF37] mb-6">
                     CORE COMPETENCIES
                   </h3>
-                  <div className="space-y-3 text-[#A0A0A0]">
+                  <div className="space-y-3 text-[#D0D0D0]">
                     <p>Brand Architecture & Visual Systems</p>
                     <p>Digital Platform Development</p>
                     <p>Operational Process Design</p>
@@ -278,7 +278,7 @@ export function AboutPage() {
                   <h3 className="text-3xl font-bold text-[#D4AF37] mb-4">
                     STRATEGY BEFORE PIXELS.
                   </h3>
-                  <p className="text-xl text-[#A0A0A0] leading-relaxed">
+                  <p className="text-xl text-[#D0D0D0] leading-relaxed">
                     We don't open Figma until we understand your business model,
                     your audience, and your competitive landscape. Design without
                     strategy is decoration. Strategy without execution is just a
@@ -292,7 +292,7 @@ export function AboutPage() {
                   <h3 className="text-3xl font-bold text-[#D4AF37] mb-4">
                     BUILD THE WHOLE MACHINE.
                   </h3>
-                  <p className="text-xl text-[#A0A0A0] leading-relaxed">
+                  <p className="text-xl text-[#D0D0D0] leading-relaxed">
                     A brand is not a logo. It's the identity, the website, the
                     email system, the automation, the documentation, and the
                     training that makes it all run without you in the room.
@@ -307,7 +307,7 @@ export function AboutPage() {
                   <h3 className="text-3xl font-bold text-[#D4AF37] mb-4">
                     LEAVE IT BETTER THAN WE FOUND IT.
                   </h3>
-                  <p className="text-xl text-[#A0A0A0] leading-relaxed">
+                  <p className="text-xl text-[#D0D0D0] leading-relaxed">
                     Every engagement ends with your team knowing how to operate
                     what we built. We don't create dependency. We create
                     capability. Full documentation. Full training. Full
@@ -330,14 +330,14 @@ export function AboutPage() {
                     SOMEONE WHO GETS IT?
                   </span>
                 </h2>
-                <p className="text-xl text-[#A0A0A0] leading-relaxed max-w-3xl mx-auto mb-10">
+                <p className="text-xl text-[#D0D0D0] leading-relaxed max-w-3xl mx-auto mb-10">
                   16 years of building systems that work. Three certifications
                   that prove it. One conversation to see if we're the right fit.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Link
                     to="/contact"
-                    className="floating-card rounded-full px-12 py-5 bg-[#D4AF37] text-black text-lg font-medium tracking-wide hover:bg-[#B8962E] transition-all duration-300 group"
+                    className="floating-card rounded-full px-12 py-5 bg-[#D4AF37] text-[#FAFAFA] text-lg font-medium tracking-wide hover:bg-[#B8962E] transition-all duration-300 group"
                   >
                     <span>BOOK A CALL</span>
                     <span className="inline-block ml-2 group-hover:translate-x-2 transition-transform">
@@ -346,7 +346,7 @@ export function AboutPage() {
                   </Link>
                   <Link
                     to="/services"
-                    className="floating-card rounded-full px-12 py-5 text-[#D4AF37] text-lg font-medium tracking-wide border-2 border-[#D4AF37] hover:bg-[#D4AF37] hover:text-black transition-all duration-300"
+                    className="floating-card rounded-full px-12 py-5 text-[#D4AF37] text-lg font-medium tracking-wide border-2 border-[#D4AF37] hover:bg-[#D4AF37] hover:text-[#FAFAFA] transition-all duration-300"
                   >
                     VIEW SERVICE CATALOG
                   </Link>

@@ -366,7 +366,7 @@ export function ServiceCategoryPage() {
                 <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-[#FAFAFA] leading-[0.95] tracking-tight mb-6">
                   {category.title}
                 </h1>
-                <p className="text-xl md:text-2xl text-[#A0A0A0] leading-relaxed max-w-3xl">
+                <p className="text-xl md:text-2xl text-[#D0D0D0] leading-relaxed max-w-3xl">
                   {category.description}
                 </p>
               </div>
@@ -392,7 +392,7 @@ export function ServiceCategoryPage() {
                           {service.name}
                         </h3>
                       </div>
-                      <p className="text-sm text-[#A0A0A0] leading-relaxed pl-8 mb-4 flex-1">
+                      <p className="text-sm text-[#D0D0D0] leading-relaxed pl-8 mb-4 flex-1">
                         {service.desc}
                       </p>
                       <div className="pl-8">
@@ -402,7 +402,7 @@ export function ServiceCategoryPage() {
                           }
                           className={`text-sm font-medium tracking-wide px-6 py-2 rounded-full border-2 transition-all duration-300 ${
                             isSelected
-                              ? "bg-[#D4AF37] text-black border-[#D4AF37]"
+                              ? "bg-[#D4AF37] text-[#FAFAFA] border-[#D4AF37]"
                               : "bg-transparent text-[#D4AF37] border-[#D4AF37]/50 hover:border-[#D4AF37] hover:bg-[#D4AF37]/10"
                           }`}
                         >
@@ -423,16 +423,16 @@ export function ServiceCategoryPage() {
                 <h2 className="text-3xl md:text-4xl font-bold text-[#FAFAFA] mb-4">
                   NEED THIS EXPERTISE?
                 </h2>
-                <p className="text-lg md:text-xl text-[#A0A0A0] leading-relaxed mb-8">
+                <p className="text-lg md:text-xl text-[#D0D0D0] leading-relaxed mb-8">
                   Book a free 30-minute strategy call to discuss how these
                   services can be tailored to your needs.
                 </p>
                 <Link
                   to="/contact"
-                  className="inline-block floating-card rounded-full px-12 py-4 bg-[#D4AF37] text-black text-lg font-medium tracking-wide hover:bg-[#B8962E] transition-all duration-300 group"
+                  className="inline-block floating-card rounded-full px-12 py-4 bg-[#D4AF37] text-[#FAFAFA] text-lg font-medium tracking-wide hover:bg-[#B8962E] transition-all duration-300 group"
                 >
                   <span>BOOK A CALL</span>
-                  <span className="inline-block ml-2 group-hover:translate-x-2 transition-transform text-black">
+                  <span className="inline-block ml-2 group-hover:translate-x-2 transition-transform text-[#FAFAFA]">
                     →
                   </span>
                 </Link>

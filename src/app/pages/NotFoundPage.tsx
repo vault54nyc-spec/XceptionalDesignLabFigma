@@ -28,7 +28,7 @@ export function NotFoundPage() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.8, duration: 0.6 }}
-            className="text-xl md:text-2xl text-[#A0A0A0] max-w-2xl mx-auto leading-relaxed"
+            className="text-xl md:text-2xl text-[#D0D0D0] max-w-2xl mx-auto leading-relaxed"
           >
             This page doesn't exist — but we can build it. Let's get you back
             on track.
@@ -41,7 +41,7 @@ export function NotFoundPage() {
           >
             <Link
               to="/"
-              className="inline-block floating-card rounded-full px-12 py-6 text-[#D4AF37] text-lg font-medium tracking-wide border-2 border-[#D4AF37] hover:bg-[#D4AF37] hover:text-black transition-all duration-300 group"
+              className="inline-block floating-card rounded-full px-12 py-6 text-[#D4AF37] text-lg font-medium tracking-wide border-2 border-[#D4AF37] hover:bg-[#D4AF37] hover:text-[#FAFAFA] transition-all duration-300 group"
             >
               <span>BACK TO HOME</span>
               <span className="inline-block ml-2 group-hover:translate-x-2 transition-transform">

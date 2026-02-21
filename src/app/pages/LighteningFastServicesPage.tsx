@@ -117,7 +117,7 @@ export function LighteningFastServicesPage() {
                 <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-[#FAFAFA] leading-[0.95] tracking-tight mb-6">
                   LIGHTENING FAST SERVICES.
                 </h1>
-                <p className="text-xl md:text-2xl text-[#A0A0A0] leading-relaxed max-w-4xl">
+                <p className="text-xl md:text-2xl text-[#D0D0D0] leading-relaxed max-w-4xl">
                   Quick-turn, high-standard deliverables for teams and leaders
                   who need quality work now. Select what you need, add it to
                   your consultation request, and we will scope your timeline.
@@ -148,7 +148,7 @@ export function LighteningFastServicesPage() {
                       <h3 className="text-[#F5E6B8] font-medium text-2xl leading-tight mb-4">
                         {service.name}
                       </h3>
-                      <p className="text-sm text-[#A0A0A0] leading-relaxed mb-5 flex-1">
+                      <p className="text-sm text-[#D0D0D0] leading-relaxed mb-5 flex-1">
                         {service.description}
                       </p>
 
@@ -160,7 +160,7 @@ export function LighteningFastServicesPage() {
                         onClick={() => handleToggleService(service)}
                         className={`text-sm font-medium tracking-wide px-6 py-2 rounded-full border-2 transition-all duration-300 ${
                           isSelected
-                            ? "bg-[#D4AF37] text-black border-[#D4AF37]"
+                            ? "bg-[#D4AF37] text-[#FAFAFA] border-[#D4AF37]"
                             : "bg-transparent text-[#D4AF37] border-[#D4AF37]/50 hover:border-[#D4AF37] hover:bg-[#D4AF37]/10"
                         }`}
                       >
@@ -179,20 +179,20 @@ export function LighteningFastServicesPage() {
                 <h2 className="text-3xl md:text-4xl font-bold text-[#FAFAFA] mb-4">
                   NEED IT FAST AND DONE RIGHT?
                 </h2>
-                <p className="text-lg md:text-xl text-[#A0A0A0] leading-relaxed mb-8">
+                <p className="text-lg md:text-xl text-[#D0D0D0] leading-relaxed mb-8">
                   Submit your a la carte selections and we will confirm scope,
                   turnaround, and next steps in your consultation.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Link
                     to="/contact"
-                    className="inline-block floating-card rounded-full px-12 py-4 bg-[#D4AF37] text-black text-lg font-medium tracking-wide hover:bg-[#B8962E] transition-all duration-300"
+                    className="inline-block floating-card rounded-full px-12 py-4 bg-[#D4AF37] text-[#FAFAFA] text-lg font-medium tracking-wide hover:bg-[#B8962E] transition-all duration-300"
                   >
                     REQUEST NOW
                   </Link>
                   <Link
                     to="/services"
-                    className="inline-block floating-card rounded-full px-12 py-4 text-[#D4AF37] text-lg font-medium tracking-wide border-2 border-[#D4AF37] hover:bg-[#D4AF37] hover:text-black transition-all duration-300"
+                    className="inline-block floating-card rounded-full px-12 py-4 text-[#D4AF37] text-lg font-medium tracking-wide border-2 border-[#D4AF37] hover:bg-[#D4AF37] hover:text-[#FAFAFA] transition-all duration-300"
                   >
                     VIEW FULL CATALOG
                   </Link>

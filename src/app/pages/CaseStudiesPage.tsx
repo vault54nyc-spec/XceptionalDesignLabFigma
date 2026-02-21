@@ -10,14 +10,14 @@ import {
 
 const projects = [
   {
-    title: "NPHC OF HUDSON COUNTY PORTAL",
+    title: "COMMUNITY LEADERSHIP PORTAL",
     category: "DIGITAL PLATFORM · OPERATIONS COMMAND CENTER · COMMUNITY ENGAGEMENT",
     description:
-      "Built and launched the NPHC of Hudson County digital command center portal from scratch — website architecture, brand system, communication workflows, and operational infrastructure for chapter-wide coordination.",
+      "Built and launched a digital command center portal from scratch — website architecture, brand system, communication workflows, and operational infrastructure for chapter-wide coordination.",
     results: [
       "Full portal built and deployed from scratch",
       "Integrated communication and resource workflows",
-      "Operational hub for chapter leadership and members",
+      "See case study or example here.",
     ],
     image:
       "https://images.unsplash.com/photo-1759563874711-b026ac0b6c6e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBicmFuZCUyMGlkZW50aXR5JTIwZGVzaWduJTIwZGFya3xlbnwxfHx8fDE3NzA1NDQxMDJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
@@ -38,10 +38,10 @@ const projects = [
     featured: true,
   },
   {
-    title: "THE VALUEVERSE",
+    title: "EXECUTIVE PORTFOLIO PRESENTATION SYSTEM",
     category: "STRATEGIC DESIGN · EXECUTIVE COMMUNICATIONS",
     description:
-      "Designed a comprehensive presentation system showcasing brand demographics across a multi-billion dollar portfolio — delivered directly to C-suite leadership at a Fortune 10 corporation.",
+      "Designed a comprehensive presentation system showcasing brand demographics across a multi-billion dollar portfolio — delivered directly to executive leadership review.",
     results: [
       "C-suite presentation delivered",
       "Multi-billion dollar portfolio visualized",
@@ -108,13 +108,13 @@ export function CaseStudiesPage() {
 
             <AnimatedSection delay={0.2}>
               <div className="floating-card rounded-3xl p-10 md:p-16 max-w-5xl mb-20">
-                <p className="text-xl md:text-2xl text-[#A0A0A0] leading-relaxed mb-4">
+                <p className="text-xl md:text-2xl text-[#D0D0D0] leading-relaxed mb-4">
                   A curated selection of engagements across strategic
                   operations, program leadership, technology solutions, and
                   brand systems. Due to NDA agreements, some client names have
                   been anonymized.
                 </p>
-                <p className="text-lg text-[#A0A0A0] leading-relaxed">
+                <p className="text-lg text-[#D0D0D0] leading-relaxed">
                   16+ years of enterprise experience. Every project shown here
                   was delivered with full documentation, team training, and
                   operational handoff.
@@ -165,7 +165,7 @@ export function CaseStudiesPage() {
                         <h3 className="text-2xl md:text-3xl font-bold text-[#FAFAFA] mb-3 group-hover:text-[#D4AF37] transition-colors">
                           {project.title}
                         </h3>
-                        <p className="text-[#A0A0A0] leading-relaxed mb-6 flex-1">
+                        <p className="text-[#D0D0D0] leading-relaxed mb-6 flex-1">
                           {project.description}
                         </p>
 
@@ -231,7 +231,7 @@ export function CaseStudiesPage() {
                           </p>
                         </div>
                       </div>
-                      <p className="text-[#A0A0A0] leading-relaxed mb-4 flex-1">
+                      <p className="text-[#D0D0D0] leading-relaxed mb-4 flex-1">
                         {project.description}
                       </p>
                       <div className="space-y-1.5">
@@ -261,16 +261,16 @@ export function CaseStudiesPage() {
                     LET'S BUILD SOMETHING{" "}
                     <span className="text-gold-gradient">EXCEPTIONAL.</span>
                   </h2>
-                  <p className="text-lg md:text-xl text-[#A0A0A0] leading-relaxed mb-8">
+                  <p className="text-lg md:text-xl text-[#D0D0D0] leading-relaxed mb-8">
                     Every transformation starts with a conversation. Tell us
                     what needs to change.
                   </p>
                   <Link
                     to="/contact"
-                    className="inline-block floating-card rounded-full px-12 py-4 bg-[#D4AF37] text-black text-lg font-medium tracking-wide hover:bg-[#B8962E] transition-all duration-300 group"
+                    className="inline-block rounded-full px-12 py-4 bg-[#D4AF37]/20 border-2 border-[#D4AF37] text-[#FAFAFA] text-lg font-medium tracking-wide hover:bg-[#D4AF37]/30 transition-all duration-300 group"
                   >
                     <span>START A PROJECT</span>
-                    <span className="inline-block ml-2 group-hover:translate-x-2 transition-transform text-black">
+                    <span className="inline-block ml-2 group-hover:translate-x-2 transition-transform text-[#FAFAFA]">
                       →
                     </span>
                   </Link>

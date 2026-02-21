@@ -43,7 +43,7 @@ export function HeroSection() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.7 }}
-              className="text-xl md:text-2xl text-[#A0A0A0] leading-relaxed max-w-2xl"
+              className="text-xl md:text-2xl text-[#D0D0D0] leading-relaxed max-w-2xl"
             >
               Xceptional Design Lab is a full-spectrum business operations and
               strategy practice for companies that demand more than
@@ -58,7 +58,7 @@ export function HeroSection() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.6, delay: 0.85 }}
-              className="flex flex-wrap gap-6 text-xs tracking-[0.2em] text-[#A0A0A0] uppercase"
+              className="flex flex-wrap gap-6 text-xs tracking-[0.2em] text-[#D0D0D0] uppercase"
             >
               <span>
                 PMP® Certified
@@ -144,12 +144,12 @@ export function HeroSection() {
                 </p>
 
                 <div className="pt-3 border-t border-[#D4AF37]/30 space-y-2">
-                  <p className="text-[#A0A0A0] text-sm leading-relaxed">
+                  <p className="text-[#D0D0D0] text-sm leading-relaxed">
                     <span className="text-[#F5E6B8] font-medium">
                       PMP® · CCOS · CFE
                     </span>
                   </p>
-                  <p className="text-[#A0A0A0] text-sm leading-relaxed">
+                  <p className="text-[#D0D0D0] text-sm leading-relaxed">
                     Verizon | Portfolio & Program Management
                   </p>
                   <p className="text-[#D4AF37] text-sm font-medium">

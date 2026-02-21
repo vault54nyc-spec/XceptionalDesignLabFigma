@@ -45,7 +45,7 @@ export function EntranceAnimation({ onComplete }: EntranceAnimationProps) {
         {/* Video element */}
         <video
           ref={videoRef}
-          className="w-full h-full object-cover"
+          className="w-full h-full object-contain object-center bg-black"
           onEnded={handleVideoEnd}
           playsInline
           muted={isMuted}
@@ -62,7 +62,7 @@ export function EntranceAnimation({ onComplete }: EntranceAnimationProps) {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.8, duration: 0.4 }}
           onClick={onComplete}
-          className="absolute bottom-12 right-12 glass rounded-full px-6 py-3 text-[#D4AF37] text-sm tracking-wider hover:bg-[#D4AF37] hover:text-black transition-all duration-300 font-medium z-20"
+          className="absolute bottom-12 right-12 glass rounded-full px-6 py-3 text-[#D4AF37] text-sm tracking-wider hover:bg-[#D4AF37] hover:text-[#FAFAFA] transition-all duration-300 font-medium z-20"
         >
           SKIP
         </motion.button>
@@ -73,7 +73,7 @@ export function EntranceAnimation({ onComplete }: EntranceAnimationProps) {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.8, duration: 0.4 }}
           onClick={toggleMute}
-          className="absolute bottom-12 left-12 glass rounded-full px-6 py-3 text-[#D4AF37] text-sm tracking-wider hover:bg-[#D4AF37] hover:text-black transition-all duration-300 font-medium z-20"
+          className="absolute bottom-12 left-12 glass rounded-full px-6 py-3 text-[#D4AF37] text-sm tracking-wider hover:bg-[#D4AF37] hover:text-[#FAFAFA] transition-all duration-300 font-medium z-20"
         >
           {isMuted ? <VolumeX size={24} /> : <Volume2 size={24} />}
         </motion.button>

@@ -10,7 +10,7 @@ export function ServicesCartButton() {
   return (
     <Link
       to="/contact"
-      className="fixed bottom-8 right-8 z-50 floating-card bg-[#D4AF37] text-black rounded-full px-6 py-4 flex items-center gap-3 shadow-2xl hover:bg-[#B8962E] transition-all duration-300 group"
+      className="fixed bottom-8 right-8 z-50 floating-card bg-[#D4AF37] text-[#FAFAFA] rounded-full px-6 py-4 flex items-center gap-3 shadow-2xl hover:bg-[#B8962E] transition-all duration-300 group"
     >
       <div className="relative">
         <svg
