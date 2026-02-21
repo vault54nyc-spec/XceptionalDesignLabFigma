@@ -80,7 +80,7 @@ export function ResultsSection() {
               <div className="floating-card rounded-2xl p-6 md:p-8 h-full flex flex-col group">
                 {/* Metric highlight */}
                 <div className="mb-6">
-                  <div className="text-3xl md:text-4xl font-bold text-gold-gradient text-glow mb-1">
+                  <div className="text-3xl md:text-4xl font-bold text-[#F5E6B8] drop-shadow-[0_0_18px_rgba(212,175,55,0.35)] mb-1">
                     {result.metric}
                   </div>
                   <p className="text-[10px] tracking-[0.2em] text-[#D4AF37] uppercase font-medium">
@@ -93,7 +93,7 @@ export function ResultsSection() {
                   <span className="text-2xl text-[#D4AF37] font-light leading-none block mb-2 opacity-60">
                     "
                   </span>
-                  <p className="text-[#E5E5E5] leading-relaxed italic">
+                  <p className="text-[#FAFAFA] leading-relaxed italic">
                     {result.quote}
                   </p>
                 </div>
