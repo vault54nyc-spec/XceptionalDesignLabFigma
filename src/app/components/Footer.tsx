@@ -10,7 +10,7 @@ export function Footer() {
             {/* Column 1: Brand */}
             <div className="md:col-span-1">
               <img
-                src="https://pub-28a5a1ab60b44821b2111f74965f9cbf.r2.dev/XDL%20White.svg"
+                src="https://pub-28a5a1ab60b44821b2111f74965f9cbf.r2.dev/XDL%20White%20(1).svg"
                 alt="Xceptional Design Lab"
                 className="h-12 w-auto mb-4"
                 style={{
