@@ -156,7 +156,7 @@
     font-family: var(--font-primary);
     background-color: #000000;
     background-image: url('https://pub-28a5a1ab60b44821b2111f74965f9cbf.r2.dev/XCEPTIONAL%20DESIGN%20LAB%20FEATHER%20BACKGROUND.png');
-    background-size: cover;
+    background-size: contain;
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -176,7 +176,7 @@
     width: 100vw;
     height: 100vh;
     background-image: url('https://pub-28a5a1ab60b44821b2111f74965f9cbf.r2.dev/F2E137CE-917F-444E-8B86-88F3832608C4_1_102_o.jpeg');
-    background-size: cover;
+    background-size: contain;
     background-position: center center;
     background-repeat: no-repeat;
     opacity: 0.55;
