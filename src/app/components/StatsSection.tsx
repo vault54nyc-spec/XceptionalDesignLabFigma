@@ -63,7 +63,7 @@ function AnimatedStat({
   return (
     <AnimatedSection delay={delay} direction="up">
       <div ref={ref} className="text-center">
-        <div className="text-4xl md:text-5xl lg:text-6xl font-bold text-gold-gradient text-glow mb-3">
+        <div className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#F5E6B8] text-glow mb-3">
           {isText ? isText : `${prefix || ""}${count}${suffix || ""}`}
         </div>
         <p className="text-[#A0A0A0] text-sm md:text-base">{label}</p>
