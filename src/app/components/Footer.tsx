@@ -117,6 +117,14 @@ export function Footer() {
                 </li>
                 <li>
                   <Link
+                    to="/lightening-fast-services"
+                    className="text-[#A0A0A0] hover:text-[#D4AF37] transition-colors"
+                  >
+                    Lightening Fast Services
+                  </Link>
+                </li>
+                <li>
+                  <Link
                     to="/contact"
                     className="text-[#A0A0A0] hover:text-[#D4AF37] transition-colors"
                   >

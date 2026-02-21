@@ -41,10 +41,10 @@ export function BookCallSection() {
                 </span>
               </Link>
               <Link
-                to="/services"
-                className="floating-card rounded-full px-12 py-5 text-[#D4AF37] text-lg font-medium tracking-wide border-2 border-[#D4AF37] hover:bg-[#D4AF37] hover:text-black transition-all duration-300"
+                to="/lightening-fast-services"
+                className="floating-card rounded-full px-12 py-5 text-[#F5E6B8] text-lg font-medium tracking-wide border-2 border-[#D4AF37]/60 hover:bg-[#D4AF37]/10 transition-all duration-300"
               >
-                VIEW SERVICE CATALOG
+                LIGHTENING FAST SERVICES
               </Link>
             </div>
           </div>

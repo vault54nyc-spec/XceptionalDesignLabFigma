@@ -95,6 +95,14 @@ export function HeroSection() {
                   BOOK A STRATEGY CALL
                 </span>
               </Link>
+              <Link
+                to="/lightening-fast-services"
+                className="floating-card rounded-full px-8 py-4 text-[#F5E6B8] border border-[#D4AF37]/60 hover:bg-[#D4AF37]/10 transition-all duration-300"
+              >
+                <span className="tracking-wide font-medium">
+                  LIGHTENING FAST SERVICES
+                </span>
+              </Link>
             </motion.div>
           </div>
 

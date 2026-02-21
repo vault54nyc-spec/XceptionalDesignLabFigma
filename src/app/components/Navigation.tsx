@@ -137,7 +137,13 @@ export function Navigation() {
               </Link>
             )}
             
-            {/* CTA Button */}
+            {/* CTA Buttons */}
+            <Link
+              to="/lightening-fast-services"
+              className="hidden xl:inline-block floating-card rounded-full px-4 md:px-5 py-2 md:py-3 border border-[#D4AF37]/60 text-[#F5E6B8] text-[10px] md:text-xs tracking-[0.08em] hover:bg-[#D4AF37]/15 transition-all duration-300"
+            >
+              LIGHTENING FAST
+            </Link>
             <Link
               to="/contact"
               className="hidden sm:inline-block floating-card rounded-full px-4 md:px-6 py-2 md:py-3 bg-[#D4AF37] text-black text-xs md:text-sm tracking-wide hover:bg-[#B8962E] transition-all duration-300"

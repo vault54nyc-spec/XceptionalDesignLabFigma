@@ -5,6 +5,7 @@ import { ServicesPage } from "./pages/ServicesPage";
 import { ServiceCategoryPage } from "./pages/ServiceCategoryPage";
 import { CaseStudiesPage } from "./pages/CaseStudiesPage";
 import { ContactPage } from "./pages/ContactPage";
+import { LighteningFastServicesPage } from "./pages/LighteningFastServicesPage";
 import { NotFoundPage } from "./pages/NotFoundPage";
 
 export const router = createBrowserRouter([
@@ -31,6 +32,10 @@ export const router = createBrowserRouter([
   {
     path: "/contact",
     element: <ContactPage />,
+  },
+  {
+    path: "/lightening-fast-services",
+    element: <LighteningFastServicesPage />,
   },
   {
     path: "*",
